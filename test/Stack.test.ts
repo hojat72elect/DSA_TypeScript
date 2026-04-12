@@ -1,7 +1,6 @@
 import {expect, test} from "bun:test";
 import {Stack} from "../src/Stack.ts";
 
-
 test("general behavior of a stack", () => {
     const sut = new Stack([3, 8, 4, 7, 6, 5]);
 

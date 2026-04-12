@@ -1,8 +1,6 @@
 import {expect, test} from "bun:test";
 import {SinglyLinkedList} from "../src/SinglyLinkedList.ts";
 
-
-
 test("General behavior of a SinglyLinkedList", () => {
     const sut1 = new SinglyLinkedList([6, 5, 7, -2]);
     expect(sut1.getSize()).toBe(4);
