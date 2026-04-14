@@ -1,14 +1,14 @@
 /**
  * A LIFO data structure. It's easy to implement and reason about.
  */
-export class Stack {
-    private _dataHolder: any[];
+export class Stack<T> {
+    private _dataHolder: T[];
 
-    constructor(data: any[] = []) {
+    constructor(data: T[] = []) {
         this._dataHolder = data;
     }
 
-    push(newValue: any) {
+    push(newValue: T) {
         this._dataHolder.push(newValue);
     }
 
