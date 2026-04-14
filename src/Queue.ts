@@ -1,11 +1,11 @@
 /**
  * This is a simple **one-way** queue and a FIFO structure.
  */
-export class Queue {
+export class Queue<T> {
 
-    private _dataHolder: any[];
+    private _dataHolder: T[];
 
-    constructor(data: any[] = []) {
+    constructor(data: T[] = []) {
         this._dataHolder = data;
     }
 
@@ -17,7 +17,7 @@ export class Queue {
         return this._dataHolder.length;
     }
 
-    enqueue(newValue: any) {
+    enqueue(newValue: T) {
         this._dataHolder.push(newValue);
     }
 
