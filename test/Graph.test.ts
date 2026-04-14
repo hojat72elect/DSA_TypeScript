@@ -1,203 +1,140 @@
 import {expect, test} from "bun:test";
-
 import {SimpleGraph} from "../src/Graph";
 
 test("General behavior of a simple graph", () => {
-    const graph = new SimpleGraph();
+    const sut = new SimpleGraph();
 
-    // Test initial state
-    expect(graph.getNodeCount()).toBe(0);
+    expect(sut.getNodeCount()).toBe(0);
 
-    // Test adding vertices
-    graph.addVertex("A");
-    graph.addVertex("B");
-    graph.addVertex("C");
-    expect(graph.getNodeCount()).toBe(3);
+    sut.addVertex("A");
+    sut.addVertex("B");
+    sut.addVertex("C");
+    expect(sut.getNodeCount()).toBe(3);
 
-    // Test adding edges
-    graph.addEdge("A", "B");
-    graph.addEdge("B", "C");
-    graph.addEdge("A", "C");
+    sut.addEdge("A", "B");
+    sut.addEdge("B", "C");
+    sut.addEdge("A", "C");
 
-    // Test that graph structure is correct by checking internal adjacency list
-    // Note: We need to access private members for testing, so we'll use type assertion
-    const adjacencyList = (graph as any)._adjacencyList;
-
-    expect(adjacencyList["A"].has("B")).toBe(true);
-    expect(adjacencyList["A"].has("C")).toBe(true);
-    expect(adjacencyList["B"].has("A")).toBe(true);
-    expect(adjacencyList["B"].has("C")).toBe(true);
-    expect(adjacencyList["C"].has("A")).toBe(true);
-    expect(adjacencyList["C"].has("B")).toBe(true);
+    const graphRepresentation = sut.toString();
+    expect(graphRepresentation).toEqual("A--->  { B, C }\nB--->  { A, C }\nC--->  { B, A }\n");
 });
 
-test("Adding single vertex", () => {
-    const graph = new SimpleGraph();
-    graph.addVertex("X");
-    expect(graph.getNodeCount()).toBe(1);
+test("Just a single vertex", () => {
+    const sut = new SimpleGraph();
+    sut.addVertex("X");
+    expect(sut.getNodeCount()).toBe(1);
 
-    const adjacencyList = (graph as any)._adjacencyList;
-    expect(adjacencyList["X"]).toBeDefined();
-    expect(adjacencyList["X"].size).toBe(0);
+    const graphRepresentation = sut.toString();
+    expect(graphRepresentation).toBe("X--->  { }\n");
 });
 
-test("Adding multiple vertices", () => {
-    const graph = new SimpleGraph();
+test("multiple vertices without any edges", () => {
+    const sut = new SimpleGraph();
     const vertices = ["A", "B", "C", "D", "E"];
 
-    vertices.forEach(vertex => graph.addVertex(vertex));
+    vertices.forEach(vertex => sut.addVertex(vertex));
+    expect(sut.getNodeCount()).toBe(5);
 
-    expect(graph.getNodeCount()).toBe(5);
-
-    const adjacencyList = (graph as any)._adjacencyList;
-    vertices.forEach(vertex => {
-        expect(adjacencyList[vertex]).toBeDefined();
-        expect(adjacencyList[vertex].size).toBe(0);
-    });
+    const graphRepresentation = sut.toString();
+    expect(graphRepresentation).toEqual("A--->  { }\nB--->  { }\nC--->  { }\nD--->  { }\nE--->  { }\n");
 });
 
-test("Adding single edge", () => {
-    const graph = new SimpleGraph();
-    graph.addVertex("A");
-    graph.addVertex("B");
-    graph.addEdge("A", "B");
+test("2 vertices with 1 edge between them", () => {
+    const sut = new SimpleGraph();
+    sut.addVertex("A");
+    sut.addVertex("B");
+    sut.addEdge("A", "B");
 
-    const adjacencyList = (graph as any)._adjacencyList;
-    expect(adjacencyList["A"].has("B")).toBe(true);
-    expect(adjacencyList["B"].has("A")).toBe(true);
-    expect(adjacencyList["A"].size).toBe(1);
-    expect(adjacencyList["B"].size).toBe(1);
+    const graphRepresentation = sut.toString();
+    expect(graphRepresentation).toEqual("A--->  { B }\nB--->  { A }\n");
 });
 
-test("Adding multiple edges", () => {
-    const graph = new SimpleGraph();
-    graph.addVertex("A");
-    graph.addVertex("B");
-    graph.addVertex("C");
-    graph.addVertex("D");
+test("4 vertices and 3 edges between them", () => {
+    const sut = new SimpleGraph();
+    sut.addVertex("A");
+    sut.addVertex("B");
+    sut.addVertex("C");
+    sut.addVertex("D");
 
-    graph.addEdge("A", "B");
-    graph.addEdge("A", "C");
-    graph.addEdge("B", "D");
+    sut.addEdge("A", "B");
+    sut.addEdge("A", "C");
+    sut.addEdge("B", "D");
 
-    const adjacencyList = (graph as any)._adjacencyList;
-
-    // Check A's connections
-    expect(adjacencyList["A"].has("B")).toBe(true);
-    expect(adjacencyList["A"].has("C")).toBe(true);
-    expect(adjacencyList["A"].size).toBe(2);
-
-    // Check B's connections
-    expect(adjacencyList["B"].has("A")).toBe(true);
-    expect(adjacencyList["B"].has("D")).toBe(true);
-    expect(adjacencyList["B"].size).toBe(2);
-
-    // Check C's connections
-    expect(adjacencyList["C"].has("A")).toBe(true);
-    expect(adjacencyList["C"].size).toBe(1);
-
-    // Check D's connections
-    expect(adjacencyList["D"].has("B")).toBe(true);
-    expect(adjacencyList["D"].size).toBe(1);
+    const graphRepresentation = sut.toString();
+    expect(graphRepresentation).toEqual("A--->  { B, C }\nB--->  { A, D }\nC--->  { A }\nD--->  { B }\n");
 });
 
-test("Self-loop edge", () => {
-    const graph = new SimpleGraph();
-    graph.addVertex("A");
-    graph.addEdge("A", "A");
+test("Just one vertex with a loop edge", () => {
+    const sut = new SimpleGraph();
+    sut.addVertex("A");
+    sut.addEdge("A", "A");
 
-    const adjacencyList = (graph as any)._adjacencyList;
-    expect(adjacencyList["A"].has("A")).toBe(true);
-    expect(adjacencyList["A"].size).toBe(1);
+    const graphRepresentation = sut.toString();
+    expect(graphRepresentation).toEqual("A--->  { A }\n");
 });
 
-test("Graph with isolated vertices", () => {
-    const graph = new SimpleGraph();
-    graph.addVertex("A");
-    graph.addVertex("B");
-    graph.addVertex("C");
-    graph.addVertex("D");
+test("Multiple vertices with just 1 edge", () => {
+    const sut = new SimpleGraph();
+    sut.addVertex("A");
+    sut.addVertex("B");
+    sut.addVertex("C");
+    sut.addVertex("D");
 
-    // Only connect A and B
-    graph.addEdge("A", "B");
+    sut.addEdge("A", "B");
 
-    const adjacencyList = (graph as any)._adjacencyList;
-
-    // A and B should be connected
-    expect(adjacencyList["A"].has("B")).toBe(true);
-    expect(adjacencyList["B"].has("A")).toBe(true);
-
-    // C and D should be isolated
-    expect(adjacencyList["C"].size).toBe(0);
-    expect(adjacencyList["D"].size).toBe(0);
+    const graphRepresentation = sut.toString();
+    expect(graphRepresentation).toEqual("A--->  { B }\nB--->  { A }\nC--->  { }\nD--->  { }\n");
 });
 
-test("Complete graph", () => {
-    const graph = new SimpleGraph();
+test("A complete graph", () => {
+    const sut = new SimpleGraph();
     const vertices = ["A", "B", "C", "D"];
 
-    vertices.forEach(vertex => graph.addVertex(vertex));
+    vertices.forEach(vertex => sut.addVertex(vertex));
 
     // Create a complete graph (every vertex connected to every other vertex)
     for (let i = 0; i < vertices.length; i++) {
         for (let j = i + 1; j < vertices.length; j++) {
-            graph.addEdge(vertices[i]!, vertices[j]!);
+            sut.addEdge(vertices[i]!, vertices[j]!);
         }
     }
 
-    const adjacencyList = (graph as any)._adjacencyList;
-
-    // In a complete graph with n vertices, each vertex should have n-1 connections
-    vertices.forEach(vertex => {
-        expect(adjacencyList[vertex].size).toBe(vertices.length - 1);
-    });
+    const graphRepresentation = sut.toString();
+    expect(graphRepresentation).toEqual("A--->  { B, C, D }\nB--->  { A, C, D }\nC--->  { A, B, D }\nD--->  { A, B, C }\n");
 });
 
-test("Linear chain graph", () => {
-    const graph = new SimpleGraph();
+test("Linear chain graph (each vertex gets connected to the next vertex)", () => {
+    const sut = new SimpleGraph();
     const vertices = ["A", "B", "C", "D", "E"];
 
-    vertices.forEach(vertex => graph.addVertex(vertex));
+    vertices.forEach(vertex => sut.addVertex(vertex));
 
     // Create a linear chain: A-B-C-D-E
     for (let i = 0; i < vertices.length - 1; i++) {
-        graph.addEdge(vertices[i]!, vertices[i + 1]!);
+        sut.addEdge(vertices[i]!, vertices[i + 1]!);
     }
 
-    const adjacencyList = (graph as any)._adjacencyList;
-
-    // End vertices should have 1 connection
-    expect(adjacencyList["A"].size).toBe(1);
-    expect(adjacencyList["E"].size).toBe(1);
-
-    // Middle vertices should have 2 connections
-    expect(adjacencyList["B"].size).toBe(2);
-    expect(adjacencyList["C"].size).toBe(2);
-    expect(adjacencyList["D"].size).toBe(2);
+    const graphRepresentation = sut.toString();
+    expect(graphRepresentation).toEqual("A--->  { B }\nB--->  { A, C }\nC--->  { B, D }\nD--->  { C, E }\nE--->  { D }\n");
 });
 
-test("Adding duplicate edges", () => {
-    const graph = new SimpleGraph();
-    graph.addVertex("A");
-    graph.addVertex("B");
+test("Adding duplicate edges shouldn't make any changes", () => {
+    const sut = new SimpleGraph();
+    sut.addVertex("A");
+    sut.addVertex("B");
 
-    graph.addEdge("A", "B");
-    graph.addEdge("A", "B"); // Add the same edge again
-    graph.addEdge("B", "A"); // Add the reverse edge (should be the same in undirected graph)
+    sut.addEdge("A", "B");
+    sut.addEdge("A", "B");
+    sut.addEdge("B", "A");
 
-    const adjacencyList = (graph as any)._adjacencyList;
-
-    // Should still only have one edge between A and B (Set prevents duplicates)
-    expect(adjacencyList["A"].size).toBe(1);
-    expect(adjacencyList["B"].size).toBe(1);
-    expect(adjacencyList["A"].has("B")).toBe(true);
-    expect(adjacencyList["B"].has("A")).toBe(true);
+    const graphRepresentation = sut.toString();
+    expect(graphRepresentation).toEqual("A--->  { B }\nB--->  { A }\n");
 });
 
 test("Empty graph", () => {
-    const graph = new SimpleGraph();
-    expect(graph.getNodeCount()).toBe(0);
+    const sut = new SimpleGraph();
+    expect(sut.getNodeCount()).toBe(0);
 
-    const adjacencyList = (graph as any)._adjacencyList;
-    expect(Object.keys(adjacencyList).length).toBe(0);
+    const graphRepresentation = sut.toString();
+    expect(graphRepresentation).toEqual("");
 });

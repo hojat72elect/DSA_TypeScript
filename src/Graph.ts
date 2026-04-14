@@ -31,7 +31,7 @@ export class SimpleGraph {
     /**
      * This function is only used for debugging purposes.
      */
-    private toString(): string {
+    public toString(): string {
         const allNodes = Object.keys(this._adjacencyList);
         let graphRepresentation = "";
         for (let node of allNodes) {
@@ -47,6 +47,9 @@ export class SimpleGraph {
         return graphRepresentation;
     }
 
+    /**
+     * A utility function so printing the graph to the console will be easier.
+     */
     public print() {
         console.log(this.toString());
     }
