@@ -9,6 +9,17 @@ class Node<T> {
         this.value = value;
         this.next = null;
     }
+
+    /**
+     * This function is only used for debugging and testing purposes.
+     */
+    toString(): string {
+        if (this.next !== null) {
+            return `${this.value} -> ${this.next.toString()}`;
+        } else {
+            return `${this.value}`;
+        }
+    }
 }
 
 export class SinglyLinkedList<T> {
