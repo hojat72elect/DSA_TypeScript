@@ -8,8 +8,13 @@ export class Stack<T> {
         this._dataHolder = data;
     }
 
-    push(newValue: T) {
+    /**
+     * Add a new item to the top of the stack.
+     * Returns a reference to the stack, so this operation can be chained.
+     */
+    push(newValue: T): Stack<T> {
         this._dataHolder.push(newValue);
+        return this;
     }
 
     peek() {
