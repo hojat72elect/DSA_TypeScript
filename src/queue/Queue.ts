@@ -17,8 +17,12 @@ export class Queue<T> {
         return this._dataHolder.length;
     }
 
-    enqueue(newValue: T) {
+    /**
+     * @returns A reference to this queue, so it's possible to chain this operation.
+     */
+    enqueue(newValue: T): Queue<T> {
         this._dataHolder.push(newValue);
+        return this;
     }
 
     dequeue() {
@@ -34,13 +38,16 @@ export class Queue<T> {
         return this._dataHolder[0];
     }
 
+    /**
+     * @return The element in the row with the lowest priority, or undefined if the queue is empty.
+     */
     peekBack() {
         if (this.isEmpty()) return undefined;
         return this._dataHolder[this._dataHolder.length - 1];
     }
 
     /**
-     * @returns A string representation of the Queue (for debugging purposes).
+     * @returns A string representation of the Queue (for debugging and testing purposes).
      */
     toString(): string {
         return this._dataHolder.join(" <-- ");
