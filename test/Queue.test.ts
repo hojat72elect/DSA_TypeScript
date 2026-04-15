@@ -1,5 +1,5 @@
 import {expect, test} from "bun:test";
-import {Queue} from "../src/Queue.ts";
+import {Queue} from "../src/queue/Queue.ts";
 
 test("General behavior of a Queue", () => {
     const sut = new Queue([0, 2, 6, 5]);
