@@ -35,9 +35,9 @@ export class BinaryTree<T> {
     public preOrderTraversal(node: BinaryNode<T> | null = this.root, depth: number = 0) {
         if (!node) return "";
 
-        let resultingString = " ".repeat(depth) + "└──" + node.value + "\n";
-        resultingString += this.preOrderTraversal(node.leftChild, depth + 1);
-        resultingString += this.preOrderTraversal(node.rightChild, depth + 1);
+        let resultingString = " ".repeat(depth) + "└──" + node.value + "\n"; // Visit the current node
+        resultingString += this.preOrderTraversal(node.leftChild, depth + 1);// Traverse the left subtree
+        resultingString += this.preOrderTraversal(node.rightChild, depth + 1);// Traverse the right subtree
 
         return resultingString;
     }
@@ -53,7 +53,7 @@ export class BinaryTree<T> {
         let resultingString = "";
         resultingString += this.inOrderTraversal(node.leftChild, depth + 1); // Traverse the left subtree
         resultingString += " ".repeat(depth) + "└──" + node.value + "\n"; // Visit the current node
-        resultingString += this.inOrderTraversal(node.rightChild, depth + 1);
+        resultingString += this.inOrderTraversal(node.rightChild, depth + 1); // Traverse the right subtree
 
         return resultingString;
     }
@@ -62,8 +62,14 @@ export class BinaryTree<T> {
      *
      * Left  -> Right -> Node
      */
-    public postOrderTraversal() {
+    public postOrderTraversal(node: BinaryNode<T> | null = this.root, depth: number = 0) {
+        if (!node) return "";
+        let resultingString = "";
+        resultingString += this.postOrderTraversal(node.leftChild, depth + 1); // Traverse the left subtree
+        resultingString += this.postOrderTraversal(node.rightChild, depth + 1); // Traverse the right subtree
+        resultingString += " ".repeat(depth) + " " + node.value + "\n"; // Visit the current node
 
+        return resultingString;
     }
 
 
