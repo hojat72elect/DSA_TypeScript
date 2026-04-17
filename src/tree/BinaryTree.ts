@@ -27,6 +27,22 @@ class BinaryNode<T> {
         if (!this.rightChild) return this;
         return this.rightChild.findRightMost();
     }
+
+    /**
+     * Changes the value in the left child of this node.
+     */
+    public setLeftChild(newValue: T) {
+        this.leftChild = new BinaryNode(newValue);
+    }
+
+    /**
+     * Changes the value in the right child of this node.
+     */
+    public setRightChild(newValue: T) {
+        this.rightChild = new BinaryNode(newValue);
+    }
+
+
 }
 
 export class BinaryTree<T> {
