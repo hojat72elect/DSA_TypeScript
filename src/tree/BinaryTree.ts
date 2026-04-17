@@ -12,9 +12,20 @@ class BinaryNode<T> {
         this.rightChild = null;
     }
 
+    /**
+     * @return the left-most child in the left subtree of a binary node.
+     */
     public findLeftMost(): BinaryNode<T> {
         if (!this.leftChild) return this;
         return this.leftChild.findLeftMost();
+    }
+
+    /**
+     * @return the right-most child in the right subtree of a binary node.
+     */
+    public findRightMost(): BinaryNode<T> {
+        if (!this.rightChild) return this;
+        return this.rightChild.findRightMost();
     }
 }
 
