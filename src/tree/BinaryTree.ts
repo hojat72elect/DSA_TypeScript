@@ -133,4 +133,29 @@ export class BinaryTree<T> {
     public search(value: T): BinaryNode<T> | null {
         return this.root!.search(value);
     }
+    /**
+     * Goes through a binary tree in a pre-order traversal fashion.
+     * You give it the current node and the target node you have, it will return the parent of that target node.
+     * If it couldn't find the parent of that target, will return null.
+     */
+    private findParent(current: BinaryNode<T>, target: BinaryNode<T>): BinaryNode<T> | null {
+        if (current.leftChild === target || current.rightChild === target) {
+            return current;
+        }
+        
+        if (current.leftChild) {
+            // Go to the left sub-tree
+            const result = this.findParent(current.leftChild, target);
+            if (result) return result;
+        }
+        
+        if (current.rightChild) {
+            // Go to the right sub-tree
+            const result = this.findParent(current.rightChild, target);
+            if (result) return result;
+        }
+
+        // Couldn't find anything, just return null
+        return null;
+    }
 }
