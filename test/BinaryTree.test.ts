@@ -1,5 +1,5 @@
 import {expect, test} from "bun:test";
-import {BinaryTree} from "../src/tree/BinaryTree.ts";
+import {BinaryNode, BinaryTree} from "../src/tree/BinaryTree.ts";
 
 /**
  *                            _  Hojat _
@@ -27,6 +27,15 @@ test("General behavior of different traversal strategies in a binary tree with 3
 
 });
 
-test("searching for a value in a normal binary tree", () => {
+test("various ways of searching for a value in a normal binary tree", () => {
+    expect(sut.getLeftMostNode()).toEqual(new BinaryNode("Tooba"));
+    expect(sut.getRightMostNode()).toEqual(new BinaryNode("Mahmood"));
 
+    const mockedJilaNode = new BinaryNode("Jila")
+    mockedJilaNode.setRightChild("Mohammad");
+    mockedJilaNode.setLeftChild("Tooba");
+    expect(sut.search("Jila")).toEqual(mockedJilaNode);
+
+    expect(sut.search("Peter")).toBeNull();
+    expect(sut.search("jila")).toBeNull();
 });

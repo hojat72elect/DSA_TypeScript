@@ -1,8 +1,11 @@
 /**
+ * @internal
+ * This class was exported only for testing purposes.
+ *
  * This node is specifically defined for binary trees.
  * I have made it private, so it should be used only inside this file.
  */
-class BinaryNode<T> {
+export class BinaryNode<T> {
     value: T;
     leftChild: BinaryNode<T> | null;
     rightChild: BinaryNode<T> | null;
