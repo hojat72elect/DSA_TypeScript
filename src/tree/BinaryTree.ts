@@ -1,5 +1,6 @@
 /**
  * This node is specifically defined for binary trees.
+ * I have made it private, so it should be used only inside this file.
  */
 class BinaryNode<T> {
     value: T;
@@ -66,6 +67,16 @@ export class BinaryTree<T> {
         this.root = rootValue ? new BinaryNode(rootValue) : null;
     }
 
+    public getLeftMostNode() {
+        if (!this.root) return null;
+        return this.root!.findLeftMost();
+    }
+
+    public getRightMostNode(){
+        if (!this.root) return null;
+        return this.root!.findRightMost();
+    }
+
     /**
      * Traverses the tree recursively; in such a way that it first visits the node itself
      * and then visits the left and right nodes recursively.
@@ -117,6 +128,6 @@ export class BinaryTree<T> {
      * Returns the found node or null if not found.
      */
     public search(value: T): BinaryNode<T> | null {
-       return this.root!.search(value);
+        return this.root!.search(value);
     }
 }
