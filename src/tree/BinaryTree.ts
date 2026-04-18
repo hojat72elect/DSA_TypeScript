@@ -42,6 +42,19 @@ class BinaryNode<T> {
         this.rightChild = new BinaryNode(newValue);
     }
 
+    /**
+     * Searches for the given value in this node and its children nodes.
+     * This node is for a general binary tree (not a BST), so we have to traverse all nodes.
+     */
+    public search(value: T): BinaryNode<T> | null {
+        if (this.value === value) return this;
+        if (!this.rightChild && !this.leftChild) return null;
+
+        const leftResult = this.leftChild!.search(value);
+        if (leftResult) return leftResult;
+
+        return this.rightChild!.search(value);
+    }
 
 }
 
@@ -98,17 +111,12 @@ export class BinaryTree<T> {
         return resultingString;
     }
 
-
     /**
-     * Sets the left child of a node, returns the parent node.
+     * Searches for a node with the given value in this tree.
+     * This is a regular binary tree (not BST), so we need to traverse the entire tree.
+     * Returns the found node or null if not found.
      */
-    static insertLeft<E>(parentNode: BinaryNode<E>, newValue: E): BinaryNode<E> {
-        parentNode.leftChild = new BinaryNode(newValue);
-        return parentNode;
-    }
-
-    static insertRight<E>(parentNode: BinaryNode<E>, newValue: E): BinaryNode<E> {
-        parentNode.rightChild = new BinaryNode(newValue);
-        return parentNode;
+    public search(value: T): BinaryNode<T> | null {
+       return this.root!.search(value);
     }
 }
