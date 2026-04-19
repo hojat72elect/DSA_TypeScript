@@ -1,9 +1,5 @@
 /**
- * @internal
- * This class was exported only for testing purposes.
- *
  * This node is specifically defined for binary trees.
- * I have made it private, so it should be used only inside this file.
  */
 export class BinaryNode<T> {
     value: T;
@@ -238,7 +234,7 @@ export class BinaryTree<T> {
      * You give it the current node and the target node you have, it will return the parent of that target node.
      * If it couldn't find the parent of that target, will return null.
      */
-    private findParent(current: BinaryNode<T>, target: BinaryNode<T>): BinaryNode<T> | null {
+     findParent(current: BinaryNode<T>, target: BinaryNode<T>): BinaryNode<T> | null {
         if (current.leftChild === target || current.rightChild === target) {
             return current;
         }
