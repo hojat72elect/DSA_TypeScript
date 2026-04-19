@@ -75,7 +75,7 @@ export class BinaryTree<T> {
         return this.root!.findLeftMost();
     }
 
-    public getRightMostNode(){
+    public getRightMostNode() {
         if (!this.root) return null;
         return this.root!.findRightMost();
     }
@@ -133,6 +133,40 @@ export class BinaryTree<T> {
     public search(value: T): BinaryNode<T> | null {
         return this.root!.search(value);
     }
+    /**
+     * Helper function to find a node and its parent.
+     * @returns an object with parent, node, and whether it's a left child.
+     */
+    private findNodeAndParent(current: BinaryNode<T>, value: T): {
+        parent: BinaryNode<T>,
+        node: BinaryNode<T>,
+        isLeftChild: boolean
+    } | null {
+        if (current.leftChild && current.leftChild.value === value) {
+            // The left child of the current node is wht we are looking for.
+            return {parent: current, node: current.leftChild, isLeftChild: true};
+        }
+        if (current.rightChild && current.rightChild.value === value) {
+            // The right child of the current node is wht we are looking for.
+            return {parent: current, node: current.rightChild, isLeftChild: false};
+        }
+
+        // Search in left subtree
+        if (current.leftChild) {
+            const result = this.findNodeAndParent(current.leftChild, value);
+            if (result) return result;
+        }
+
+        // Search in right subtree
+        if (current.rightChild) {
+            const result = this.findNodeAndParent(current.rightChild, value);
+            if (result) return result;
+        }
+
+        // Couldn't find anything
+        return null;
+    }
+
     /**
      * When we are about to remove a node from the tree, we need to provide a replacement for it so the rest of the tree can continue as a whole thing.
      * This function decides about the replacement node.
