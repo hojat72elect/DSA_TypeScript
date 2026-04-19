@@ -133,6 +133,36 @@ export class BinaryTree<T> {
     public search(value: T): BinaryNode<T> | null {
         return this.root!.search(value);
     }
+
+    /**
+     * Searches the entire tree, finds the first node that matches the provided value, removes it and replaces it with some other node.
+     *
+     * @returns true if the node was found and removed, false otherwise.
+     */
+    public remove(value: T): boolean {
+        if (!this.root) return false; // The tree is empty
+
+        if (this.root.value === value) {
+            // We are removing the root node
+            this.root = this.getReplacementNode(this.root);
+            return true;
+        }
+
+        const result = this.findNodeAndParent(this.root, value);
+        if (!result) return false; // Couldn't find such a node in the entire tree
+
+        const {parent, node, isLeftChild} = result;
+
+        // Replace the node with another node from our tree
+        if (isLeftChild) {
+            parent.leftChild = this.getReplacementNode(node);
+        } else {
+            parent.rightChild = this.getReplacementNode(node);
+        }
+
+        return true;
+    }
+
     /**
      * Helper function to find a node and its parent.
      * @returns an object with parent, node, and whether it's a left child.
