@@ -54,12 +54,12 @@ export class BinaryNode<T> {
         if (this.value === value) return this;
         if (!this.rightChild && !this.leftChild) return null;
 
-        const leftResult = this.leftChild!.search(value);
+        const leftResult = this.leftChild?.search(value);
         if (leftResult) return leftResult;
 
-        return this.rightChild!.search(value);
+        const rightResult = this.rightChild?.search(value);
+        return rightResult ? rightResult : null;
     }
-
 }
 
 export class BinaryTree<T> {
@@ -72,12 +72,12 @@ export class BinaryTree<T> {
 
     public getLeftMostNode() {
         if (!this.root) return null;
-        return this.root!.findLeftMost();
+        return this.root?.findLeftMost();
     }
 
     public getRightMostNode() {
         if (!this.root) return null;
-        return this.root!.findRightMost();
+        return this.root?.findRightMost();
     }
 
     /**
@@ -131,7 +131,7 @@ export class BinaryTree<T> {
      * Returns the found node or null if not found.
      */
     public search(value: T): BinaryNode<T> | null {
-        return this.root!.search(value);
+        return this.root ? this.root!.search(value) : null;
     }
 
     /**
