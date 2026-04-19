@@ -134,6 +134,42 @@ export class BinaryTree<T> {
         return this.root!.search(value);
     }
     /**
+     * When we are about to remove a node from the tree, we need to provide a replacement for it so the rest of the tree can continue as a whole thing.
+     * This function decides about the replacement node.
+     */
+    private getReplacementNode(node: BinaryNode<T>): BinaryNode<T> | null {
+
+        if (!node.leftChild && !node.rightChild) {
+            // The provided node has no children, we don't need any replacement for it.
+            return null;
+        }
+
+        if (!node.leftChild) {
+            // The provided node has ONLY a right child.
+            return node.rightChild;
+        }
+        if (!node.rightChild) {
+            // The provided node has ONLY a left child.
+            return node.leftChild;
+        }
+        // The provided node has 2 children; the leftmost node of the right subtree will be replacement
+        const replacement = node.rightChild.findLeftMost();
+
+        // If the replacement is not the immediate right child
+        if (replacement !== node.rightChild) {
+            // Find the parent of the replacement node
+            const replacementParent = this.findParent(node.rightChild, replacement);
+            // Remove the replacement from its current position
+            replacementParent!.leftChild = replacement.rightChild;
+            // Set the right child of replacement
+            replacement.rightChild = node.rightChild;
+        }
+
+        replacement.leftChild = node.leftChild;
+        return replacement;
+    }
+
+    /**
      * Goes through a binary tree in a pre-order traversal fashion.
      * You give it the current node and the target node you have, it will return the parent of that target node.
      * If it couldn't find the parent of that target, will return null.
@@ -142,13 +178,13 @@ export class BinaryTree<T> {
         if (current.leftChild === target || current.rightChild === target) {
             return current;
         }
-        
+
         if (current.leftChild) {
             // Go to the left sub-tree
             const result = this.findParent(current.leftChild, target);
             if (result) return result;
         }
-        
+
         if (current.rightChild) {
             // Go to the right sub-tree
             const result = this.findParent(current.rightChild, target);
