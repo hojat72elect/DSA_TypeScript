@@ -1,7 +1,7 @@
 /**
  * A LIFO data structure. It's easy to implement and reason about.
  */
-export class Stack<T> {
+export class Old_Stack<T> {
     private _dataHolder: T[];
 
     constructor(data: T[] = []) {
@@ -12,7 +12,7 @@ export class Stack<T> {
      * Add a new item to the top of the stack.
      * Returns a reference to the stack, so this operation can be chained.
      */
-    push(newValue: T): Stack<T> {
+    push(newValue: T): Old_Stack<T> {
         this._dataHolder.push(newValue);
         return this;
     }

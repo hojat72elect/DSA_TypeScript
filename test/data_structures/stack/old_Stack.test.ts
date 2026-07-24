@@ -1,9 +1,9 @@
 import {expect, test} from "bun:test";
-import {Stack} from "../../src/data_structures/Stack.ts";
+import {Old_Stack} from "../../../src/data_structures/stack/old_Stack.ts";
 
 
 test("general behavior of a stack", () => {
-    const sut = new Stack([3, 8, 4, 7, 6, 5]);
+    const sut = new Old_Stack([3, 8, 4, 7, 6, 5]);
 
     expect(sut.toString()).toBe("3 -> 8 -> 4 -> 7 -> 6 -> 5");
 
