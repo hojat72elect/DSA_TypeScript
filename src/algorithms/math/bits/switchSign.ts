@@ -1,0 +1,6 @@
+/**
+ * Switch the sign of the number using "Twos Complement" approach.
+ */
+export function switchSign(number: number): number {
+    return ~number + 1;
+}
