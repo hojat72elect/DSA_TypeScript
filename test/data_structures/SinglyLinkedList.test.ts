@@ -1,5 +1,6 @@
 import {expect, test} from "bun:test";
-import {SinglyLinkedList} from "../src/linkedlist/SinglyLinkedList.ts";
+import {SinglyLinkedList} from "../../src/data_structures/linkedlist/SinglyLinkedList.ts";
+
 
 test("General behavior of a SinglyLinkedList", () => {
     const sut1 = new SinglyLinkedList([6, 5, 7, -2]);

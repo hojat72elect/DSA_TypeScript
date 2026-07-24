@@ -1,5 +1,5 @@
 import {expect, test} from "bun:test";
-import {SimpleGraph} from "../src/Graph";
+import {SimpleGraph} from "../../src/data_structures/Graph.ts";
 
 test("General behavior of a simple graph", () => {
     const sut = new SimpleGraph();

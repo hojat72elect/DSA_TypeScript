@@ -1,5 +1,5 @@
 import {expect, test} from "bun:test";
-import {Vector2} from "../src/Vector2.ts";
+import {Vector2} from "../../src/data_structures/Vector2.ts";
 
 test("Normal features of a 2D vector", () => {
 

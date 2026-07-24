@@ -1,5 +1,6 @@
 import {expect, test} from "bun:test";
-import {BinaryNode, BinaryTree} from "../src/tree/BinaryTree.ts";
+import {BinaryNode, BinaryTree} from "../../src/data_structures/tree/BinaryTree.ts";
+
 
 function createTreeMock() {
 
