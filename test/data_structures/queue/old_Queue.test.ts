@@ -1,9 +1,9 @@
 import {expect, test} from "bun:test";
-import {Queue} from "../../src/data_structures/queue/Queue.ts";
+import {Old_Queue} from "../../../src/data_structures/queue/Old_Queue.ts";
 
 
 test("General behavior of a Queue", () => {
-    const sut = new Queue([0, 2, 6, 5]);
+    const sut = new Old_Queue([0, 2, 6, 5]);
 
     expect(sut.isEmpty()).toBeFalse();
     expect(sut.getSize()).toBe(4);

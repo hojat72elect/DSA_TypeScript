@@ -1,59 +1,52 @@
+import {LinkedList} from "../../../../TypeScript-algorithms/src/data-structures/linked-list/LinkedList.ts";
+
 /**
- * This is a simple **one-way** queue and a FIFO structure.
+ * We're going to implement `Queue` based on `LinkedList` since the two
+ * structures are quite similar. Namely, they both operate mostly on
+ * the elements at the beginning and the end. Compare enqueue/dequeue
+ * operations of Queue with append/deleteHead operations of LinkedList.
  */
-export class Queue<T> {
+export class Queue {
+    linkedList: LinkedList<any>;
 
-    private _dataHolder: T[];
-
-    constructor(data: T[] = []) {
-        this._dataHolder = data;
+    constructor() {
+        this.linkedList = new LinkedList<any>();
     }
 
-    isEmpty() {
-        return this._dataHolder.length === 0;
-    }
-
-    getSize() {
-        return this._dataHolder.length;
+    isEmpty(): boolean {
+        return !this.linkedList.head;
     }
 
     /**
-     * @returns A reference to this queue, so it's possible to chain this operation.
+     * Read the element at the front of the queue without removing it.
      */
-    enqueue(newValue: T): Queue<T> {
-        this._dataHolder.push(newValue);
-        return this;
+    peek() {
+        if (this.isEmpty()) {
+            return null;
+        }
+
+        return this.linkedList.head?.value;
     }
 
+    /**
+     * Add a new element to the end of the queue (the tail of the linked list).
+     * This element will be processed after all elements ahead of it.
+     */
+    enqueue(value: any) {
+        this.linkedList.append(value);
+    }
+
+    /**
+     * Remove the element at the front of the queue (the head of the linked list).
+     * If the queue is empty, return null.
+     */
     dequeue() {
-        if (this.isEmpty()) return undefined;
-        return this._dataHolder.shift();
+        const removedHead = this.linkedList.deleteHead();
+        return removedHead ? removedHead.value : null;
     }
 
-    /**
-     * @return The element in the row with the highest priority. Or undefined, if the queue is empty.
-     */
-    peekFront() {
-        if (this.isEmpty()) return undefined;
-        return this._dataHolder[0];
-    }
-
-    /**
-     * @return The element in the row with the lowest priority, or undefined if the queue is empty.
-     */
-    peekBack() {
-        if (this.isEmpty()) return undefined;
-        return this._dataHolder[this._dataHolder.length - 1];
-    }
-
-    /**
-     * @returns A string representation of the Queue (for debugging and testing purposes).
-     */
-    toString(): string {
-        return this._dataHolder.join(" <-- ");
-    }
-
-    clear() {
-        this._dataHolder = [];
+    toString(callback?: (value: any) => string) {
+        // Return string representation of the queue's linked list.
+        return this.linkedList.toString(callback);
     }
 }
