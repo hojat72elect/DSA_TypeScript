@@ -1,6 +1,6 @@
-import {LinkedList} from "../linkedlist/LinkedList.ts";
+import {LinkedList} from "../linked_list/LinkedList.ts";
 import {GraphEdge} from "./GraphEdge.ts";
-import {LinkedListNode} from "../linkedlist/LinkedListNode.ts";
+import {LinkedListNode} from "../linked_list/LinkedListNode.ts";
 
 export class GraphVertex {
     public value: any;

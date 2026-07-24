@@ -1,5 +1,5 @@
 import {describe, expect, it} from "bun:test";
-import {SegmentTree} from "../../../../src/data_structures/tree/segment-tree/SegmentTree.ts";
+import {SegmentTree} from "../../../../src/data_structures/tree/segment_tree/SegmentTree.ts";
 
 describe('SegmentTree', () => {
     it('should build tree for input array #0 with length of power of two', () => {

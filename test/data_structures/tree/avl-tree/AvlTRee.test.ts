@@ -1,5 +1,5 @@
 import {describe, expect, it} from "bun:test";
-import {AvlTree} from "../../../../src/data_structures/tree/avl-tree/AvlTree.ts";
+import {AvlTree} from "../../../../src/data_structures/tree/avl_tree/AvlTree.ts";
 
 describe('AvlTree', () => {
     it('should do simple left-left rotation', () => {

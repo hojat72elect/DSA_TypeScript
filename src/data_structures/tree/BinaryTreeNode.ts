@@ -1,5 +1,5 @@
 import {Comparator} from '../../../src/utils/comparator/Comparator.ts';
-import {HashTable} from '../../../src/data_structures/hash-table/HashTable.ts';
+import {HashTable} from '../hash_table/HashTable.ts';
 
 export class BinaryTreeNode<T> {
     left: BinaryTreeNode<T> | null;

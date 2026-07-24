@@ -1,4 +1,4 @@
-import {DisjointSet} from '../../../../../DSA_TypeScript/src/data_structures/disjoint-set/DisjointSet.ts';
+import {DisjointSet} from '../../../../../DSA_TypeScript/src/data_structures/disjoint_set/DisjointSet.ts';
 import {Graph} from "../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts";
 import {GraphVertex} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts";
 

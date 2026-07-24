@@ -1,37 +1,35 @@
 # TypeScript Algorithms and Data Structures
 
-In this repository we have professional implementations of many popular algorithms and data structures, written in [TypeScript programming language](https://www.typescriptlang.org/).
-
-Each algorithm and data structure has abundant documentations
+In this repository we have professional implementations of many popular algorithms and data structures, written in [TypeScript programming language](https://www.typescriptlang.org/). Each algorithm and data structure has abundant documentations
 with simple explanations and links for further reading or watching online courses about the topic.
 
 ## Data Structures
 
-A data structure is a particular way of organizing and storing data in a computer so that it can
+A [data structure](https://en.wikipedia.org/wiki/Data_structure) is a particular way of organizing and storing data in a computer so that it can
 be accessed and modified efficiently. More precisely, a data structure is a collection of data
 values, the relationships among them, and the functions or operations that can be applied to
 the data.
 
-**Keep in mind that any data structure has its own trade-offs. And you need to pay attention more to why you're choosing a certain data structure than to how to implement it.**
+**Keep in mind that any data structure has its own trade-offs. And you need to pay attention more to why you're choosing a certain data structure rather than to how to implement it.**
 
-* [Linked List](./src/data-structures/linked-list)
-* [Doubly Linked List](./src/data-structures/doubly-linked-list)
-* [Queue](./src/data-structures/queue)
-* [Stack](./src/data-structures/stack)
-* [Hash Table](./src/data-structures/hash-table)
-* [Heap](./src/data-structures/heap) - max and min heap versions
-* [Priority Queue](./src/data-structures/priority-queue)
-* [Trie](./src/data-structures/trie)
-* [Tree](./src/data-structures/tree)
-  * [Binary Search Tree](./src/data-structures/tree/binary-search-tree)
-  * [AVL Tree](./src/data-structures/tree/avl-tree)
-  * [Red-Black Tree](./src/data-structures/tree/red-black-tree)
-  * [Segment Tree](./src/data-structures/tree/segment-tree) - with min/max/sum range queries examples
-  * [Fenwick Tree](./src/data-structures/tree/fenwick-tree) (Binary Indexed Tree)
-* [Graph](./src/data-structures/graph) (both directed and undirected)
-* [Disjoint Set](./src/data-structures/disjoint-set) - a union–find data structure or merge–find set
-* [Bloom Filter](./src/data-structures/bloom-filter)
-* [LRU Cache](./src/data-structures/lru-cache/) - Least Recently Used (LRU) cache
+* [Linked List](./src/data_structures/linked_list)
+* [Doubly Linked List](./src/data_structures/doubly_linked_list)
+* [Queue](./src/data_structures/queue)
+* [Stack](./src/data_structures/stack)
+* [Hash Table](./src/data_structures/hash_table)
+* [Heap](./src/data_structures/heap)
+* [Priority Queue](./src/data_structures/priority_queue)
+* [Trie](./src/data_structures/trie)
+* [Tree](./src/data_structures/tree)
+  * [Binary Search Tree](./src/data_structures/tree/binary_search_tree)
+  * [AVL Tree](./src/data_structures/tree/avl_tree)
+  * [Red-Black Tree](./src/data_structures/tree/red_black_tree)
+  * [Segment Tree](./src/data_structures/tree/segment_tree)
+  * [Fenwick Tree](./src/data_structures/tree/fenwick_tree)
+* [Graph](./src/data_structures/graph)
+* [Disjoint Set](./src/data_structures/disjoint_set)
+* [Bloom Filter](./src/data_structures/bloom_filter)
+* [LRU Cache](./src/data_structures/lru_cache/)
 
 ## Algorithms
 

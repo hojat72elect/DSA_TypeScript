@@ -1,4 +1,4 @@
-import {LinkedList} from "../linkedlist/LinkedList.ts";
+import {LinkedList} from "../linked_list/LinkedList.ts";
 
 
 /**

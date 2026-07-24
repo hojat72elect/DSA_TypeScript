@@ -1,5 +1,5 @@
 import {expect, test} from "bun:test";
-import {SinglyLinkedList} from "../../../src/data_structures/linkedlist/SinglyLinkedList.ts";
+import {SinglyLinkedList} from "../../../src/data_structures/linked_list/SinglyLinkedList.ts";
 
 
 test("General behavior of a SinglyLinkedList", () => {

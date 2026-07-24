@@ -1,5 +1,5 @@
-import {BinarySearchTree} from "../binary-search-tree/BinarySearchTree.ts";
-import {BinarySearchTreeNode} from "../binary-search-tree/BinarySearchTreeNode.ts";
+import {BinarySearchTree} from "../binary_search_tree/BinarySearchTree.ts";
+import {BinarySearchTreeNode} from "../binary_search_tree/BinarySearchTreeNode.ts";
 
 export class AvlTree<T> extends BinarySearchTree<T> {
 

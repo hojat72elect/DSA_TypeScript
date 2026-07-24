@@ -1,4 +1,4 @@
-import {LinkedListNode} from "../../../src/data_structures/linkedlist/LinkedListNode.ts";
+import {LinkedListNode} from "../../../src/data_structures/linked_list/LinkedListNode.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('LinkedListNode', () => {

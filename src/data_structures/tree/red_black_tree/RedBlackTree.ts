@@ -1,6 +1,6 @@
 // Possible colors of red-black tree nodes.
-import {BinarySearchTree} from "../binary-search-tree/BinarySearchTree.ts";
-import {type BinarySearchTreeNode} from "../binary-search-tree/BinarySearchTreeNode.ts";
+import {BinarySearchTree} from "../binary_search_tree/BinarySearchTree.ts";
+import {type BinarySearchTreeNode} from "../binary_search_tree/BinarySearchTreeNode.ts";
 
 const RED_BLACK_TREE_COLORS = {
     red: 'red',
@@ -103,7 +103,7 @@ export class RedBlackTree<T> extends BinarySearchTree<T> {
                 }
 
                 if (newGrandParent) {
-                    // Check if new grand parent don't violate red-black-tree rules.
+                    // Check if new grand parent don't violate red_black_tree rules.
                     this.balance(newGrandParent);
                 }
             }

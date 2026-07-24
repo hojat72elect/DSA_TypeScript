@@ -1,4 +1,4 @@
-import {DisjointSetAdhoc} from "../../../../DSA_TypeScript/src/data_structures/disjoint-set/DisjointSetAdhoc.ts";
+import {DisjointSetAdhoc} from "../../../../DSA_TypeScript/src/data_structures/disjoint_set/DisjointSetAdhoc.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('DisjointSetAdhoc', () => {

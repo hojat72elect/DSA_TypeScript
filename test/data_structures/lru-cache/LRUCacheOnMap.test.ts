@@ -1,4 +1,4 @@
-import {LruCacheOnMap} from "../../../../DSA_TypeScript/src/data_structures/lru-cache/LruCacheOnMap.ts";
+import {LruCacheOnMap} from "../../../../DSA_TypeScript/src/data_structures/lru_cache/LruCacheOnMap.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('LRUCacheOnMap', () => {

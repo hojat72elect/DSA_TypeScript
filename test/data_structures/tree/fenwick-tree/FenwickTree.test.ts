@@ -1,5 +1,5 @@
 import {describe, expect, it} from "bun:test";
-import {FenwickTree} from "../../../../src/data_structures/tree/fenwick-tree/FenwickTree.ts";
+import {FenwickTree} from "../../../../src/data_structures/tree/fenwick_tree/FenwickTree.ts";
 
 describe('FenwickTree', () => {
     it('should create empty Fenwick tree of correct size', () => {

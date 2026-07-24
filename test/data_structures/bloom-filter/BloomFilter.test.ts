@@ -1,4 +1,4 @@
-import {BloomFilter} from "../../../../DSA_TypeScript/src/data_structures/bloom-filter/BloomFilter.ts";
+import {BloomFilter} from "../../../../DSA_TypeScript/src/data_structures/bloom_filter/BloomFilter.ts";
 import {beforeEach, describe, expect, it} from "bun:test";
 
 describe('BloomFilter', () => {

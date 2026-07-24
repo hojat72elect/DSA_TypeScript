@@ -1,4 +1,4 @@
-import {LruCache} from "../../../../DSA_TypeScript/src/data_structures/lru-cache/LruCache.ts";
+import {LruCache} from "../../../../DSA_TypeScript/src/data_structures/lru_cache/LruCache.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('LRUCache', () => {

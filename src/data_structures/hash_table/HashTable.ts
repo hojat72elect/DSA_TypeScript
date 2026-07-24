@@ -1,5 +1,5 @@
-import {LinkedList} from "../../../../DSA_TypeScript/src/data_structures/linkedlist/LinkedList.ts";
-import {LinkedListNode} from "../../../../DSA_TypeScript/src/data_structures/linkedlist/LinkedListNode.ts";
+import {LinkedList} from "../../../../DSA_TypeScript/src/data_structures/linked_list/LinkedList.ts";
+import {LinkedListNode} from "../../../../DSA_TypeScript/src/data_structures/linked_list/LinkedListNode.ts";
 
 export interface HashTableValue<T> {
     key: string;

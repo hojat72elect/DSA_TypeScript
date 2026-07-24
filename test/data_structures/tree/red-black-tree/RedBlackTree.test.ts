@@ -1,5 +1,5 @@
 import {describe, expect, it} from "bun:test";
-import {RedBlackTree} from "../../../../src/data_structures/tree/red-black-tree/RedBlackTree.ts";
+import {RedBlackTree} from "../../../../src/data_structures/tree/red_black_tree/RedBlackTree.ts";
 
 describe('RedBlackTree', () => {
     it('should always color first inserted node as black', () => {

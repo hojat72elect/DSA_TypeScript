@@ -1,5 +1,5 @@
 import {Graph} from '../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts';
-import {PriorityQueue} from '../../../../../DSA_TypeScript/src/data_structures/priority-queue/PriorityQueue.ts';
+import {PriorityQueue} from '../../../../../DSA_TypeScript/src/data_structures/priority_queue/PriorityQueue.ts';
 import {GraphEdge} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts';
 import {GraphVertex} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts';
 

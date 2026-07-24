@@ -1,4 +1,4 @@
-import type {CallbackFunction} from "../doubly-linked-list/DoublyLinkedListNode.ts";
+import type {CallbackFunction} from "../doubly_linked_list/DoublyLinkedListNode.ts";
 
 export class LinkedListNode {
     value: any;

@@ -1,5 +1,5 @@
 import {describe, expect, it} from "bun:test";
-import {BinarySearchTreeNode} from "../../../../src/data_structures/tree/binary-search-tree/BinarySearchTreeNode.ts";
+import {BinarySearchTreeNode} from "../../../../src/data_structures/tree/binary_search_tree/BinarySearchTreeNode.ts";
 
 describe('BinarySearchTreeNode', () => {
     it('should create binary search tree', () => {
