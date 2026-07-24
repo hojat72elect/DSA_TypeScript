@@ -1,4 +1,4 @@
-import {LinkedList} from "../../../../TypeScript-algorithms/src/data-structures/linked-list/LinkedList.ts";
+import {LinkedList} from "../linkedlist/LinkedList.ts";
 
 export class Stack {
 
