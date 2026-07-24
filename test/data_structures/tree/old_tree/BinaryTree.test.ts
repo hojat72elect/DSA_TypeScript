@@ -1,5 +1,5 @@
 import {expect, test} from "bun:test";
-import {BinaryNode, BinaryTree} from "../../../../src/data_structures/tree/old_tree/BinaryTree.ts";
+import {old_BinaryNode, BinaryTree} from "../../../../src/data_structures/tree/old_tree/BinaryTree.ts";
 
 
 function createTreeMock() {
@@ -37,10 +37,10 @@ test("General behavior of different traversal strategies in a binary tree with 3
 test("various ways of searching for a value in a normal binary tree", () => {
     const sut = createTreeMock();
 
-    expect(sut.getLeftMostNode()).toEqual(new BinaryNode("Tooba"));
-    expect(sut.getRightMostNode()).toEqual(new BinaryNode("Mahmood"));
+    expect(sut.getLeftMostNode()).toEqual(new old_BinaryNode("Tooba"));
+    expect(sut.getRightMostNode()).toEqual(new old_BinaryNode("Mahmood"));
 
-    const mockedJilaNode = new BinaryNode("Jila")
+    const mockedJilaNode = new old_BinaryNode("Jila")
     mockedJilaNode.setRightChild("Mohammad");
     mockedJilaNode.setLeftChild("Tooba");
     expect(sut.search("Jila")).toEqual(mockedJilaNode);

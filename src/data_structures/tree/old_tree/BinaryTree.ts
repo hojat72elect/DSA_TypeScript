@@ -1,10 +1,10 @@
 /**
  * This node is specifically defined for binary trees.
  */
-export class BinaryNode<T> {
+export class old_BinaryNode<T> {
     value: T;
-    leftChild: BinaryNode<T> | null;
-    rightChild: BinaryNode<T> | null;
+    leftChild: old_BinaryNode<T> | null;
+    rightChild: old_BinaryNode<T> | null;
 
     constructor(value: T) {
         this.value = value;
@@ -15,7 +15,7 @@ export class BinaryNode<T> {
     /**
      * @return the left-most child in the left subtree of a binary node.
      */
-    public findLeftMost(): BinaryNode<T> {
+    public findLeftMost(): old_BinaryNode<T> {
         if (!this.leftChild) return this;
         return this.leftChild.findLeftMost();
     }
@@ -23,7 +23,7 @@ export class BinaryNode<T> {
     /**
      * @return the right-most child in the right subtree of a binary node.
      */
-    public findRightMost(): BinaryNode<T> {
+    public findRightMost(): old_BinaryNode<T> {
         if (!this.rightChild) return this;
         return this.rightChild.findRightMost();
     }
@@ -32,21 +32,21 @@ export class BinaryNode<T> {
      * Changes the value in the left child of this node.
      */
     public setLeftChild(newValue: T) {
-        this.leftChild = new BinaryNode(newValue);
+        this.leftChild = new old_BinaryNode(newValue);
     }
 
     /**
      * Changes the value in the right child of this node.
      */
     public setRightChild(newValue: T) {
-        this.rightChild = new BinaryNode(newValue);
+        this.rightChild = new old_BinaryNode(newValue);
     }
 
     /**
      * Searches for the given value in this node and its children nodes.
      * This node is for a general binary tree (not a BST), so we have to traverse all nodes.
      */
-    public search(value: T): BinaryNode<T> | null {
+    public search(value: T): old_BinaryNode<T> | null {
         if (this.value === value) return this;
         if (!this.rightChild && !this.leftChild) return null;
 
@@ -60,10 +60,10 @@ export class BinaryNode<T> {
 
 export class BinaryTree<T> {
 
-    public root: BinaryNode<T> | null;
+    public root: old_BinaryNode<T> | null;
 
     constructor(rootValue?: T) {
-        this.root = rootValue ? new BinaryNode(rootValue) : null;
+        this.root = rootValue ? new old_BinaryNode(rootValue) : null;
     }
 
     public getLeftMostNode() {
@@ -82,7 +82,7 @@ export class BinaryTree<T> {
      * Node -> Left -> Right
      * This function can be used for making an identical copy of the tree (just like how it is).
      */
-    public preOrderTraversal(node: BinaryNode<T> | null = this.root, depth: number = 0) {
+    public preOrderTraversal(node: old_BinaryNode<T> | null = this.root, depth: number = 0) {
         if (!node) return "";
 
         let resultingString = "  ".repeat(depth) + "└──" + node.value + "\n"; // Visit the current node
@@ -98,7 +98,7 @@ export class BinaryTree<T> {
      * Left -> Root -> Right
      * In a BST, this function gets the values in a non-decreasing order.
      */
-    public inOrderTraversal(node: BinaryNode<T> | null = this.root, depth: number = 0) {
+    public inOrderTraversal(node: old_BinaryNode<T> | null = this.root, depth: number = 0) {
         if (!node) return "";
         let resultingString = "";
         resultingString += this.inOrderTraversal(node.leftChild, depth + 1); // Traverse the left subtree
@@ -111,7 +111,7 @@ export class BinaryTree<T> {
     /**
      * Left  -> Right -> Node
      */
-    public postOrderTraversal(node: BinaryNode<T> | null = this.root, depth: number = 0) {
+    public postOrderTraversal(node: old_BinaryNode<T> | null = this.root, depth: number = 0) {
         if (!node) return "";
         let resultingString = "";
         resultingString += this.postOrderTraversal(node.leftChild, depth + 1); // Traverse the left subtree
@@ -126,7 +126,7 @@ export class BinaryTree<T> {
      * This is a regular binary tree (not BST), so we need to traverse the entire tree.
      * Returns the found node or null if not found.
      */
-    public search(value: T): BinaryNode<T> | null {
+    public search(value: T): old_BinaryNode<T> | null {
         return this.root ? this.root!.search(value) : null;
     }
 
@@ -163,9 +163,9 @@ export class BinaryTree<T> {
      * Helper function to find a node and its parent.
      * @returns an object with parent, node, and whether it's a left child.
      */
-    private findNodeAndParent(current: BinaryNode<T>, value: T): {
-        parent: BinaryNode<T>,
-        node: BinaryNode<T>,
+    private findNodeAndParent(current: old_BinaryNode<T>, value: T): {
+        parent: old_BinaryNode<T>,
+        node: old_BinaryNode<T>,
         isLeftChild: boolean
     } | null {
         if (current.leftChild && current.leftChild.value === value) {
@@ -197,7 +197,7 @@ export class BinaryTree<T> {
      * When we are about to remove a node from the tree, we need to provide a replacement for it so the rest of the tree can continue as a whole thing.
      * This function decides about the replacement node.
      */
-    private getReplacementNode(node: BinaryNode<T>): BinaryNode<T> | null {
+    private getReplacementNode(node: old_BinaryNode<T>): old_BinaryNode<T> | null {
 
         if (!node.leftChild && !node.rightChild) {
             // The provided node has no children, we don't need any replacement for it.
@@ -234,7 +234,7 @@ export class BinaryTree<T> {
      * You give it the current node and the target node you have, it will return the parent of that target node.
      * If it couldn't find the parent of that target, will return null.
      */
-     findParent(current: BinaryNode<T>, target: BinaryNode<T>): BinaryNode<T> | null {
+     findParent(current: old_BinaryNode<T>, target: old_BinaryNode<T>): old_BinaryNode<T> | null {
         if (current.leftChild === target || current.rightChild === target) {
             return current;
         }

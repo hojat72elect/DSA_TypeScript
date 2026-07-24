@@ -1,11 +1,11 @@
-import {BinaryNode, BinaryTree} from "./BinaryTree.ts";
+import {old_BinaryNode, BinaryTree} from "./BinaryTree.ts";
 
-class BinarySearchTreeNode extends BinaryNode<number> {
+class BinarySearchTreeNode extends old_BinaryNode<number> {
 
     /**
      * In fact, searching through a BST node is so much easier, because the tree is always fully sorted.
      */
-    public override search(value: number): BinaryNode<number> | null {
+    public override search(value: number): old_BinaryNode<number> | null {
         if (this.value === value) return this;
 
         if (value < this.value && this.leftChild) {
@@ -54,7 +54,7 @@ export class BinarySearchTree extends BinaryTree<number> {
     /**
      * Searching in a BST is so much more optimized compared to normal binary trees.
      */
-    public override search(value: number): BinaryNode<number> | null {
+    public override search(value: number): old_BinaryNode<number> | null {
         let currentNode = this.root;
 
         while (currentNode) {
