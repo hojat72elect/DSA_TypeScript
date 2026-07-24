@@ -1,4 +1,4 @@
-import type {CallbackFunction} from "../../../../TypeScript-algorithms/src/data-structures/doubly-linked-list/DoublyLinkedListNode.ts";
+import type {CallbackFunction} from "../doubly-linked-list/DoublyLinkedListNode.ts";
 
 export class LinkedListNode {
     value: any;

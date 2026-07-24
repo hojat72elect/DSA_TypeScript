@@ -1,5 +1,6 @@
 import {LinkedListNode} from './LinkedListNode.ts';
-import {Comparator} from '../../../../TypeScript-algorithms/src/utils/comparator/Comparator.ts';
+import {Comparator} from "../../utils/comparator/Comparator.ts";
+
 
 export class LinkedList<T> {
 
