@@ -1,5 +1,5 @@
-import {LruCache} from "../../../../DSA_TypeScript/src/data_structures/lru_cache/LruCache.ts";
 import {describe, expect, it} from "bun:test";
+import {LruCache} from "../../../src/data_structures/lru_cache/LruCache.ts";
 
 describe('LRUCache', () => {
     it('should set and get values to and from the cache', () => {

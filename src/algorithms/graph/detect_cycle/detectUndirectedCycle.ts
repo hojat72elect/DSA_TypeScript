@@ -1,6 +1,6 @@
 import {depthFirstSearch} from '../depth_first_search/depthFirstSearch.ts';
-import {Graph} from "../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts";
-import {GraphVertex} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts";
+import {Graph} from "../../../data_structures/graph/Graph.ts";
+import {GraphVertex} from "../../../data_structures/graph/GraphVertex.ts";
 
 /**
  * Detect cycle in undirected graph using Depth First Search.

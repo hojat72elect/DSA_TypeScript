@@ -1,5 +1,5 @@
-import {DisjointSetAdhoc} from "../../../../DSA_TypeScript/src/data_structures/disjoint_set/DisjointSetAdhoc.ts";
 import {describe, expect, it} from "bun:test";
+import {DisjointSetAdhoc} from "../../../src/data_structures/disjoint_set/DisjointSetAdhoc.ts";
 
 describe('DisjointSetAdhoc', () => {
     it('should create unions and find connected elements', () => {

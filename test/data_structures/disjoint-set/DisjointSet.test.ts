@@ -1,5 +1,5 @@
-import {DisjointSet} from "../../../../DSA_TypeScript/src/data_structures/disjoint_set/DisjointSet.ts";
 import {describe, expect, it} from "bun:test";
+import {DisjointSet} from "../../../src/data_structures/disjoint_set/DisjointSet.ts";
 
 describe('DisjointSet', () => {
     it('should throw error when trying to union and check not existing sets', () => {

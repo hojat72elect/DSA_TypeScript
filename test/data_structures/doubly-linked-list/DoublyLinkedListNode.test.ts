@@ -1,5 +1,5 @@
-import {DoublyLinkedListNode} from "../../../../DSA_TypeScript/src/data_structures/doubly_linked_list/DoublyLinkedListNode.ts";
 import {describe, expect, it} from "bun:test";
+import {DoublyLinkedListNode} from "../../../src/data_structures/doubly_linked_list/DoublyLinkedListNode.ts";
 
 describe('DoublyLinkedListNode', () => {
 

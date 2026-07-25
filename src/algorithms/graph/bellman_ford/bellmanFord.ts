@@ -1,5 +1,5 @@
-import {Graph} from "../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts";
-import {GraphVertex} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts";
+import {GraphVertex} from "../../../data_structures/graph/GraphVertex.ts";
+import {Graph} from "../../../data_structures/graph/Graph.ts";
 
 export function bellmanFord(graph: Graph, startVertex: GraphVertex): {
     distances: Record<string, number>;

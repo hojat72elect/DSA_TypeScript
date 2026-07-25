@@ -1,5 +1,5 @@
 import {describe, expect, it} from "bun:test";
-import {MaxHeapAdhoc} from "../../../../DSA_TypeScript/src/data_structures/heap/MaxHeapAdhoc.ts";
+import {MaxHeapAdhoc} from "../../../src/data_structures/heap/MaxHeapAdhoc.ts";
 
 describe('MaxHeapAdhoc', () => {
     it('should create an empty max heap', () => {

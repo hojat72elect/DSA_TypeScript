@@ -1,5 +1,5 @@
-import {HashTable} from "../../../../DSA_TypeScript/src/data_structures/hash_table/HashTable.ts";
 import {describe, expect, it} from "bun:test";
+import {HashTable} from "../../../src/data_structures/hash_table/HashTable.ts";
 
 describe('HashTable', () => {
     it('should create hash table of certain size', () => {

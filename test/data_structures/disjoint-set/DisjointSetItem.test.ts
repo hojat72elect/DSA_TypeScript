@@ -1,5 +1,5 @@
-import {DisjointSetItem} from "../../../../DSA_TypeScript/src/data_structures/disjoint_set/DisjointSetItem.ts";
 import {describe, expect, it} from "bun:test";
+import {DisjointSetItem} from "../../../src/data_structures/disjoint_set/DisjointSetItem.ts";
 
 describe('DisjointSetItem', () => {
     it('should do basic manipulation with disjoint set item', () => {

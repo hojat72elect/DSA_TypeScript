@@ -1,5 +1,5 @@
-import {MinHeapAdhoc} from "../../../../DSA_TypeScript/src/data_structures/heap/MinHeapAdhoc.js";
 import {describe, expect, it} from "bun:test";
+import {MinHeapAdhoc} from "../../../src/data_structures/heap/MinHeapAdhoc.ts";
 
 describe('MinHeapAdhoc', () => {
     it('should create an empty min heap', () => {

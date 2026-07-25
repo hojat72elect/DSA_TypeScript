@@ -1,5 +1,5 @@
-import DoublyLinkedList from "../../../../DSA_TypeScript/src/data_structures/doubly_linked_list/DoublyLinkedList.js";
 import {describe, expect, it} from "bun:test";
+import DoublyLinkedList from "../../../src/data_structures/doubly_linked_list/DoublyLinkedList.ts";
 
 describe('DoublyLinkedList', () => {
     it('should create empty linked list', () => {

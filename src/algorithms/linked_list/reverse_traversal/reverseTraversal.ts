@@ -1,5 +1,5 @@
-import {LinkedListNode} from "../../../../../DSA_TypeScript/src/data_structures/linked_list/LinkedListNode.ts";
-import {LinkedList} from "../../../../../DSA_TypeScript/src/data_structures/linked_list/LinkedList.ts";
+import {LinkedListNode} from "../../../data_structures/linked_list/LinkedListNode.ts";
+import {LinkedList} from "../../../data_structures/linked_list/LinkedList.ts";
 
 function reverseTraversalRecursive(node: LinkedListNode, callback: (nodeValue: any) => void) {
     if (node) {

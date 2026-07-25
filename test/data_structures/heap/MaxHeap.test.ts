@@ -1,6 +1,6 @@
-import {MaxHeap} from "../../../../DSA_TypeScript/src/data_structures/heap/MaxHeap.ts";
-import {Comparator} from "../../../../DSA_TypeScript/src/utils/comparator/Comparator.ts";
 import {describe, expect, it} from "bun:test";
+import {MaxHeap} from "../../../src/data_structures/heap/MaxHeap.ts";
+import {Comparator} from "../../../src/utils/comparator/Comparator.ts";
 
 describe('MaxHeap', () => {
     it('should create an empty max heap', () => {

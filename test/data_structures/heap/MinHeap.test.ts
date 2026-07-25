@@ -1,6 +1,6 @@
-import {MinHeap} from "../../../../DSA_TypeScript/src/data_structures/heap/MinHeap.js";
-import {Comparator} from "../../../../DSA_TypeScript/src/utils/comparator/Comparator.ts";
 import {describe, expect, it} from "bun:test";
+import {MinHeap} from "../../../src/data_structures/heap/MinHeap.ts";
+import {Comparator} from "../../../src/utils/comparator/Comparator.ts";
 
 describe('MinHeap', () => {
     it('should create an empty min heap', () => {

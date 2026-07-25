@@ -1,4 +1,4 @@
-import {HashTable} from "../../../../DSA_TypeScript/src/data_structures/hash_table/HashTable.ts";
+import {HashTable} from "../hash_table/HashTable.ts";
 
 export class TrieNode {
     public character: string;

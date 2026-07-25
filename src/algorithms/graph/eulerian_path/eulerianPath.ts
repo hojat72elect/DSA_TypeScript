@@ -1,7 +1,7 @@
 import {graphBridges} from '../bridges/graphBridges.ts';
-import {Graph} from "../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts";
-import {GraphVertex} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts";
-import {GraphEdge} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts";
+import {Graph} from "../../../data_structures/graph/Graph.ts";
+import {GraphVertex} from "../../../data_structures/graph/GraphVertex.ts";
+import {GraphEdge} from "../../../data_structures/graph/GraphEdge.ts";
 
 /**
  * Fleury's algorithm of finding Eulerian Path (visit all graph edges exactly once).
