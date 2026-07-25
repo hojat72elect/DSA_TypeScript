@@ -1,5 +1,5 @@
-import {Queue} from '../../../../../DSA_TypeScript/src/data_structures/queue/Queue.ts';
 import {BinaryTreeNode} from "../../../data_structures/tree/BinaryTreeNode.ts";
+import {Queue} from "../../../data_structures/queue/Queue.ts";
 
 interface Callbacks {
     allowTraversal?: (node: BinaryTreeNode<any>, child: BinaryTreeNode<any>) => boolean;

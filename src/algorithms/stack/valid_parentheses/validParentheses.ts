@@ -1,5 +1,5 @@
-import {Stack} from '../../../../../DSA_TypeScript/src/data_structures/stack/Stack';
-import {HashTable} from '../../../../../DSA_TypeScript/src/data_structures/hash_table/HashTable.ts';
+import {HashTable} from "../../../data_structures/hash_table/HashTable.ts";
+import {Stack} from "../../../data_structures/stack/Stack.ts";
 
 const hashTable = new HashTable<string>(3);
 hashTable.set('{', '}');

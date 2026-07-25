@@ -1,8 +1,8 @@
-import {GraphVertex} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts';
-import {GraphEdge} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts';
-import {Graph} from '../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts';
 import {graphBridges} from '../../../../src/algorithms/graph/bridges/graphBridges.ts';
 import {describe, expect, it} from "bun:test";
+import {GraphVertex} from "../../../../src/data_structures/graph/GraphVertex.ts";
+import {GraphEdge} from "../../../../src/data_structures/graph/GraphEdge.ts";
+import {Graph} from "../../../../src/data_structures/graph/Graph.ts";
 
 describe('graphBridges', () => {
     it('should find bridges in simple graph', () => {

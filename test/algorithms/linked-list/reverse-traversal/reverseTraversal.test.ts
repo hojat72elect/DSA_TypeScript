@@ -1,6 +1,6 @@
 import {reverseTraversal} from "../../../../src/algorithms/linked_list/reverse_traversal/reverseTraversal.ts";
-import {LinkedList} from "../../../../../DSA_TypeScript/src/data_structures/linked_list/LinkedList.js";
 import {describe, expect, it} from "bun:test";
+import {LinkedList} from "../../../../src/data_structures/linked_list/LinkedList.ts";
 
 describe('reverseTraversal', () => {
     it('should traverse linked list in reverse order', () => {

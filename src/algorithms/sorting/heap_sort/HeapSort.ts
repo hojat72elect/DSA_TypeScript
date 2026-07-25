@@ -1,5 +1,5 @@
 import Sort from '../Sort.ts';
-import {MinHeap} from '../../../../../DSA_TypeScript/src/data_structures/heap/MinHeap.ts';
+import {MinHeap} from "../../../data_structures/heap/MinHeap.ts";
 
 export class HeapSort<T> extends Sort<T> {
     public override sort(originalArray: T[]): T[] {

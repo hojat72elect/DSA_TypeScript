@@ -1,5 +1,5 @@
-import {PriorityQueue} from "../../../../DSA_TypeScript/src/data_structures/priority_queue/PriorityQueue.js";
 import {describe, expect, it} from "bun:test";
+import {PriorityQueue} from "../../../src/data_structures/priority_queue/PriorityQueue.ts";
 
 describe('PriorityQueue', () => {
     it('should create default priority queue', () => {

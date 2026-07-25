@@ -1,4 +1,4 @@
-import {Comparator} from '../../../../../DSA_TypeScript/src/utils/comparator/Comparator.ts';
+import {Comparator} from "../../../utils/comparator/Comparator.ts";
 
 /**
  * Jump (block) search implementation.

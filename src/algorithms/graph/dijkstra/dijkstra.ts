@@ -1,6 +1,7 @@
-import {PriorityQueue} from '../../../../../DSA_TypeScript/src/data_structures/priority_queue/PriorityQueue.ts';
-import {GraphVertex} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts";
-import {Graph} from "../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts";
+import type {GraphVertex} from "../../../data_structures/graph/GraphVertex.ts";
+import type {Graph} from "../../../data_structures/graph/Graph.ts";
+import {PriorityQueue} from "../../../data_structures/priority_queue/PriorityQueue.ts";
+
 
 interface ShortestPaths {
     distances: Record<string, number>;

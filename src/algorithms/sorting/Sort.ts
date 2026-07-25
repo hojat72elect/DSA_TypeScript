@@ -1,4 +1,5 @@
-import {Comparator} from '../../../../DSA_TypeScript/src/utils/comparator/Comparator.ts';
+import {Comparator} from "../../utils/comparator/Comparator.ts";
+
 
 interface SorterCallbacks<T> {
     compareCallback?: (a: T, b: T) => number; // If provided then all elements comparisons will be done through this callback.

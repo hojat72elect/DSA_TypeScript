@@ -1,8 +1,8 @@
-import {Graph} from "../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts";
 import {prim} from "../../../../src/algorithms/graph/prim/prim.ts";
-import {GraphVertex} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts";
-import {GraphEdge} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts";
 import {describe, expect, it} from "bun:test";
+import {Graph} from "../../../../src/data_structures/graph/Graph.ts";
+import {GraphVertex} from "../../../../src/data_structures/graph/GraphVertex.ts";
+import {GraphEdge} from "../../../../src/data_structures/graph/GraphEdge.ts";
 
 describe('prim', () => {
     it('should fire an error for directed graph', () => {

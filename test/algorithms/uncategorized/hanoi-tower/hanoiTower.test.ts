@@ -1,6 +1,6 @@
 import {hanoiTower} from "../../../../src/algorithms/uncategorized/hanoi_tower/hanoiTower.ts";
-import {Stack} from "../../../../../DSA_TypeScript/src/data_structures/stack/Stack.ts";
 import {describe, expect, it, jest} from "bun:test";
+import {Stack} from "../../../../src/data_structures/stack/Stack.ts";
 
 describe('hanoiTower', () => {
     it('should solve tower of hanoi puzzle with 2 discs', () => {

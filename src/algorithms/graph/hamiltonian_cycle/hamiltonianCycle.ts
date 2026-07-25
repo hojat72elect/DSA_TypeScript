@@ -1,5 +1,5 @@
-import {GraphVertex} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts';
-import {Graph} from "../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts";
+import {GraphVertex} from "../../../data_structures/graph/GraphVertex.ts";
+import {Graph} from "../../../data_structures/graph/Graph.ts";
 
 function isSafe(adjacencyMatrix: number[][], verticesIndices: Record<string | number, number>, cycle: GraphVertex[], vertexCandidate: GraphVertex): boolean {
     const endVertex = cycle[cycle.length - 1]!;

@@ -1,5 +1,6 @@
 import {MinHeap} from '../heap/MinHeap';
-import {Comparator} from '../../../../DSA_TypeScript/src/utils/comparator/Comparator';
+import {Comparator} from "../../utils/comparator/Comparator.ts";
+
 
 /**
  * It is the same as min heap except that when comparing two elements,

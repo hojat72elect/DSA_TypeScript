@@ -1,5 +1,5 @@
 import {BinaryTreeNode} from '../BinaryTreeNode.ts';
-import {Comparator} from '../../../../../DSA_TypeScript/src/utils/comparator/Comparator.ts';
+import {Comparator} from "../../../utils/comparator/Comparator.ts";
 
 export class BinarySearchTreeNode<T> extends BinaryTreeNode<T> {
 

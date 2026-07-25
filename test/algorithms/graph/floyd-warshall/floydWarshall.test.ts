@@ -1,8 +1,9 @@
-import {GraphVertex} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts";
-import {GraphEdge} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts";
-import {Graph} from "../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts";
+
 import {floydWarshall} from "../../../../src/algorithms/graph/floyd_warshall/floydWarshall.ts";
 import {describe, expect, it} from "bun:test";
+import {GraphVertex} from "../../../../src/data_structures/graph/GraphVertex.ts";
+import {GraphEdge} from "../../../../src/data_structures/graph/GraphEdge.ts";
+import {Graph} from "../../../../src/data_structures/graph/Graph.ts";
 
 describe('floydWarshall', () => {
     it('should find minimum paths to all vertices for undirected graph', () => {

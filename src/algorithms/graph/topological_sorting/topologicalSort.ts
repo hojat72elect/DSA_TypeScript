@@ -1,7 +1,8 @@
-import {Stack} from '../../../../../DSA_TypeScript/src/data_structures/stack/Stack.ts';
 import {depthFirstSearch} from '../depth_first_search/depthFirstSearch.ts';
-import {Graph} from "../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts";
-import {GraphVertex} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts";
+import {Graph} from "../../../data_structures/graph/Graph.ts";
+import {GraphVertex} from "../../../data_structures/graph/GraphVertex.ts";
+import {Stack} from "../../../data_structures/stack/Stack.ts";
+
 
 export function topologicalSort(graph: Graph): GraphVertex[] {
     // Create a set of all vertices we want to visit.

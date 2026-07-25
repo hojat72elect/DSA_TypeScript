@@ -1,5 +1,5 @@
-import {isPowerOfTwo} from "../../../../../DSA_TypeScript/src/algorithms/math/bits/isPowerOfTwo.ts";
 import {describe, expect, it} from "bun:test";
+import {isPowerOfTwo} from "../../../../src/algorithms/math/bits/isPowerOfTwo.ts";
 
 describe('isPowerOfTwo', () => {
     it('should check if the number is made by multiplying twos', () => {

@@ -1,8 +1,8 @@
-import {Graph} from "../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts";
 import {kruskal} from "../../../../src/algorithms/graph/kruskal/kruskal.ts";
-import {GraphEdge} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts";
-import {GraphVertex} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts";
 import {describe, expect, it} from "bun:test";
+import {GraphVertex} from "../../../../src/data_structures/graph/GraphVertex.ts";
+import {Graph} from "../../../../src/data_structures/graph/Graph.ts";
+import {GraphEdge} from "../../../../src/data_structures/graph/GraphEdge.ts";
 
 describe('kruskal', () => {
     it('should fire an error for directed graph', () => {

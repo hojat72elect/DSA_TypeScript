@@ -1,5 +1,5 @@
-import {Trie} from "../../../../DSA_TypeScript/src/data_structures/trie/Trie.ts";
 import {describe, expect, it} from "bun:test";
+import {Trie} from "../../../src/data_structures/trie/Trie.ts";
 
 describe('Trie', () => {
     it('should create trie', () => {

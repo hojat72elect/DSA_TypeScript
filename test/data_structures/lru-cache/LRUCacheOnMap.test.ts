@@ -1,5 +1,5 @@
-import {LruCacheOnMap} from "../../../../DSA_TypeScript/src/data_structures/lru_cache/LruCacheOnMap.ts";
 import {describe, expect, it} from "bun:test";
+import {LruCacheOnMap} from "../../../src/data_structures/lru_cache/LruCacheOnMap.ts";
 
 describe('LRUCacheOnMap', () => {
     it('should set and get values to and from the cache', () => {

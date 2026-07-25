@@ -1,4 +1,4 @@
-import {Comparator} from '../../../../../DSA_TypeScript/src/utils/comparator/Comparator.ts';
+import {Comparator} from "../../../utils/comparator/Comparator.ts";
 
 export function linearSearch(array: any[], seekElement: any, comparatorCallback?: (a: any, b: any) => number): number[] {
     const comparator = new Comparator(comparatorCallback);

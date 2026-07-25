@@ -1,7 +1,8 @@
-import {Graph} from '../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts';
-import {PriorityQueue} from '../../../../../DSA_TypeScript/src/data_structures/priority_queue/PriorityQueue.ts';
-import {GraphEdge} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts';
-import {GraphVertex} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts';
+import {Graph} from "../../../data_structures/graph/Graph.ts";
+import {PriorityQueue} from "../../../data_structures/priority_queue/PriorityQueue.ts";
+import {GraphEdge} from "../../../data_structures/graph/GraphEdge.ts";
+import {GraphVertex} from "../../../data_structures/graph/GraphVertex.ts";
+
 
 export function prim(graph: Graph): Graph {
     // It should fire error if graph is directed since the algorithm works only

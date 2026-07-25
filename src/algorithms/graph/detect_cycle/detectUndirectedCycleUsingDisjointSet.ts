@@ -1,6 +1,6 @@
-import {DisjointSet} from '../../../../../DSA_TypeScript/src/data_structures/disjoint_set/DisjointSet.ts';
-import {Graph} from "../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts";
-import {GraphVertex} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts";
+import {DisjointSet} from "../../../data_structures/disjoint_set/DisjointSet.ts";
+import {GraphVertex} from "../../../data_structures/graph/GraphVertex.ts";
+import {Graph} from "../../../data_structures/graph/Graph.ts";
 
 /**
  * Detect cycle in undirected graph using disjoint sets.

@@ -1,7 +1,8 @@
-import {Graph} from '../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts';
 import {QuickSort} from '../../sorting/quick_sort/QuickSort.ts';
-import {DisjointSet} from '../../../../../DSA_TypeScript/src/data_structures/disjoint_set/DisjointSet.ts';
-import {GraphEdge} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts";
+import {GraphEdge} from "../../../data_structures/graph/GraphEdge.ts";
+import {Graph} from "../../../data_structures/graph/Graph.ts";
+import {DisjointSet} from "../../../data_structures/disjoint_set/DisjointSet.ts";
+
 
 export function kruskal(graph: Graph): Graph {
     // It should fire error if graph is directed since the algorithm works only

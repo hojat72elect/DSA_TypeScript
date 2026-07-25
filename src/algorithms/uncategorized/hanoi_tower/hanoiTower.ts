@@ -1,4 +1,4 @@
-import {Stack} from '../../../../../DSA_TypeScript/src/data_structures/stack/Stack.ts';
+import {Stack} from "../../../data_structures/stack/Stack.ts";
 
 type MoveCallback = (disc: number, fromPole: number[], toPole: number[]) => void;
 

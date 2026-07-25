@@ -1,8 +1,8 @@
-import {GraphVertex} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts';
-import {GraphEdge} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts';
-import {Graph} from '../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts';
 import {articulationPoints} from '../../../../src/algorithms/graph/articulation_points/articulationPoints.ts';
 import {describe, expect, it} from "bun:test";
+import {GraphVertex} from "../../../../src/data_structures/graph/GraphVertex.ts";
+import {GraphEdge} from "../../../../src/data_structures/graph/GraphEdge.ts";
+import {Graph} from "../../../../src/data_structures/graph/Graph.ts";
 
 describe('articulationPoints', () => {
     it('should find articulation points in simple graph', () => {
