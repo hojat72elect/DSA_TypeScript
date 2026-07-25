@@ -226,7 +226,7 @@ bun run test
 **Run tests by name**
 
 ```
-bun test playground.test.js
+bun test Queue.test.ts
 ```
 
 ## Useful Information
