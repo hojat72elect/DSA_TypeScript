@@ -125,15 +125,10 @@ a set of rules that precisely define a sequence of operations.
   * [Caesar Cipher](./src/algorithms/cryptography/caesar_cipher) - simple substitution cipher
   * [Hill Cipher](./src/algorithms/cryptography/hill_cipher) - substitution cipher based on linear algebra
 * **Machine Learning**
-  * [NanoNeuron](https://github.com/trekhleb/nano_neuron) - 7 simple JS functions that illustrate how machines can actually learn (forward/backward propagation)
   * [k-NN](./src/algorithms/ml/knn) - k-nearest neighbors classification algorithm
   * [k-Means](./src/algorithms/ml/k_means) - k-Means clustering algorithm
-* **Image Processing**
-  * [Seam Carving](./src/algorithms/image_processing/seam_carving) - content-aware image resizing algorithm
 * **Statistics**
   * [Weighted Random](./src/algorithms/statistics/weighted_random) - select the random item from the list based on items' weights
-* **Evolutionary algorithms**
-  * [Genetic algorithm](https://github.com/trekhleb/self_parking_car_evolution) - example of how the genetic algorithm may be applied for training the self-parking cars
 * **Uncategorized**
   * [Tower of Hanoi](./src/algorithms/uncategorized/hanoi_tower)
   * [Square Matrix Rotation](./src/algorithms/uncategorized/square_matrix_rotation) - in-place algorithm
@@ -187,7 +182,6 @@ algorithm is an abstraction higher than a computer program.
   * [Unique Paths](./src/algorithms/uncategorized/unique_paths)
   * [Rain Terraces](./src/algorithms/uncategorized/rain_terraces) - trapping rain water problem
   * [Recursive Staircase](./src/algorithms/uncategorized/recursive_staircase) - count the number of ways to reach the top
-  * [Seam Carving](./src/algorithms/image_processing/seam_carving) - content-aware image resizing algorithm
   * [Levenshtein Distance](./src/algorithms/string/levenshtein_distance) - minimum edit distance between two sequences
   * [Longest Common Subsequence](./src/algorithms/sets/longest_common_subsequence) (LCS)
   * [Longest Common Substring](./src/algorithms/string/longest_common_substring)
