@@ -33,182 +33,182 @@ the data.
 
 ## Algorithms
 
-An algorithm is an unambiguous specification of how to solve a class of problems. It is
+An [algorithm](https://en.wikipedia.org/wiki/Algorithm) is an unambiguous specification of how to solve a class of problems. It is
 a set of rules that precisely define a sequence of operations.
 
 ### Algorithms by Topic
 
 * **Math**
-  * [Bit Manipulation](src/algorithms/math/bits) - set/get/update/clear bits, multiplication/division by two, make negative etc.
-  * [Binary Floating Point](src/algorithms/math/binary-floating-point) - binary representation of the floating-point numbers.
-  * [Factorial](src/algorithms/math/factorial)
-  * [Fibonacci Number](src/algorithms/math/fibonacci) - classic and closed-form versions
-  * [Prime Factors](src/algorithms/math/prime-factors) - finding prime factors and counting them using Hardy-Ramanujan's theorem
-  * [Primality Test](src/algorithms/math/primality-test) (trial division method)
-  * [Euclidean Algorithm](src/algorithms/math/euclidean-algorithm) - calculate the Greatest Common Divisor (GCD)
-  * [Least Common Multiple](src/algorithms/math/least-common-multiple) (LCM)
-  * [Sieve of Eratosthenes](src/algorithms/math/sieve-of-eratosthenes) - finding all prime numbers up to any given limit
-  * [Is Power of Two](src/algorithms/math/is-power-of-two) - check if the number is power of two (naive and bitwise algorithms)
-  * [Pascal's Triangle](src/algorithms/math/pascal-triangle)
-  * [Complex Number](src/algorithms/math/complex-number) - complex numbers and basic operations with them
-  * [Radian & Degree](src/algorithms/math/radian) - radians to degree and backwards conversion
-  * [Fast Powering](src/algorithms/math/fast-powering)
-  * [Horner's method](src/algorithms/math/horner-method) - polynomial evaluation
-  * [Matrices](src/algorithms/math/matrix) - matrices and basic matrix operations (multiplication, transposition, etc.)
-  * [Euclidean Distance](src/algorithms/math/euclidean-distance) - distance between two points/vectors/matrices
-  * [Integer Partition](src/algorithms/math/integer-partition)
-  * [Square Root](src/algorithms/math/square-root) - Newton's method
-  * [Liu Hui π Algorithm](src/algorithms/math/liu-hui) - approximate π calculations based on N-gons
-  * [Discrete Fourier Transform](src/algorithms/math/fourier-transform) - decompose a function of time (a signal) into the frequencies that make it up
+  * [Bit Manipulation](./src/algorithms/math/bits) - set/get/update/clear bits, multiplication/division by two, make negative etc.
+  * [Binary Floating Point](./src/algorithms/math/binary_floating_point) - binary representation of the floating-point numbers.
+  * [Factorial](./src/algorithms/math/factorial)
+  * [Fibonacci Number](./src/algorithms/math/fibonacci) - classic and closed-form versions
+  * [Prime Factors](./src/algorithms/math/prime_factors) - finding prime factors and counting them using Hardy-Ramanujan's theorem
+  * [Primality Test](./src/algorithms/math/primality_test) (trial division method)
+  * [Euclidean Algorithm](./src/algorithms/math/euclidean_algorithm) - calculate the Greatest Common Divisor (GCD)
+  * [Least Common Multiple](./src/algorithms/math/least_common_multiple) (LCM)
+  * [Sieve of Eratosthenes](./src/algorithms/math/sieve_of_eratosthenes) - finding all prime numbers up to any given limit
+  * [Is Power of Two](./src/algorithms/math/is_power_of_two) - check if the number is power of two (naive and bitwise algorithms)
+  * [Pascal's Triangle](./src/algorithms/math/pascal_triangle)
+  * [Complex Number](./src/algorithms/math/complex_number) - complex numbers and basic operations with them
+  * [Radian & Degree](./src/algorithms/math/radian) - radians to degree and backwards conversion
+  * [Fast Powering](./src/algorithms/math/fast_powering)
+  * [Horner's method](./src/algorithms/math/horner_method) - polynomial evaluation
+  * [Matrices](./src/algorithms/math/matrix) - matrices and basic matrix operations (multiplication, transposition, etc.)
+  * [Euclidean Distance](./src/algorithms/math/euclidean_distance) - distance between two points/vectors/matrices
+  * [Integer Partition](./src/algorithms/math/integer_partition)
+  * [Square Root](./src/algorithms/math/square_root) - Newton's method
+  * [Liu Hui π Algorithm](./src/algorithms/math/liu_hui) - approximate π calculations based on N-gons
+  * [Discrete Fourier Transform](./src/algorithms/math/fourier_transform) - decompose a function of time (a signal) into the frequencies that make it up
 * **Sets**
-  * [Cartesian Product](src/algorithms/sets/cartesian-product) - product of multiple sets
-  * [Fisher–Yates Shuffle](src/algorithms/sets/fisher-yates) - random permutation of a finite sequence
-  * [Power Set](src/algorithms/sets/power-set) - all subsets of a set (bitwise, backtracking, and cascading solutions)
-  * [Permutations](src/algorithms/sets/permutations) (with and without repetitions)
-  * [Combinations](src/algorithms/sets/combinations) (with and without repetitions)
-  * [Longest Common Subsequence](src/algorithms/sets/longest-common-subsequence) (LCS)
-  * [Longest Increasing Subsequence](src/algorithms/sets/longest-increasing-subsequence)
-  * [Shortest Common Supersequence](src/algorithms/sets/shortest-common-supersequence) (SCS)
-  * [Knapsack Problem](src/algorithms/sets/knapsack-problem) - "0/1" and "Unbound" ones
-  * [Maximum Subarray](src/algorithms/sets/maximum-subarray) - "Brute Force" and "Dynamic Programming" (Kadane's) versions
-  * [Combination Sum](src/algorithms/sets/combination-sum) - find all combinations that form specific sum
+  * [Cartesian Product](./src/algorithms/sets/cartesian_product) - product of multiple sets
+  * [Fisher–Yates Shuffle](./src/algorithms/sets/fisher_yates) - random permutation of a finite sequence
+  * [Power Set](./src/algorithms/sets/power_set) - all subsets of a set (bitwise, backtracking, and cascading solutions)
+  * [Permutations](./src/algorithms/sets/permutations) (with and without repetitions)
+  * [Combinations](./src/algorithms/sets/combinations) (with and without repetitions)
+  * [Longest Common Subsequence](./src/algorithms/sets/longest_common_subsequence) (LCS)
+  * [Longest Increasing Subsequence](./src/algorithms/sets/longest_increasing_subsequence)
+  * [Shortest Common Supersequence](./src/algorithms/sets/shortest_common_supersequence) (SCS)
+  * [Knapsack Problem](./src/algorithms/sets/knapsack_problem) - "0/1" and "Unbound" ones
+  * [Maximum Subarray](./src/algorithms/sets/maximum_subarray) - "Brute Force" and "Dynamic Programming" (Kadane's) versions
+  * [Combination Sum](./src/algorithms/sets/combination_sum) - find all combinations that form specific sum
 * **Strings**
-  * [Hamming Distance](src/algorithms/string/hamming-distance) - number of positions at which the symbols are different
-  * [Palindrome](src/algorithms/string/palindrome) - check if the string is the same in reverse
-  * [Levenshtein Distance](src/algorithms/string/levenshtein-distance) - minimum edit distance between two sequences
-  * [Knuth–Morris–Pratt Algorithm](src/algorithms/string/knuth-morris-pratt) (KMP Algorithm) - substring search (pattern matching)
-  * [Z Algorithm](src/algorithms/string/z-algorithm) - substring search (pattern matching)
-  * [Rabin Karp Algorithm](src/algorithms/string/rabin-karp) - substring search
-  * [Longest Common Substring](src/algorithms/string/longest-common-substring)
-  * [Regular Expression Matching](src/algorithms/string/regular-expression-matching)
+  * [Hamming Distance](./src/algorithms/string/hamming_distance) - number of positions at which the symbols are different
+  * [Palindrome](./src/algorithms/string/palindrome) - check if the string is the same in reverse
+  * [Levenshtein Distance](./src/algorithms/string/levenshtein_distance) - minimum edit distance between two sequences
+  * [Knuth–Morris–Pratt Algorithm](./src/algorithms/string/knuth_morris_pratt) (KMP Algorithm) - substring search (pattern matching)
+  * [Z Algorithm](./src/algorithms/string/z_algorithm) - substring search (pattern matching)
+  * [Rabin Karp Algorithm](./src/algorithms/string/rabin_karp) - substring search
+  * [Longest Common Substring](./src/algorithms/string/longest_common_substring)
+  * [Regular Expression Matching](./src/algorithms/string/regular_expression_matching)
 * **Searches**
-  * [Linear Search](src/algorithms/search/linear-search)
-  * [Jump Search](src/algorithms/search/jump-search) (or Block Search) - search in sorted array
-  * [Binary Search](src/algorithms/search/binary-search) - search in sorted array
-  * [Interpolation Search](src/algorithms/search/interpolation-search) - search in uniformly distributed sorted array
+  * [Linear Search](./src/algorithms/search/linear_search)
+  * [Jump Search](./src/algorithms/search/jump_search) (or Block Search) - search in sorted array
+  * [Binary Search](./src/algorithms/search/binary_search) - search in sorted array
+  * [Interpolation Search](./src/algorithms/search/interpolation_search) - search in uniformly distributed sorted array
 * **Sorting**
-  * [Bubble Sort](src/algorithms/sorting/bubble-sort)
-  * [Selection Sort](src/algorithms/sorting/selection-sort)
-  * [Insertion Sort](src/algorithms/sorting/insertion-sort)
-  * [Heap Sort](src/algorithms/sorting/heap-sort)
-  * [Merge Sort](src/algorithms/sorting/merge-sort)
-  * [Quicksort](src/algorithms/sorting/quick-sort) - in-place and non-in-place implementations
-  * [Shellsort](src/algorithms/sorting/shell-sort)
-  * [Counting Sort](src/algorithms/sorting/counting-sort)
-  * [Radix Sort](src/algorithms/sorting/radix-sort)
-  * [Bucket Sort](src/algorithms/sorting/bucket-sort)
+  * [Bubble Sort](./src/algorithms/sorting/bubble_sort)
+  * [Selection Sort](./src/algorithms/sorting/selection_sort)
+  * [Insertion Sort](./src/algorithms/sorting/insertion_sort)
+  * [Heap Sort](./src/algorithms/sorting/heap_sort)
+  * [Merge Sort](./src/algorithms/sorting/merge_sort)
+  * [Quicksort](./src/algorithms/sorting/quick_sort) - in-place and non-in-place implementations
+  * [Shellsort](./src/algorithms/sorting/shell_sort)
+  * [Counting Sort](./src/algorithms/sorting/counting_sort)
+  * [Radix Sort](./src/algorithms/sorting/radix_sort)
+  * [Bucket Sort](./src/algorithms/sorting/bucket_sort)
 * **Linked Lists**
-  * [Straight Traversal](src/algorithms/linked-list/traversal)
-  * [Reverse Traversal](src/algorithms/linked-list/reverse-traversal)
+  * [Straight Traversal](./src/algorithms/linked_list/traversal)
+  * [Reverse Traversal](./src/algorithms/linked_list/reverse_traversal)
 * **Trees**
-  * [Depth-First Search](src/algorithms/tree/depth-first-search) (DFS)
-  * [Breadth-First Search](src/algorithms/tree/breadth-first-search) (BFS)
+  * [Depth-First Search](./src/algorithms/tree/depth_first_search) (DFS)
+  * [Breadth-First Search](./src/algorithms/tree/breadth_first_search) (BFS)
 * **Graphs**
-  * [Depth-First Search](src/algorithms/graph/depth-first-search) (DFS)
-  * [Breadth-First Search](src/algorithms/graph/breadth-first-search) (BFS)
-  * [Kruskal’s Algorithm](src/algorithms/graph/kruskal) - finding Minimum Spanning Tree (MST) for weighted undirected graph
-  * [Dijkstra Algorithm](src/algorithms/graph/dijkstra) - finding the shortest paths to all graph vertices from single vertex
-  * [Bellman-Ford Algorithm](src/algorithms/graph/bellman-ford) - finding the shortest paths to all graph vertices from single vertex
-  * [Floyd-Warshall Algorithm](src/algorithms/graph/floyd-warshall) - find the shortest paths between all pairs of vertices
-  * [Detect Cycle](src/algorithms/graph/detect-cycle) - for both directed and undirected graphs (DFS and Disjoint Set based versions)
-  * [Prim’s Algorithm](src/algorithms/graph/prim) - finding Minimum Spanning Tree (MST) for weighted undirected graph
-  * [Topological Sorting](src/algorithms/graph/topological-sorting) - DFS method
-  * [Articulation Points](src/algorithms/graph/articulation-points) - Tarjan's algorithm (DFS based)
-  * [Bridges](src/algorithms/graph/bridges) - DFS based algorithm
-  * [Eulerian Path and Eulerian Circuit](src/algorithms/graph/eulerian-path) - Fleury's algorithm - Visit every edge exactly once
-  * [Hamiltonian Cycle](src/algorithms/graph/hamiltonian-cycle) - Visit every vertex exactly once
-  * [Strongly Connected Components](src/algorithms/graph/strongly-connected-components) - Kosaraju's algorithm
-  * [Travelling Salesman Problem](src/algorithms/graph/travelling-salesman) - shortest possible route that visits each city and returns to the origin city
+  * [Depth-First Search](./src/algorithms/graph/depth_first_search) (DFS)
+  * [Breadth-First Search](./src/algorithms/graph/breadth_first_search) (BFS)
+  * [Kruskal’s Algorithm](./src/algorithms/graph/kruskal) - finding Minimum Spanning Tree (MST) for weighted undirected graph
+  * [Dijkstra Algorithm](./src/algorithms/graph/dijkstra) - finding the shortest paths to all graph vertices from single vertex
+  * [Bellman-Ford Algorithm](./src/algorithms/graph/bellman_ford) - finding the shortest paths to all graph vertices from single vertex
+  * [Floyd-Warshall Algorithm](./src/algorithms/graph/floyd_warshall) - find the shortest paths between all pairs of vertices
+  * [Detect Cycle](./src/algorithms/graph/detect_cycle) - for both directed and undirected graphs (DFS and Disjoint Set based versions)
+  * [Prim’s Algorithm](./src/algorithms/graph/prim) - finding Minimum Spanning Tree (MST) for weighted undirected graph
+  * [Topological Sorting](./src/algorithms/graph/topological_sorting) - DFS method
+  * [Articulation Points](./src/algorithms/graph/articulation_points) - Tarjan's algorithm (DFS based)
+  * [Bridges](./src/algorithms/graph/bridges) - DFS based algorithm
+  * [Eulerian Path and Eulerian Circuit](./src/algorithms/graph/eulerian_path) - Fleury's algorithm - Visit every edge exactly once
+  * [Hamiltonian Cycle](./src/algorithms/graph/hamiltonian_cycle) - Visit every vertex exactly once
+  * [Strongly Connected Components](./src/algorithms/graph/strongly_connected_components) - Kosaraju's algorithm
+  * [Travelling Salesman Problem](./src/algorithms/graph/travelling_salesman) - shortest possible route that visits each city and returns to the origin city
 * **Cryptography**
-  * [Polynomial Hash](src/algorithms/cryptography/polynomial-hash) - rolling hash function based on polynomial
-  * [Rail Fence Cipher](src/algorithms/cryptography/rail-fence-cipher) - a transposition cipher algorithm for encoding messages
-  * [Caesar Cipher](src/algorithms/cryptography/caesar-cipher) - simple substitution cipher
-  * [Hill Cipher](src/algorithms/cryptography/hill-cipher) - substitution cipher based on linear algebra
+  * [Polynomial Hash](./src/algorithms/cryptography/polynomial_hash) - rolling hash function based on polynomial
+  * [Rail Fence Cipher](./src/algorithms/cryptography/rail_fence_cipher) - a transposition cipher algorithm for encoding messages
+  * [Caesar Cipher](./src/algorithms/cryptography/caesar_cipher) - simple substitution cipher
+  * [Hill Cipher](./src/algorithms/cryptography/hill_cipher) - substitution cipher based on linear algebra
 * **Machine Learning**
-  * [NanoNeuron](https://github.com/trekhleb/nano-neuron) - 7 simple JS functions that illustrate how machines can actually learn (forward/backward propagation)
-  * [k-NN](src/algorithms/ml/knn) - k-nearest neighbors classification algorithm
-  * [k-Means](src/algorithms/ml/k-means) - k-Means clustering algorithm
+  * [NanoNeuron](https://github.com/trekhleb/nano_neuron) - 7 simple JS functions that illustrate how machines can actually learn (forward/backward propagation)
+  * [k-NN](./src/algorithms/ml/knn) - k-nearest neighbors classification algorithm
+  * [k-Means](./src/algorithms/ml/k_means) - k-Means clustering algorithm
 * **Image Processing**
-  * [Seam Carving](src/algorithms/image-processing/seam-carving) - content-aware image resizing algorithm
+  * [Seam Carving](./src/algorithms/image_processing/seam_carving) - content-aware image resizing algorithm
 * **Statistics**
-  * [Weighted Random](src/algorithms/statistics/weighted-random) - select the random item from the list based on items' weights
+  * [Weighted Random](./src/algorithms/statistics/weighted_random) - select the random item from the list based on items' weights
 * **Evolutionary algorithms**
-  * [Genetic algorithm](https://github.com/trekhleb/self-parking-car-evolution) - example of how the genetic algorithm may be applied for training the self-parking cars
+  * [Genetic algorithm](https://github.com/trekhleb/self_parking_car_evolution) - example of how the genetic algorithm may be applied for training the self-parking cars
 * **Uncategorized**
-  * [Tower of Hanoi](src/algorithms/uncategorized/hanoi-tower)
-  * [Square Matrix Rotation](src/algorithms/uncategorized/square-matrix-rotation) - in-place algorithm
-  * [Jump Game](src/algorithms/uncategorized/jump-game) - backtracking, dynamic programming (top-down + bottom-up) and greedy examples
-  * [Unique Paths](src/algorithms/uncategorized/unique-paths) - backtracking, dynamic programming and Pascal's Triangle based examples
-  * [Rain Terraces](src/algorithms/uncategorized/rain-terraces) - trapping rain water problem (dynamic programming and brute force versions)
-  * [Recursive Staircase](src/algorithms/uncategorized/recursive-staircase) - count the number of ways to reach to the top (4 solutions)
-  * [Best Time To Buy Sell Stocks](src/algorithms/uncategorized/best-time-to-buy-sell-stocks) - divide and conquer and one-pass examples
-  * [Valid Parentheses](src/algorithms/stack/valid-parentheses) - check if a string has valid parentheses (using stack)
-  * [N-Queens Problem](src/algorithms/uncategorized/n-queens)
-  * [Knight's Tour](src/algorithms/uncategorized/knight-tour)
+  * [Tower of Hanoi](./src/algorithms/uncategorized/hanoi_tower)
+  * [Square Matrix Rotation](./src/algorithms/uncategorized/square_matrix_rotation) - in-place algorithm
+  * [Jump Game](./src/algorithms/uncategorized/jump_game) - backtracking, dynamic programming (top-down + bottom-up) and greedy examples
+  * [Unique Paths](./src/algorithms/uncategorized/unique_paths) - backtracking, dynamic programming and Pascal's Triangle based examples
+  * [Rain Terraces](./src/algorithms/uncategorized/rain_terraces) - trapping rain water problem (dynamic programming and brute force versions)
+  * [Recursive Staircase](./src/algorithms/uncategorized/recursive_staircase) - count the number of ways to reach to the top (4 solutions)
+  * [Best Time To Buy Sell Stocks](./src/algorithms/uncategorized/best_time_to_buy_sell_stocks) - divide and conquer and one-pass examples
+  * [Valid Parentheses](./src/algorithms/stack/valid_parentheses) - check if a string has valid parentheses (using stack)
+  * [N-Queens Problem](./src/algorithms/uncategorized/n_queens)
+  * [Knight's Tour](./src/algorithms/uncategorized/knight_tour)
 
 ### Algorithms by Paradigm
 
-An algorithmic paradigm is a generic method or approach which underlies the design of a class
+An algorithmic paradigm is a generic method or approach which underlines the design of a class
 of algorithms. It is an abstraction higher than the notion of an algorithm, just as an
 algorithm is an abstraction higher than a computer program.
 
-* **Brute Force** - look at all the possibilities and selects the best solution
-  * [Linear Search](src/algorithms/search/linear-search)
-  * [Rain Terraces](src/algorithms/uncategorized/rain-terraces) - trapping rain water problem
-  * [Recursive Staircase](src/algorithms/uncategorized/recursive-staircase) - count the number of ways to reach the top
-  * [Maximum Subarray](src/algorithms/sets/maximum-subarray)
-  * [Travelling Salesman Problem](src/algorithms/graph/travelling-salesman) - shortest possible route that visits each city and returns to the origin city
-  * [Discrete Fourier Transform](src/algorithms/math/fourier-transform) - decompose a function of time (a signal) into the frequencies that make it up
+* **Brute Force** - Looks at all the possibilities and selects the best solution :
+  * [Linear Search](./src/algorithms/search/linear_search)
+  * [Rain Terraces](./src/algorithms/uncategorized/rain_terraces) - trapping rain water problem
+  * [Recursive Staircase](./src/algorithms/uncategorized/recursive_staircase) - count the number of ways to reach the top
+  * [Maximum Subarray](./src/algorithms/sets/maximum_subarray)
+  * [Travelling Salesman Problem](./src/algorithms/graph/travelling_salesman) - shortest possible route that visits each city and returns to the origin city
+  * [Discrete Fourier Transform](./src/algorithms/math/fourier_transform) - decompose a function of time (a signal) into the frequencies that make it up
 * **Greedy** - choose the best option at the current time, without any consideration for the future
-  * [Jump Game](src/algorithms/uncategorized/jump-game)
-  * [Unbound Knapsack Problem](src/algorithms/sets/knapsack-problem)
-  * [Dijkstra Algorithm](src/algorithms/graph/dijkstra) - finding the shortest path to all graph vertices
-  * [Prim’s Algorithm](src/algorithms/graph/prim) - finding Minimum Spanning Tree (MST) for weighted undirected graph
-  * [Kruskal’s Algorithm](src/algorithms/graph/kruskal) - finding Minimum Spanning Tree (MST) for weighted undirected graph
+  * [Jump Game](./src/algorithms/uncategorized/jump_game)
+  * [Unbound Knapsack Problem](./src/algorithms/sets/knapsack_problem)
+  * [Dijkstra Algorithm](./src/algorithms/graph/dijkstra) - finding the shortest path to all graph vertices
+  * [Prim’s Algorithm](./src/algorithms/graph/prim) - finding Minimum Spanning Tree (MST) for weighted undirected graph
+  * [Kruskal’s Algorithm](./src/algorithms/graph/kruskal) - finding Minimum Spanning Tree (MST) for weighted undirected graph
 * **Divide and Conquer** - divide the problem into smaller parts and then solve those parts
-  * [Binary Search](src/algorithms/search/binary-search)
-  * [Tower of Hanoi](src/algorithms/uncategorized/hanoi-tower)
-  * [Pascal's Triangle](src/algorithms/math/pascal-triangle)
-  * [Euclidean Algorithm](src/algorithms/math/euclidean-algorithm) - calculate the Greatest Common Divisor (GCD)
-  * [Merge Sort](src/algorithms/sorting/merge-sort)
-  * [Quicksort](src/algorithms/sorting/quick-sort)
-  * [Tree Depth-First Search](src/algorithms/tree/depth-first-search) (DFS)
-  * [Graph Depth-First Search](src/algorithms/graph/depth-first-search) (DFS)
-  * [Matrices](src/algorithms/math/matrix) - generating and traversing the matrices of different shapes
-  * [Jump Game](src/algorithms/uncategorized/jump-game)
-  * [Fast Powering](src/algorithms/math/fast-powering)
-  * [Best Time To Buy Sell Stocks](src/algorithms/uncategorized/best-time-to-buy-sell-stocks) - divide and conquer and one-pass examples
-  * [Permutations](src/algorithms/sets/permutations) (with and without repetitions)
-  * [Combinations](src/algorithms/sets/combinations) (with and without repetitions)
-  * [Maximum Subarray](src/algorithms/sets/maximum-subarray)
+  * [Binary Search](./src/algorithms/search/binary_search)
+  * [Tower of Hanoi](./src/algorithms/uncategorized/hanoi_tower)
+  * [Pascal's Triangle](./src/algorithms/math/pascal_triangle)
+  * [Euclidean Algorithm](./src/algorithms/math/euclidean_algorithm) - calculate the Greatest Common Divisor (GCD)
+  * [Merge Sort](./src/algorithms/sorting/merge_sort)
+  * [Quicksort](./src/algorithms/sorting/quick_sort)
+  * [Tree Depth-First Search](./src/algorithms/tree/depth_first_search) (DFS)
+  * [Graph Depth-First Search](./src/algorithms/graph/depth_first_search) (DFS)
+  * [Matrices](./src/algorithms/math/matrix) - generating and traversing the matrices of different shapes
+  * [Jump Game](./src/algorithms/uncategorized/jump_game)
+  * [Fast Powering](./src/algorithms/math/fast_powering)
+  * [Best Time To Buy Sell Stocks](./src/algorithms/uncategorized/best_time_to_buy_sell_stocks) - divide and conquer and one-pass examples
+  * [Permutations](./src/algorithms/sets/permutations) (with and without repetitions)
+  * [Combinations](./src/algorithms/sets/combinations) (with and without repetitions)
+  * [Maximum Subarray](./src/algorithms/sets/maximum_subarray)
 * **Dynamic Programming** - build up a solution using previously found sub-solutions
-  * [Fibonacci Number](src/algorithms/math/fibonacci)
-  * [Jump Game](src/algorithms/uncategorized/jump-game)
-  * [Unique Paths](src/algorithms/uncategorized/unique-paths)
-  * [Rain Terraces](src/algorithms/uncategorized/rain-terraces) - trapping rain water problem
-  * [Recursive Staircase](src/algorithms/uncategorized/recursive-staircase) - count the number of ways to reach the top
-  * [Seam Carving](src/algorithms/image-processing/seam-carving) - content-aware image resizing algorithm
-  * [Levenshtein Distance](src/algorithms/string/levenshtein-distance) - minimum edit distance between two sequences
-  * [Longest Common Subsequence](src/algorithms/sets/longest-common-subsequence) (LCS)
-  * [Longest Common Substring](src/algorithms/string/longest-common-substring)
-  * [Longest Increasing Subsequence](src/algorithms/sets/longest-increasing-subsequence)
-  * [Shortest Common Supersequence](src/algorithms/sets/shortest-common-supersequence)
-  * [0/1 Knapsack Problem](src/algorithms/sets/knapsack-problem)
-  * [Integer Partition](src/algorithms/math/integer-partition)
-  * [Maximum Subarray](src/algorithms/sets/maximum-subarray)
-  * [Bellman-Ford Algorithm](src/algorithms/graph/bellman-ford) - finding the shortest path to all graph vertices
-  * [Floyd-Warshall Algorithm](src/algorithms/graph/floyd-warshall) - find the shortest paths between all pairs of vertices
-  * [Regular Expression Matching](src/algorithms/string/regular-expression-matching)
+  * [Fibonacci Number](./src/algorithms/math/fibonacci)
+  * [Jump Game](./src/algorithms/uncategorized/jump_game)
+  * [Unique Paths](./src/algorithms/uncategorized/unique_paths)
+  * [Rain Terraces](./src/algorithms/uncategorized/rain_terraces) - trapping rain water problem
+  * [Recursive Staircase](./src/algorithms/uncategorized/recursive_staircase) - count the number of ways to reach the top
+  * [Seam Carving](./src/algorithms/image_processing/seam_carving) - content-aware image resizing algorithm
+  * [Levenshtein Distance](./src/algorithms/string/levenshtein_distance) - minimum edit distance between two sequences
+  * [Longest Common Subsequence](./src/algorithms/sets/longest_common_subsequence) (LCS)
+  * [Longest Common Substring](./src/algorithms/string/longest_common_substring)
+  * [Longest Increasing Subsequence](./src/algorithms/sets/longest_increasing_subsequence)
+  * [Shortest Common Supersequence](./src/algorithms/sets/shortest_common_supersequence)
+  * [0/1 Knapsack Problem](./src/algorithms/sets/knapsack_problem)
+  * [Integer Partition](./src/algorithms/math/integer_partition)
+  * [Maximum Subarray](./src/algorithms/sets/maximum_subarray)
+  * [Bellman-Ford Algorithm](./src/algorithms/graph/bellman_ford) - finding the shortest path to all graph vertices
+  * [Floyd-Warshall Algorithm](./src/algorithms/graph/floyd_warshall) - find the shortest paths between all pairs of vertices
+  * [Regular Expression Matching](./src/algorithms/string/regular_expression_matching)
 * **Backtracking** - similarly to brute force, try to generate all possible solutions, but each time you generate the next solution, you test
 if it satisfies all conditions and only then continue generating subsequent solutions. Otherwise, backtrack and go on a
 different path to finding a solution. Normally the DFS traversal of state-space is being used.
-  * [Jump Game](src/algorithms/uncategorized/jump-game)
-  * [Unique Paths](src/algorithms/uncategorized/unique-paths)
-  * [Power Set](src/algorithms/sets/power-set) - all subsets of a set
-  * [Hamiltonian Cycle](src/algorithms/graph/hamiltonian-cycle) - Visit every vertex exactly once
-  * [N-Queens Problem](src/algorithms/uncategorized/n-queens)
-  * [Knight's Tour](src/algorithms/uncategorized/knight-tour)
-  * [Combination Sum](src/algorithms/sets/combination-sum) - find all combinations that form specific sum
+  * [Jump Game](./src/algorithms/uncategorized/jump_game)
+  * [Unique Paths](./src/algorithms/uncategorized/unique_paths)
+  * [Power Set](./src/algorithms/sets/power_set) - all subsets of a set
+  * [Hamiltonian Cycle](./src/algorithms/graph/hamiltonian_cycle) - Visit every vertex exactly once
+  * [N-Queens Problem](./src/algorithms/uncategorized/n_queens)
+  * [Knight's Tour](./src/algorithms/uncategorized/knight_tour)
+  * [Combination Sum](./src/algorithms/sets/combination_sum) - find all combinations that form specific sum
 * **Branch & Bound** - remember the lowest-cost solution found at each stage of the backtracking
 search, and use the cost of the lowest-cost solution found so far as a lower bound on the cost of
 a least-cost solution to the problem in order to discard partial solutions with costs larger than the

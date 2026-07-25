@@ -2,13 +2,13 @@ import {
     testCases16Bits,
     testCases32Bits,
     testCases64Bits
-} from "../../../../src/algorithms/math/binary-floating-point/testCases.js";
+} from "../../../../src/algorithms/math/binary_floating_point/testCases.js";
 import {
     type Bits,
     bitsToFloat16,
     bitsToFloat32,
     bitsToFloat64
-} from "../../../../src/algorithms/math/binary-floating-point/bitsToFloat.js";
+} from "../../../../src/algorithms/math/binary_floating_point/bitsToFloat.js";
 import {describe, expect, it} from "bun:test";
 
 describe('bitsToFloat16', () => {

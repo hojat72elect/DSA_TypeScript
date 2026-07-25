@@ -1,4 +1,4 @@
-import {hardyRamanujan, primeFactors} from "../../../../src/algorithms/math/prime-factors/primeFactors.js";
+import {hardyRamanujan, primeFactors} from "../../../../src/algorithms/math/prime_factors/primeFactors.js";
 import {describe, expect, it} from "bun:test";
 
 /**

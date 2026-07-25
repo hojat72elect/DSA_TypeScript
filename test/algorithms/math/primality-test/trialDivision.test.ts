@@ -1,4 +1,4 @@
-import {trialDivision} from "../../../../src/algorithms/math/primality-test/trialDivision.ts";
+import {trialDivision} from "../../../../src/algorithms/math/primality_test/trialDivision.ts";
 import {describe, expect, it} from "bun:test";
 
 /**

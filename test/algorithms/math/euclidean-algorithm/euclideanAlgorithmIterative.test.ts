@@ -1,6 +1,6 @@
 import {
     euclideanAlgorithmIterative
-} from "../../../../src/algorithms/math/euclidean-algorithm/euclideanAlgorithmIterative.ts";
+} from "../../../../src/algorithms/math/euclidean_algorithm/euclideanAlgorithmIterative.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('euclideanAlgorithmIterative', () => {

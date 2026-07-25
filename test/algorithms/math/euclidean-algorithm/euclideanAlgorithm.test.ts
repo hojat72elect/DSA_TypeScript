@@ -1,4 +1,4 @@
-import {euclideanAlgorithm} from "../../../../src/algorithms/math/euclidean-algorithm/euclideanAlgorithm.ts";
+import {euclideanAlgorithm} from "../../../../src/algorithms/math/euclidean_algorithm/euclideanAlgorithm.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('euclideanAlgorithm', () => {

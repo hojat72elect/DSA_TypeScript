@@ -1,8 +1,8 @@
 import {
     floatAs32BinaryString,
     floatAs64BinaryString
-} from "../../../../src/algorithms/math/binary-floating-point/floatAsBinaryString.js";
-import {testCases32Bits, testCases64Bits} from "../../../../src/algorithms/math/binary-floating-point/testCases.js";
+} from "../../../../src/algorithms/math/binary_floating_point/floatAsBinaryString.js";
+import {testCases32Bits, testCases64Bits} from "../../../../src/algorithms/math/binary_floating_point/testCases.js";
 import {describe, expect, it} from "bun:test";
 
 describe('floatAs32Binary', () => {
