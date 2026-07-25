@@ -1,4 +1,4 @@
-import {knuthMorrisPratt} from "../../../../src/algorithms/string/knuth-morris-pratt/knuthMorrisPratt.ts";
+import {knuthMorrisPratt} from "../../../../src/algorithms/string/knuth_morris_pratt/knuthMorrisPratt.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('knuthMorrisPratt', () => {

@@ -1,4 +1,4 @@
-import RadixSort from "../../../../src/algorithms/sorting/radix-sort/RadixSort.js";
+import RadixSort from "../../../../src/algorithms/sorting/radix_sort/RadixSort.js";
 import {SortTester} from "../../../../src/algorithms/sorting/SortTester.js";
 import {describe, it} from "bun:test";
 

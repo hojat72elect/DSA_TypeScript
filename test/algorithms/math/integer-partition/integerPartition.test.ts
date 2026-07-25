@@ -1,4 +1,4 @@
-import {integerPartition} from "../../../../src/algorithms/math/integer-partition/integerPartition.ts";
+import {integerPartition} from "../../../../src/algorithms/math/integer_partition/integerPartition.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('integerPartition', () => {

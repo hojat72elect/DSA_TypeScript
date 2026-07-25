@@ -1,4 +1,4 @@
-import {squareRoot} from "../../../../src/algorithms/math/square-root/squareRoot.ts";
+import {squareRoot} from "../../../../src/algorithms/math/square_root/squareRoot.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('squareRoot', () => {

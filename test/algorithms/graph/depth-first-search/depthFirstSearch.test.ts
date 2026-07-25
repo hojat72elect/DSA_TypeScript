@@ -1,7 +1,7 @@
 import {Graph} from '../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts';
 import {GraphVertex} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts';
 import {GraphEdge} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts';
-import {depthFirstSearch} from '../../../../src/algorithms/graph/depth-first-search/depthFirstSearch.ts';
+import {depthFirstSearch} from '../../../../src/algorithms/graph/depth_first_search/depthFirstSearch.ts';
 import {describe, expect, it, jest} from "bun:test";
 
 describe('depthFirstSearch', () => {

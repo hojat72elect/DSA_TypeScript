@@ -1,6 +1,6 @@
 import {
     longestCommonSubsequence
-} from "../../../../src/algorithms/sets/longest-common-subsequence/longestCommonSubsequence.ts";
+} from "../../../../src/algorithms/sets/longest_common_subsequence/longestCommonSubsequence.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('longestCommonSubsequence', () => {

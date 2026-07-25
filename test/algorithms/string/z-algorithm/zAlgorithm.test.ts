@@ -1,4 +1,4 @@
-import {zAlgorithm} from "../../../../src/algorithms/string/z-algorithm/zAlgorithm.ts";
+import {zAlgorithm} from "../../../../src/algorithms/string/z_algorithm/zAlgorithm.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('ZAlgorithm', () => {

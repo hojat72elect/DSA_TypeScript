@@ -1,7 +1,7 @@
 import {GraphVertex} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts";
 import {GraphEdge} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts";
 import {Graph} from "../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts";
-import {hamiltonianCycle} from "../../../../src/algorithms/graph/hamiltonian-cycle/hamiltonianCycle.ts";
+import {hamiltonianCycle} from "../../../../src/algorithms/graph/hamiltonian_cycle/hamiltonianCycle.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('hamiltonianCycle', () => {

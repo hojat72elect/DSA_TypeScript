@@ -1,7 +1,7 @@
 import {GraphVertex} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts';
 import {GraphEdge} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts';
 import {Graph} from '../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts';
-import {detectDirectedCycle} from '../../../../src/algorithms/graph/detect-cycle/detectDirectedCycle.ts';
+import {detectDirectedCycle} from '../../../../src/algorithms/graph/detect_cycle/detectDirectedCycle.ts';
 import {describe, expect, it} from "bun:test";
 
 describe('detectDirectedCycle', () => {

@@ -1,4 +1,4 @@
-import {pascalTriangle} from "../../../../src/algorithms/math/pascal-triangle/pascalTriangle.ts";
+import {pascalTriangle} from "../../../../src/algorithms/math/pascal_triangle/pascalTriangle.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('pascalTriangle', () => {

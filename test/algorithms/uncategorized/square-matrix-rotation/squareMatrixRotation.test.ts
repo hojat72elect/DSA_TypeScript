@@ -1,6 +1,6 @@
 import {
     squareMatrixRotation
-} from "../../../../src/algorithms/uncategorized/square-matrix-rotation/squareMatrixRotation.ts";
+} from "../../../../src/algorithms/uncategorized/square_matrix_rotation/squareMatrixRotation.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('squareMatrixRotation', () => {

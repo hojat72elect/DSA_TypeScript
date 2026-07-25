@@ -1,4 +1,4 @@
-import {cartesianProduct} from "../../../../src/algorithms/sets/cartesian-product/cartesianProduct.ts";
+import {cartesianProduct} from "../../../../src/algorithms/sets/cartesian_product/cartesianProduct.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('cartesianProduct', () => {

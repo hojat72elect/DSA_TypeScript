@@ -1,4 +1,4 @@
-import {QuickSort} from "../../../../src/algorithms/sorting/quick-sort/QuickSort.ts";
+import {QuickSort} from "../../../../src/algorithms/sorting/quick_sort/QuickSort.ts";
 import {
     equalArr,
     notSortedArr,

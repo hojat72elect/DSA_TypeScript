@@ -3,7 +3,7 @@ import {GraphEdge} from '../../../../../DSA_TypeScript/src/data_structures/graph
 import {Graph} from '../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts';
 import {
     detectUndirectedCycleUsingDisjointSet
-} from '../../../../src/algorithms/graph/detect-cycle/detectUndirectedCycleUsingDisjointSet.ts';
+} from '../../../../src/algorithms/graph/detect_cycle/detectUndirectedCycleUsingDisjointSet.ts';
 import {describe, expect, it} from "bun:test";
 
 describe('detectUndirectedCycleUsingDisjointSet', () => {

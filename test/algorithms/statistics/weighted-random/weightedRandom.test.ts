@@ -1,4 +1,4 @@
-import {weightedRandom} from "../../../../src/algorithms/statistics/weighted-random/weightedRandom.ts";
+import {weightedRandom} from "../../../../src/algorithms/statistics/weighted_random/weightedRandom.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('weightedRandom', () => {

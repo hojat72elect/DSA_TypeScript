@@ -1,4 +1,4 @@
-import {CountingSort} from "../../../../src/algorithms/sorting/counting-sort/CountingSort.ts";
+import {CountingSort} from "../../../../src/algorithms/sorting/counting_sort/CountingSort.ts";
 import {
     equalArr,
     notSortedArr,

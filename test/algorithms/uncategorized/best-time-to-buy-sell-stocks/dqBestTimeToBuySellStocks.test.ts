@@ -1,6 +1,6 @@
 import {
     dqBestTimeToBuySellStocks
-} from "../../../../src/algorithms/uncategorized/best-time-to-buy-sell-stocks/dqBestTimeToBuySellStocks.ts";
+} from "../../../../src/algorithms/uncategorized/best_time_to_buy_sell_stocks/dqBestTimeToBuySellStocks.ts";
 import {describe, expect, it, jest} from "bun:test";
 
 describe('dqBestTimeToBuySellStocks', () => {

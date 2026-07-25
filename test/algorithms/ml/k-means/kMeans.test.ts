@@ -1,4 +1,4 @@
-import {KMeans} from "../../../../src/algorithms/ml/k-means/kMeans.ts";
+import {KMeans} from "../../../../src/algorithms/ml/k_means/kMeans.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('kMeans', () => {

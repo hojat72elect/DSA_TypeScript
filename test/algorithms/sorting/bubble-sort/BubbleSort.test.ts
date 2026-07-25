@@ -5,7 +5,7 @@ import {
     sortedArr,
     SortTester
 } from "../../../../src/algorithms/sorting/SortTester.js";
-import {BubbleSort} from "../../../../src/algorithms/sorting/bubble-sort/BubbleSort.js";
+import {BubbleSort} from "../../../../src/algorithms/sorting/bubble_sort/BubbleSort.js";
 import {describe, it} from "bun:test";
 
 // Complexity constants.

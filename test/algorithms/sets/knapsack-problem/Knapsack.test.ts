@@ -1,5 +1,5 @@
-import {KnapsackItem} from "../../../../src/algorithms/sets/knapsack-problem/KnapsackItem.ts";
-import Knapsack from "../../../../src/algorithms/sets/knapsack-problem/Knapsack.js";
+import {KnapsackItem} from "../../../../src/algorithms/sets/knapsack_problem/KnapsackItem.ts";
+import Knapsack from "../../../../src/algorithms/sets/knapsack_problem/Knapsack.js";
 import {describe, expect, it} from "bun:test";
 
 describe('Knapsack', () => {

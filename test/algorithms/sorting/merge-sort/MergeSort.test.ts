@@ -1,4 +1,4 @@
-import {MergeSort} from "../../../../src/algorithms/sorting/merge-sort/MergeSort.ts";
+import {MergeSort} from "../../../../src/algorithms/sorting/merge_sort/MergeSort.ts";
 import {
     equalArr,
     notSortedArr,

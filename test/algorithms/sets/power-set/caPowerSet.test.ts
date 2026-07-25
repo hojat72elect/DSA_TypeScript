@@ -1,4 +1,4 @@
-import {caPowerSet} from "../../../../src/algorithms/sets/power-set/caPowerSet.ts";
+import {caPowerSet} from "../../../../src/algorithms/sets/power_set/caPowerSet.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('caPowerSet', () => {

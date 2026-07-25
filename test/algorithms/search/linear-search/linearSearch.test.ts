@@ -1,4 +1,4 @@
-import {linearSearch} from "../../../../src/algorithms/search/linear-search/linearSearch.ts";
+import {linearSearch} from "../../../../src/algorithms/search/linear_search/linearSearch.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('linearSearch', () => {

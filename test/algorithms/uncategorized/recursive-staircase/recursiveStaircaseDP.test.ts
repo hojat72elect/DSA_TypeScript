@@ -1,6 +1,6 @@
 import {
     recursiveStaircaseDP
-} from "../../../../src/algorithms/uncategorized/recursive-staircase/recursiveStaircaseDP.ts";
+} from "../../../../src/algorithms/uncategorized/recursive_staircase/recursiveStaircaseDP.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('recursiveStaircaseDP', () => {

@@ -1,4 +1,4 @@
-import {btPowerSet} from "../../../../src/algorithms/sets/power-set/btPowerSet.ts";
+import {btPowerSet} from "../../../../src/algorithms/sets/power_set/btPowerSet.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('btPowerSet', () => {

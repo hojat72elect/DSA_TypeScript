@@ -1,6 +1,6 @@
 import {
     longestCommonSubstring
-} from "../../../../src/algorithms/string/longest-common-substring/longestCommonSubstring.ts";
+} from "../../../../src/algorithms/string/longest_common_substring/longestCommonSubstring.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('longestCommonSubstring', () => {

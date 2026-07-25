@@ -1,4 +1,4 @@
-import {dpMaximumSubarray} from "../../../../src/algorithms/sets/maximum-subarray/dpMaximumSubarray.ts";
+import {dpMaximumSubarray} from "../../../../src/algorithms/sets/maximum_subarray/dpMaximumSubarray.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('dpMaximumSubarray', () => {

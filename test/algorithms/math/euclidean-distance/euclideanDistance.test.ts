@@ -1,6 +1,6 @@
 import {describe, expect, it} from "bun:test";
 import {Matrix} from "../../../../src/algorithms/math/matrix/Matrix.ts";
-import {euclideanDistance} from "../../../../src/algorithms/math/euclidean-distance/euclideanDistance.ts";
+import {euclideanDistance} from "../../../../src/algorithms/math/euclidean_distance/euclideanDistance.ts";
 
 describe('euclideanDistance', () => {
     it('should calculate euclidean distance between vectors', () => {

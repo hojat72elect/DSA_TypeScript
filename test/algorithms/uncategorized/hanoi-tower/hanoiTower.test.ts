@@ -1,4 +1,4 @@
-import {hanoiTower} from "../../../../src/algorithms/uncategorized/hanoi-tower/hanoiTower.ts";
+import {hanoiTower} from "../../../../src/algorithms/uncategorized/hanoi_tower/hanoiTower.ts";
 import {Stack} from "../../../../../DSA_TypeScript/src/data_structures/stack/Stack.ts";
 import {describe, expect, it, jest} from "bun:test";
 

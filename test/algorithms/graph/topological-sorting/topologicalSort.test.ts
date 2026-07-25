@@ -1,6 +1,6 @@
 import {GraphVertex} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts";
 import {GraphEdge} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts";
-import {topologicalSort} from "../../../../src/algorithms/graph/topological-sorting/topologicalSort.ts";
+import {topologicalSort} from "../../../../src/algorithms/graph/topological_sorting/topologicalSort.ts";
 import {Graph} from "../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts";
 import {describe, expect, it} from "bun:test";
 

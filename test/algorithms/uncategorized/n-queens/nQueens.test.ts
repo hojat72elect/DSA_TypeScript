@@ -1,4 +1,4 @@
-import {nQueens} from "../../../../src/algorithms/uncategorized/n-queens/nQueens.ts";
+import {nQueens} from "../../../../src/algorithms/uncategorized/n_queens/nQueens.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('NQueens', () => {
@@ -7,7 +7,7 @@ describe('NQueens', () => {
         expect(solutions.length).toBe(0);
     });
 
-    it('should solve n-queens problem for 4 queens', () => {
+    it('should solve n_queens problem for 4 queens', () => {
         const solutions = nQueens(4);
         expect(solutions.length).toBe(2);
 
@@ -24,7 +24,7 @@ describe('NQueens', () => {
         expect(solutions[1]![3]!.toString()).toBe('3,1');
     });
 
-    it('should solve n-queens problem for 6 queens', () => {
+    it('should solve n_queens problem for 6 queens', () => {
         const solutions = nQueens(6);
         expect(solutions.length).toBe(4);
 

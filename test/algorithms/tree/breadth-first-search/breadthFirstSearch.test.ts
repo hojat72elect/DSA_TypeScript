@@ -1,4 +1,4 @@
-import {breadthFirstSearch} from "../../../../src/algorithms/tree/breadth-first-search/breadthFirstSearch.ts";
+import {breadthFirstSearch} from "../../../../src/algorithms/tree/breadth_first_search/breadthFirstSearch.ts";
 import {describe, expect, it, jest} from "bun:test";
 import {BinaryTreeNode} from "../../../../src/data_structures/tree/BinaryTreeNode.ts";
 

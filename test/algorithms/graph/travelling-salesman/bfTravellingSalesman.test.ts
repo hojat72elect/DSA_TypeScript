@@ -1,7 +1,7 @@
 import {GraphVertex} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts";
 import {GraphEdge} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts";
 import {Graph} from "../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts";
-import {bfTravellingSalesman} from "../../../../src/algorithms/graph/travelling-salesman/bfTravellingSalesman.ts";
+import {bfTravellingSalesman} from "../../../../src/algorithms/graph/travelling_salesman/bfTravellingSalesman.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('bfTravellingSalesman', () => {

@@ -1,4 +1,4 @@
-import {levenshteinDistance} from "../../../../src/algorithms/string/levenshtein-distance/levenshteinDistance.ts";
+import {levenshteinDistance} from "../../../../src/algorithms/string/levenshtein_distance/levenshteinDistance.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('levenshteinDistance', () => {

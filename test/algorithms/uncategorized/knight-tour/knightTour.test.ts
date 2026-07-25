@@ -1,4 +1,4 @@
-import {knightTour} from "../../../../src/algorithms/uncategorized/knight-tour/knightTour.ts";
+import {knightTour} from "../../../../src/algorithms/uncategorized/knight_tour/knightTour.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('knightTour', () => {

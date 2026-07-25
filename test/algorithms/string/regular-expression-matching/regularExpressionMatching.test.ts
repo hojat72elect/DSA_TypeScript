@@ -1,6 +1,6 @@
 import {
     regularExpressionMatching
-} from "../../../../src/algorithms/string/regular-expression-matching/regularExpressionMatching.ts";
+} from "../../../../src/algorithms/string/regular_expression_matching/regularExpressionMatching.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('regularExpressionMatching', () => {

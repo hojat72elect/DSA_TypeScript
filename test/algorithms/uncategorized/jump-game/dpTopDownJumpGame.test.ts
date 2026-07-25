@@ -1,4 +1,4 @@
-import {dpTopDownJumpGame} from "../../../../src/algorithms/uncategorized/jump-game/dpTopDownJumpGame.ts";
+import {dpTopDownJumpGame} from "../../../../src/algorithms/uncategorized/jump_game/dpTopDownJumpGame.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('dpTopDownJumpGame', () => {

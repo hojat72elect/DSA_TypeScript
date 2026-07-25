@@ -1,4 +1,4 @@
-import {depthFirstSearch} from "../../../../src/algorithms/tree/depth-first-search/depthFirstSearch.ts";
+import {depthFirstSearch} from "../../../../src/algorithms/tree/depth_first_search/depthFirstSearch.ts";
 import {describe, expect, it, jest} from "bun:test";
 import {BinaryTreeNode} from "../../../../src/data_structures/tree/BinaryTreeNode.ts";
 

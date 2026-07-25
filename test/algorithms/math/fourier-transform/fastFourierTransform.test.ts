@@ -1,5 +1,5 @@
-import ComplexNumber from "../../../../src/algorithms/math/complex-number/ComplexNumber.js";
-import {fastFourierTransform} from "../../../../src/algorithms/math/fourier-transform/fastFourierTransform.ts";
+import ComplexNumber from "../../../../src/algorithms/math/complex_number/ComplexNumber.js";
+import {fastFourierTransform} from "../../../../src/algorithms/math/fourier_transform/fastFourierTransform.ts";
 import {describe, expect, it} from "bun:test";
 
 function sequencesApproximatelyEqual(sequence1: ComplexNumber[], sequence2: ComplexNumber[], delta: number): boolean {

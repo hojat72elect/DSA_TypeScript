@@ -1,6 +1,6 @@
 import {
     shortestCommonSupersequence
-} from "../../../../src/algorithms/sets/shortest-common-supersequence/shortestCommonSupersequence.ts";
+} from "../../../../src/algorithms/sets/shortest_common_supersequence/shortestCommonSupersequence.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('shortestCommonSupersequence', () => {

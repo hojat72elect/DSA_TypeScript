@@ -1,7 +1,7 @@
 import {GraphVertex} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts';
 import {GraphEdge} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts';
 import {Graph} from '../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts';
-import {bellmanFord} from '../../../../src/algorithms/graph/bellman-ford/bellmanFord.ts';
+import {bellmanFord} from '../../../../src/algorithms/graph/bellman_ford/bellmanFord.ts';
 import {describe, expect, it} from "bun:test";
 
 describe('bellmanFord', () => {

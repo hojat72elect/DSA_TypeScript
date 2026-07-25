@@ -1,4 +1,4 @@
-import {nQueensBitwise} from "../../../../src/algorithms/uncategorized/n-queens/nQueensBitwise.ts";
+import {nQueensBitwise} from "../../../../src/algorithms/uncategorized/n_queens/nQueensBitwise.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('NQueensBitwise', () => {

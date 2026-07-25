@@ -1,5 +1,5 @@
 import {Graph} from '../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts';
-import {QuickSort} from '../../sorting/quick-sort/QuickSort.ts';
+import {QuickSort} from '../../sorting/quick_sort/QuickSort.ts';
 import {DisjointSet} from '../../../../../DSA_TypeScript/src/data_structures/disjoint_set/DisjointSet.ts';
 import {GraphEdge} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts";
 

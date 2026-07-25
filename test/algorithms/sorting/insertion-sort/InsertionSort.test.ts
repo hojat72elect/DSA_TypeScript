@@ -5,7 +5,7 @@ import {
     sortedArr,
     SortTester
 } from "../../../../src/algorithms/sorting/SortTester.js";
-import {InsertionSort} from "../../../../src/algorithms/sorting/insertion-sort/InsertionSort.ts";
+import {InsertionSort} from "../../../../src/algorithms/sorting/insertion_sort/InsertionSort.ts";
 import {describe, it} from "bun:test";
 
 // Complexity constants.

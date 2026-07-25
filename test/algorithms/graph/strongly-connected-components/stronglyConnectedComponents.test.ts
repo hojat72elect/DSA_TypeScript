@@ -3,7 +3,7 @@ import {GraphEdge} from "../../../../../DSA_TypeScript/src/data_structures/graph
 import {Graph} from "../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts";
 import {
     stronglyConnectedComponents
-} from "../../../../src/algorithms/graph/strongly-connected-components/stronglyConnectedComponents.ts";
+} from "../../../../src/algorithms/graph/strongly_connected_components/stronglyConnectedComponents.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('stronglyConnectedComponents', () => {

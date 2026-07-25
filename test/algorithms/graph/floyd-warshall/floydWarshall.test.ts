@@ -1,7 +1,7 @@
 import {GraphVertex} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts";
 import {GraphEdge} from "../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts";
 import {Graph} from "../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts";
-import {floydWarshall} from "../../../../src/algorithms/graph/floyd-warshall/floydWarshall.ts";
+import {floydWarshall} from "../../../../src/algorithms/graph/floyd_warshall/floydWarshall.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('floydWarshall', () => {

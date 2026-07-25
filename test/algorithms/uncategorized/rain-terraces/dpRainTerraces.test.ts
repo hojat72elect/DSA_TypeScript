@@ -1,4 +1,4 @@
-import {dpRainTerraces} from "../../../../src/algorithms/uncategorized/rain-terraces/dpRainTerraces.ts";
+import {dpRainTerraces} from "../../../../src/algorithms/uncategorized/rain_terraces/dpRainTerraces.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('dpRainTerraces', () => {

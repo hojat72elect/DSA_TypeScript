@@ -1,4 +1,4 @@
-import {combinationSum} from "../../../../src/algorithms/sets/combination-sum/combinationSum.ts";
+import {combinationSum} from "../../../../src/algorithms/sets/combination_sum/combinationSum.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('combinationSum', () => {

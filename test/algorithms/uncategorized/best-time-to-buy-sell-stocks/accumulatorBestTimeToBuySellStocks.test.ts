@@ -1,6 +1,6 @@
 import {
     accumulatorBestTimeToBuySellStocks
-} from "../../../../src/algorithms/uncategorized/best-time-to-buy-sell-stocks/accumulatorBestTimeToBuySellStocks.ts";
+} from "../../../../src/algorithms/uncategorized/best_time_to_buy_sell_stocks/accumulatorBestTimeToBuySellStocks.ts";
 import {describe, expect, it, jest} from "bun:test";
 
 describe('accumulatorBestTimeToBuySellStocks', () => {

@@ -1,4 +1,4 @@
-import {hammingDistance} from "../../../../src/algorithms/string/hamming-distance/hammingDistance.ts";
+import {hammingDistance} from "../../../../src/algorithms/string/hamming_distance/hammingDistance.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('hammingDistance', () => {

@@ -1,5 +1,5 @@
 import longestCommonSubsequenceRecursive
-    from "../../../../src/algorithms/sets/longest-common-subsequence/longestCommonSubsequenceRecursive.ts";
+    from "../../../../src/algorithms/sets/longest_common_subsequence/longestCommonSubsequenceRecursive.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('longestCommonSubsequenceRecursive', () => {

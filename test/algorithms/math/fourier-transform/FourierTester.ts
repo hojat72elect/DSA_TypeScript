@@ -1,4 +1,4 @@
-import ComplexNumber from "../../../../src/algorithms/math/complex-number/ComplexNumber.js";
+import ComplexNumber from "../../../../src/algorithms/math/complex_number/ComplexNumber.js";
 import {expect} from "bun:test";
 
 export const fourierTestCases = [

@@ -1,4 +1,4 @@
-import {leastCommonMultiple} from "../../../../src/algorithms/math/least-common-multiple/leastCommonMultiple.ts";
+import {leastCommonMultiple} from "../../../../src/algorithms/math/least_common_multiple/leastCommonMultiple.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('leastCommonMultiple', () => {

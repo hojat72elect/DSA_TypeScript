@@ -1,4 +1,4 @@
-import {reverseTraversal} from "../../../../src/algorithms/linked-list/reverse-traversal/reverseTraversal.ts";
+import {reverseTraversal} from "../../../../src/algorithms/linked_list/reverse_traversal/reverseTraversal.ts";
 import {LinkedList} from "../../../../../DSA_TypeScript/src/data_structures/linked_list/LinkedList.js";
 import {describe, expect, it} from "bun:test";
 

@@ -1,4 +1,4 @@
-import {uniquePaths} from "../../../../src/algorithms/uncategorized/unique-paths/uniquePaths.ts";
+import {uniquePaths} from "../../../../src/algorithms/uncategorized/unique_paths/uniquePaths.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('uniquePaths', () => {

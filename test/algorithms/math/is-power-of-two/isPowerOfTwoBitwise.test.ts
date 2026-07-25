@@ -1,4 +1,4 @@
-import {isPowerOfTwoBitwise} from "../../../../src/algorithms/math/is-power-of-two/isPowerOfTwoBitwise.ts";
+import {isPowerOfTwoBitwise} from "../../../../src/algorithms/math/is_power_of_two/isPowerOfTwoBitwise.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('isPowerOfTwoBitwise', () => {

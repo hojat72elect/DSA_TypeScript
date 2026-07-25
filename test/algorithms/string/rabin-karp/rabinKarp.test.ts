@@ -1,4 +1,4 @@
-import {rabinKarp} from "../../../../src/algorithms/string/rabin-karp/rabinKarp.ts";
+import {rabinKarp} from "../../../../src/algorithms/string/rabin_karp/rabinKarp.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('rabinKarp', () => {

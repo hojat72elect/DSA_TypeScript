@@ -1,5 +1,5 @@
 import {Matrix} from "../../math/matrix/Matrix.ts";
-import {euclideanDistance} from "../../math/euclidean-distance/euclideanDistance.ts";
+import {euclideanDistance} from "../../math/euclidean_distance/euclideanDistance.ts";
 
 /**
  * Classifies the point in space based on k-nearest neighbors algorithm.

@@ -1,6 +1,6 @@
 import {
     recursiveStaircaseMEM
-} from "../../../../src/algorithms/uncategorized/recursive-staircase/recursiveStaircaseMEM.ts";
+} from "../../../../src/algorithms/uncategorized/recursive_staircase/recursiveStaircaseMEM.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('recursiveStaircaseMEM', () => {

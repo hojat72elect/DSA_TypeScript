@@ -1,4 +1,4 @@
-import {liuHui} from "../../../../src/algorithms/math/liu-hui/liuHui.ts";
+import {liuHui} from "../../../../src/algorithms/math/liu_hui/liuHui.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('liuHui', () => {

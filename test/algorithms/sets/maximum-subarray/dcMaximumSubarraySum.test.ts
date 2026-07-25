@@ -1,4 +1,4 @@
-import {dcMaximumSubarraySum} from '../../../../src/algorithms/sets/maximum-subarray/dcMaximumSubarraySum.ts';
+import {dcMaximumSubarraySum} from '../../../../src/algorithms/sets/maximum_subarray/dcMaximumSubarraySum.ts';
 import {describe, expect, it} from "bun:test";
 
 describe('dcMaximumSubarraySum', () => {

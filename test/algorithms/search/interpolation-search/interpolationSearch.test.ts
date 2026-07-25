@@ -1,4 +1,4 @@
-import {interpolationSearch} from "../../../../src/algorithms/search/interpolation-search/interpolationSearch.ts";
+import {interpolationSearch} from "../../../../src/algorithms/search/interpolation_search/interpolationSearch.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('interpolationSearch', () => {

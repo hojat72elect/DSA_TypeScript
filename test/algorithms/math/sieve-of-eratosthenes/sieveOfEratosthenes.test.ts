@@ -1,4 +1,4 @@
-import {sieveOfEratosthenes} from "../../../../src/algorithms/math/sieve-of-eratosthenes/sieveOfEratosthenes.ts";
+import {sieveOfEratosthenes} from "../../../../src/algorithms/math/sieve_of_eratosthenes/sieveOfEratosthenes.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('sieveOfEratosthenes', () => {

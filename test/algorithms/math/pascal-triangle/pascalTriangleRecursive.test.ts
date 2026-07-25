@@ -1,4 +1,4 @@
-import {pascalTriangleRecursive} from "../../../../src/algorithms/math/pascal-triangle/pascalTriangleRecursive.ts";
+import {pascalTriangleRecursive} from "../../../../src/algorithms/math/pascal_triangle/pascalTriangleRecursive.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('pascalTriangleRecursive', () => {

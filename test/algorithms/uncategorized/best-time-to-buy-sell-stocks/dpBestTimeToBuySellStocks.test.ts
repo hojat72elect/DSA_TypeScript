@@ -1,6 +1,6 @@
 import {
     dpBestTimeToBuySellStocks
-} from "../../../../src/algorithms/uncategorized/best-time-to-buy-sell-stocks/dpBestTimeToBuySellStocks.ts";
+} from "../../../../src/algorithms/uncategorized/best_time_to_buy_sell_stocks/dpBestTimeToBuySellStocks.ts";
 import {describe, expect, it, jest} from "bun:test";
 
 describe('dpBestTimeToBuySellStocks', () => {

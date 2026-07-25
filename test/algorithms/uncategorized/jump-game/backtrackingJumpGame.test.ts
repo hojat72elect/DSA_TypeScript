@@ -1,4 +1,4 @@
-import {backtrackingJumpGame} from "../../../../src/algorithms/uncategorized/jump-game/backtrackingJumpGame.ts";
+import {backtrackingJumpGame} from "../../../../src/algorithms/uncategorized/jump_game/backtrackingJumpGame.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('backtrackingJumpGame', () => {

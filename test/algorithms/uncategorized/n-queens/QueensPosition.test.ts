@@ -1,4 +1,4 @@
-import {QueenPosition} from "../../../../src/algorithms/uncategorized/n-queens/QueenPosition.ts";
+import {QueenPosition} from "../../../../src/algorithms/uncategorized/n_queens/QueenPosition.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('QueenPosition', () => {

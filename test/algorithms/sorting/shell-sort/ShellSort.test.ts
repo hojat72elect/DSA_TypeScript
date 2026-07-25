@@ -1,4 +1,4 @@
-import {ShellSort} from "../../../../src/algorithms/sorting/shell-sort/ShellSort.ts";
+import {ShellSort} from "../../../../src/algorithms/sorting/shell_sort/ShellSort.ts";
 import {
     equalArr,
     notSortedArr,

@@ -1,6 +1,6 @@
 import {
     peakvalleyBestTimeToBuySellStocks
-} from "../../../../src/algorithms/uncategorized/best-time-to-buy-sell-stocks/peakvalleyBestTimeToBuySellStocks.ts";
+} from "../../../../src/algorithms/uncategorized/best_time_to_buy_sell_stocks/peakvalleyBestTimeToBuySellStocks.ts";
 import {describe, expect, it, jest} from "bun:test";
 
 describe('peakvalleyBestTimeToBuySellStocks', () => {

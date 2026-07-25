@@ -1,4 +1,4 @@
-import {jumpSearch} from "../../../../src/algorithms/search/jump-search/jumpSearch.ts";
+import {jumpSearch} from "../../../../src/algorithms/search/jump_search/jumpSearch.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('jumpSearch', () => {

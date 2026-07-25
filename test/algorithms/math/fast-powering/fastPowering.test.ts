@@ -1,4 +1,4 @@
-import {fastPowering} from "../../../../src/algorithms/math/fast-powering/fastPowering.ts";
+import {fastPowering} from "../../../../src/algorithms/math/fast_powering/fastPowering.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('fastPowering', () => {

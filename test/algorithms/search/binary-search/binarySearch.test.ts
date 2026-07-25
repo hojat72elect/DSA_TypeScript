@@ -1,4 +1,4 @@
-import {binarySearch} from "../../../../src/algorithms/search/binary-search/binarySearch.ts";
+import {binarySearch} from "../../../../src/algorithms/search/binary_search/binarySearch.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('binarySearch', () => {

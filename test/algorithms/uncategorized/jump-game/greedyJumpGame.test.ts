@@ -1,4 +1,4 @@
-import {greedyJumpGame} from "../../../../src/algorithms/uncategorized/jump-game/greedyJumpGame.ts";
+import {greedyJumpGame} from "../../../../src/algorithms/uncategorized/jump_game/greedyJumpGame.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('greedyJumpGame', () => {

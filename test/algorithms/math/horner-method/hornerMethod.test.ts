@@ -1,5 +1,5 @@
-import {hornerMethod} from "../../../../src/algorithms/math/horner-method/hornerMethod.ts";
-import {classicPolynome} from "../../../../src/algorithms/math/horner-method/classicPolynome.ts";
+import {hornerMethod} from "../../../../src/algorithms/math/horner_method/hornerMethod.ts";
+import {classicPolynome} from "../../../../src/algorithms/math/horner_method/classicPolynome.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('hornerMethod', () => {

@@ -1,4 +1,4 @@
-import {isValid} from "../../../../src/algorithms/stack/valid-parentheses/validParentheses.ts";
+import {isValid} from "../../../../src/algorithms/stack/valid_parentheses/validParentheses.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('validParentheses', () => {

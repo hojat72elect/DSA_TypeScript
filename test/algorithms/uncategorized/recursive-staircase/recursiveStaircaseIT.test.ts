@@ -1,6 +1,6 @@
 import {
     recursiveStaircaseIT
-} from "../../../../src/algorithms/uncategorized/recursive-staircase/recursiveStaircaseIT.ts";
+} from "../../../../src/algorithms/uncategorized/recursive_staircase/recursiveStaircaseIT.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('recursiveStaircaseIT', () => {

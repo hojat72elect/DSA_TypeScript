@@ -5,7 +5,7 @@ import {
     sortedArr,
     SortTester
 } from "../../../../src/algorithms/sorting/SortTester.js";
-import {HeapSort} from "../../../../src/algorithms/sorting/heap-sort/HeapSort.ts";
+import {HeapSort} from "../../../../src/algorithms/sorting/heap_sort/HeapSort.ts";
 import {describe, it} from "bun:test";
 
 // Complexity constants.

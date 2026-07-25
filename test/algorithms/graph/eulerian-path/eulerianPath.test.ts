@@ -1,7 +1,7 @@
 import {GraphVertex} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphVertex.ts';
 import {GraphEdge} from '../../../../../DSA_TypeScript/src/data_structures/graph/GraphEdge.ts';
 import {Graph} from '../../../../../DSA_TypeScript/src/data_structures/graph/Graph.ts';
-import {eulerianPath} from '../../../../src/algorithms/graph/eulerian-path/eulerianPath.ts';
+import {eulerianPath} from '../../../../src/algorithms/graph/eulerian_path/eulerianPath.ts';
 import {describe, expect, it} from "bun:test";
 
 describe('eulerianPath', () => {
