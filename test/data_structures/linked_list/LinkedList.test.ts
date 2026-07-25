@@ -1,4 +1,4 @@
-import {LinkedList} from "../../../src/data_structures/linked_list/LinkedList.js";
+import {LinkedList} from "../../../src/data_structures/linked_list/LinkedList.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('LinkedList', () => {

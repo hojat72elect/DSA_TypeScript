@@ -4,8 +4,8 @@ import {
     reverseArr,
     sortedArr,
     SortTester
-} from "../../../../src/algorithms/sorting/SortTester.js";
-import {BubbleSort} from "../../../../src/algorithms/sorting/bubble_sort/BubbleSort.js";
+} from "../../../../src/algorithms/sorting/SortTester.ts";
+import {BubbleSort} from "../../../../src/algorithms/sorting/bubble_sort/BubbleSort.ts";
 import {describe, it} from "bun:test";
 
 // Complexity constants.

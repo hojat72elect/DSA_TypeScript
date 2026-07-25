@@ -1,5 +1,5 @@
 import {fisherYates} from "../../../../src/algorithms/sets/fisher_yates/fisherYates.ts";
-import {sortedArr} from "../../../../src/algorithms/sorting/SortTester.js";
+import {sortedArr} from "../../../../src/algorithms/sorting/SortTester.ts";
 import {QuickSort} from "../../../../src/algorithms/sorting/quick_sort/QuickSort.ts";
 import {describe, expect, it} from "bun:test";
 

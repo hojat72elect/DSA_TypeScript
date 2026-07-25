@@ -29,7 +29,7 @@ The centroids are moving continuously in order to create better distinction betw
 
 ## Code Examples
 
-- [kMeans.js](./kMeans.js)
+- [kMeans.ts](./kMeans.ts)
 - [kMeans.test.ts](./kMeans.test.ts) (test cases)
 
 ## References

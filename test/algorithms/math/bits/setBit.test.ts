@@ -1,4 +1,4 @@
-import setBit from "../../../../src/algorithms/math/bits/setBit.js";
+import setBit from "../../../../src/algorithms/math/bits/setBit.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('setBit', () => {

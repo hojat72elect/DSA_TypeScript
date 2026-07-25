@@ -50,7 +50,7 @@ Where:
 ## Implementation
 
 - [MaxHeap.ts](./MaxHeap.ts) and [MinHeap.ts](./MinHeap.ts)
-- [MaxHeapAdhoc.js](./MaxHeapAdhoc.js) and [MinHeapAdhoc.ts](./MinHeapAdhoc.ts) - The minimalistic (ad hoc) version of a MinHeap/MaxHeap data structure that doesn't have external dependencies and that is easy to copy-paste and use during the coding interview if allowed by the interviewer (since many data structures in JS are missing).
+- [MaxHeapAdhoc.ts](./MaxHeapAdhoc.ts) and [MinHeapAdhoc.ts](./MinHeapAdhoc.ts) - The minimalistic (ad hoc) version of a MinHeap/MaxHeap data structure that doesn't have external dependencies and that is easy to copy-paste and use during the coding interview if allowed by the interviewer (since many data structures in JS are missing).
 
 ## References
 

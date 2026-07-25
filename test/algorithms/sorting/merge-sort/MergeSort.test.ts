@@ -5,7 +5,7 @@ import {
     reverseArr,
     sortedArr,
     SortTester
-} from "../../../../src/algorithms/sorting/SortTester.js";
+} from "../../../../src/algorithms/sorting/SortTester.ts";
 import {describe, it} from "bun:test";
 
 // Complexity constants.

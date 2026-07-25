@@ -1,4 +1,4 @@
-import updateBit from "../../../../src/algorithms/math/bits/updateBit.js";
+import updateBit from "../../../../src/algorithms/math/bits/updateBit.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('updateBit', () => {

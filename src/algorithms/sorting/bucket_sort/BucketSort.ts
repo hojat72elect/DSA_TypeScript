@@ -1,4 +1,4 @@
-import RadixSort from '../radix_sort/RadixSort.js';
+import RadixSort from '../radix_sort/RadixSort.ts';
 
 /**
  * Bucket Sort

@@ -1,4 +1,4 @@
-import {caesarCipherDecrypt, caesarCipherEncrypt} from '../../../../src/algorithms/cryptography/caesar_cipher/caesarCipher.js';
+import {caesarCipherDecrypt, caesarCipherEncrypt} from '../../../../src/algorithms/cryptography/caesar_cipher/caesarCipher.ts';
 import { describe, it, expect } from "bun:test";
 
 describe('caesarCipher', () => {

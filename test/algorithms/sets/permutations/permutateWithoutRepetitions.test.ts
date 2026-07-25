@@ -1,4 +1,4 @@
-import permutateWithoutRepetitions from "../../../../src/algorithms/sets/permutations/permutateWithoutRepetitions.js";
+import permutateWithoutRepetitions from "../../../../src/algorithms/sets/permutations/permutateWithoutRepetitions.ts";
 import {factorial} from "../../../../src/algorithms/math/factorial/factorial.ts";
 import {describe, expect, it} from "bun:test";
 

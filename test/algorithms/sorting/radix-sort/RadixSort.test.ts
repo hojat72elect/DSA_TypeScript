@@ -1,5 +1,5 @@
-import RadixSort from "../../../../src/algorithms/sorting/radix_sort/RadixSort.js";
-import {SortTester} from "../../../../src/algorithms/sorting/SortTester.js";
+import RadixSort from "../../../../src/algorithms/sorting/radix_sort/RadixSort.ts";
+import {SortTester} from "../../../../src/algorithms/sorting/SortTester.ts";
 import {describe, it} from "bun:test";
 
 // Complexity constants.

@@ -1,5 +1,5 @@
 import {BucketSort} from "../../../../src/algorithms/sorting/bucket_sort/BucketSort.ts";
-import {equalArr, notSortedArr, reverseArr, sortedArr} from "../../../../src/algorithms/sorting/SortTester.js";
+import {equalArr, notSortedArr, reverseArr, sortedArr} from "../../../../src/algorithms/sorting/SortTester.ts";
 import {describe, expect, it} from "bun:test";
 
 describe('BucketSort', () => {

@@ -1,4 +1,4 @@
-import ComplexNumber from "../../../../src/algorithms/math/complex_number/ComplexNumber.js";
+import ComplexNumber from "../../../../src/algorithms/math/complex_number/ComplexNumber.ts";
 import {fastFourierTransform} from "../../../../src/algorithms/math/fourier_transform/fastFourierTransform.ts";
 import {describe, expect, it} from "bun:test";
 

@@ -4,7 +4,7 @@ import {
     reverseArr,
     sortedArr,
     SortTester
-} from "../../../../src/algorithms/sorting/SortTester.js";
+} from "../../../../src/algorithms/sorting/SortTester.ts";
 import {InsertionSort} from "../../../../src/algorithms/sorting/insertion_sort/InsertionSort.ts";
 import {describe, it} from "bun:test";
 
