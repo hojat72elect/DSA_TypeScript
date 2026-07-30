@@ -1,6 +1,6 @@
 # Stack
 
-In computer science, a **stack** is an abstract data type that serves
+In computer science, a **stack** is an abstract data structure that serves
 as a collection of elements, with two principal operations:
 
 * **push**, which adds an element to the collection, and
@@ -19,7 +19,8 @@ Simple representation of a stack runtime with push and pop operations.
 
 ![Old_Stack](./images/stack.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+## Implementation notes
+Since the nature of Stack and Linked List is kinda close to each other, in this project we have implemented the stack via a linked list.
 
 ## References
 
