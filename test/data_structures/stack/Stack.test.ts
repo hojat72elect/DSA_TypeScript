@@ -5,7 +5,7 @@ describe('Stack', () => {
     it('should create empty stack', () => {
         const sut = new Stack();
         expect(sut).not.toBeNull();
-        expect(sut.linkedList).not.toBeNull();
+        expect(sut.getList()).not.toBeNull();
     });
 
     it('should stack data to stack', () => {

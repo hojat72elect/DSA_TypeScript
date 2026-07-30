@@ -1,34 +1,39 @@
 import {LinkedList} from "../linked_list/LinkedList.ts";
 
+/**
+ * We implemented Stack based on LinkedList since these
+ * structures are quite similar. Compare push/pop operations of the Stack
+ * with prepend/deleteHead operations of LinkedList.
+ */
 export class Stack {
 
-    /**
-     * We're going to implement Stack based on LinkedList since these
-     * structures are quite similar. Compare push/pop operations of the Stack
-     * with prepend/deleteHead operations of LinkedList.
-     */
-    linkedList = new LinkedList();
+    private readonly linkedList: LinkedList<any>;
 
     constructor() {
+        this.linkedList = new LinkedList();
+    }
+
+    getList(){
+        return this.linkedList;
     }
 
     isEmpty(): boolean {
-        // The stack is empty if its linked list doesn't have a head.
-        return !this.linkedList.head;
+        return !this.linkedList.head; // The list doesn't have a head
     }
 
+    /**
+     * Reads the value from the top of the stack, without removing it.
+     */
     peek(): any {
-        if (this.isEmpty()) {
-            // If the linked list is empty then there is nothing to peek from.
-            return null;
-        }
-        // Just read the value from the start of linked list without deleting it.
+        if (this.isEmpty()) return null;
+
         return this.linkedList.head?.value;
     }
 
+    /**
+     * Lays the new value on top of the stack.
+     */
     push(value: any) {
-        // Pushing means to lay the value on top of the stack. Therefore, let's just add
-        // the new value at the start of the linked list.
         this.linkedList.prepend(value);
     }
 
