@@ -11,14 +11,13 @@ class Node<T> {
     }
 
     /**
-     * This function is only used for debugging and testing purposes.
+     * Only used for debugging purposes.
      */
     toString(): string {
-        if (this.next !== null) {
+        if (this.next !== null)
             return `${this.value} -> ${this.next.toString()}`;
-        } else {
+        else
             return `${this.value}`;
-        }
     }
 }
 
