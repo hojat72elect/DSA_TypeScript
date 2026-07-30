@@ -5,15 +5,15 @@ import {LinkedList} from "../linked_list/LinkedList.ts";
  * structures are quite similar. Compare push/pop operations of the Stack
  * with prepend/deleteHead operations of LinkedList.
  */
-export class Stack {
+export class Stack<T> {
 
-    private readonly linkedList: LinkedList<any>;
+    private readonly linkedList: LinkedList<T>;
 
     constructor() {
         this.linkedList = new LinkedList();
     }
 
-    getList(){
+    getList() {
         return this.linkedList;
     }
 
@@ -24,7 +24,7 @@ export class Stack {
     /**
      * Reads the value from the top of the stack, without removing it.
      */
-    peek(): any {
+    peek(): T | null {
         if (this.isEmpty()) return null;
 
         return this.linkedList.head?.value;
@@ -33,22 +33,22 @@ export class Stack {
     /**
      * Lays the new value on top of the stack.
      */
-    push(value: any) {
+    push(value: T) {
         this.linkedList.prepend(value);
     }
 
-    pop(): any {
+    pop(): T | null {
         const removedHead = this.linkedList.deleteHead();
         return removedHead ? removedHead.value : null;
     }
 
-    toArray(): any[] {
+    toArray(): T[] {
         return this.linkedList
             .toArray()
             .map((node) => node.value);
     }
 
-    toString(callback?: (value: any) => string) {
+    toString(callback?: (value: T) => string) {
         return this.linkedList.toString(callback);
     }
 }

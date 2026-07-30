@@ -4,9 +4,9 @@ type MoveCallback = (disc: number, fromPole: number[], toPole: number[]) => void
 
 function hanoiTowerRecursive(
     numberOfDiscs: number,
-    fromPole: Stack,
-    withPole: Stack,
-    toPole: Stack,
+    fromPole: Stack<any>,
+    withPole: Stack<any>,
+    toPole: Stack<any>,
     moveCallback: MoveCallback,
 ) {
     if (numberOfDiscs === 1) {
@@ -46,7 +46,7 @@ function hanoiTowerRecursive(
     }
 }
 
-export function hanoiTower(numberOfDiscs: number, moveCallback: MoveCallback, fromPole: Stack = new Stack(), withPole: Stack = new Stack(), toPole: Stack = new Stack()) {
+export function hanoiTower(numberOfDiscs: number, moveCallback: MoveCallback, fromPole: Stack<any> = new Stack(), withPole: Stack<any> = new Stack(), toPole: Stack<any> = new Stack()) {
     // Each of three poles of Tower of Hanoi puzzle is represented as a stack
     // that might contain elements (discs). Each disc is represented as a number.
     // Larger discs have bigger number equivalent.

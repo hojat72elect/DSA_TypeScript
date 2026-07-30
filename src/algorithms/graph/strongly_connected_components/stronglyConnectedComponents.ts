@@ -9,7 +9,7 @@ interface DfsCallbacks {
     allowTraversal?: (args: { currentVertex: GraphVertex; nextVertex: GraphVertex }) => boolean;
 }
 
-function getVerticesSortedByDfsFinishTime(graph: Graph): Stack {
+function getVerticesSortedByDfsFinishTime(graph: Graph): Stack<GraphVertex> {
     // Set of all visited vertices during DFS pass.
     const visitedVerticesSet: Record<string, GraphVertex> = {};
 
@@ -17,7 +17,7 @@ function getVerticesSortedByDfsFinishTime(graph: Graph): Stack {
     // All vertices in this stack are ordered by finished time in decreasing order.
     // Vertex that has been finished first will be at the bottom of the stack and
     // vertex that has been finished last will be at the top of the stack.
-    const verticesByDfsFinishTime = new Stack();
+    const verticesByDfsFinishTime: Stack<GraphVertex> = new Stack();
 
     // Set of all vertices we're going to visit.
     const notVisitedVerticesSet: Record<string, GraphVertex> = {};
@@ -58,7 +58,7 @@ function getVerticesSortedByDfsFinishTime(graph: Graph): Stack {
     return verticesByDfsFinishTime;
 }
 
-function getSCCSets(graph: Graph, verticesByFinishTime: Stack): GraphVertex[][] {
+function getSCCSets(graph: Graph, verticesByFinishTime: Stack<GraphVertex>): GraphVertex[][] {
     // Array of arrays of strongly connected vertices.
     const stronglyConnectedComponentsSets: GraphVertex[][] = [];
 
@@ -94,7 +94,7 @@ function getSCCSets(graph: Graph, verticesByFinishTime: Stack): GraphVertex[][] 
 
     while (!verticesByFinishTime.isEmpty()) {
 
-        const startVertex: GraphVertex = verticesByFinishTime.pop();
+        const startVertex: GraphVertex = verticesByFinishTime.pop()!;
 
         // Reset the set of strongly connected vertices.
         stronglyConnectedComponentsSet = [];

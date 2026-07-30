@@ -52,7 +52,7 @@ describe('Stack', () => {
     });
 
     it('should be possible to push/pop objects', () => {
-        const sut = new Stack();
+        const sut = new Stack<any>();
 
         sut.push({value: 'test1', key: 'key1'});
         sut.push({value: 'test2', key: 'key2'});

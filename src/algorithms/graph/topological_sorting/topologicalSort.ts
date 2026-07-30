@@ -3,7 +3,6 @@ import {Graph} from "../../../data_structures/graph/Graph.ts";
 import {GraphVertex} from "../../../data_structures/graph/GraphVertex.ts";
 import {Stack} from "../../../data_structures/stack/Stack.ts";
 
-
 export function topologicalSort(graph: Graph): GraphVertex[] {
     // Create a set of all vertices we want to visit.
     const unvisitedSet: Record<string, GraphVertex> = {};
@@ -15,7 +14,7 @@ export function topologicalSort(graph: Graph): GraphVertex[] {
     const visitedSet: Record<string, GraphVertex> = {};
 
     // Create a stack of already ordered vertices.
-    const sortedStack = new Stack();
+    const sortedStack = new Stack<GraphVertex>();
 
     const dfsCallbacks: {
         enterVertex?: (args: { currentVertex: GraphVertex }) => void;
