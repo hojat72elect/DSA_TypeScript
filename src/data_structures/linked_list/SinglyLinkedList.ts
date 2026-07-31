@@ -91,18 +91,6 @@ export class SinglyLinkedList<T> {
         return deletedNode;
     }
 
-    print() {
-        const elements: T[] = [];
-        let currentNode = this.head;
-
-        while (currentNode !== null) {
-            elements.push(currentNode.data);
-            currentNode = currentNode.next;
-        }
-
-        console.log(elements.join(" -> ") || "Empty List");
-    }
-
     size() {
         return this.length;
     }
