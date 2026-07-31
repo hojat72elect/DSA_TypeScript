@@ -173,4 +173,25 @@ class NewSinglyLinkedList<T> {
 
         return removedNode;
     }
+
+    static fromArray<T>(values: T[]): NewSinglyLinkedList<T> {
+        const list = new NewSinglyLinkedList<T>();
+
+        for (const value of values) {
+            list.append(value);
+        }
+        return list;
+    }
+
+    toArray(): NewLinkedListNode<T>[] {
+        const nodes: NewLinkedListNode<T>[] = [];
+        let currentNode = this.head;
+
+        while (currentNode !== null) {
+            nodes.push(currentNode);
+            currentNode = currentNode.next;
+        }
+
+        return nodes;
+    }
 }
