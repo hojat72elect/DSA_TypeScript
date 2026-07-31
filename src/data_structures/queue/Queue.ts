@@ -1,5 +1,4 @@
-import {LinkedList} from "../linked_list/LinkedList.ts";
-
+import {NewSinglyLinkedList} from "../linked_list/NewSinglyLinkedList.ts";
 
 /**
  * We're going to implement `Queue` based on `LinkedList` since the two
@@ -8,10 +7,10 @@ import {LinkedList} from "../linked_list/LinkedList.ts";
  * operations of Queue with append/deleteHead operations of LinkedList.
  */
 export class Queue {
-    linkedList: LinkedList<any>;
+    linkedList: NewSinglyLinkedList<any>;
 
     constructor() {
-        this.linkedList = new LinkedList<any>();
+        this.linkedList = new NewSinglyLinkedList<any>();
     }
 
     isEmpty(): boolean {
@@ -22,11 +21,9 @@ export class Queue {
      * Read the element at the front of the queue without removing it.
      */
     peek() {
-        if (this.isEmpty()) {
-            return null;
-        }
+        if (this.isEmpty()) return null;
 
-        return this.linkedList.head?.value;
+        return this.linkedList.head?.data;
     }
 
     /**
@@ -43,11 +40,6 @@ export class Queue {
      */
     dequeue() {
         const removedHead = this.linkedList.deleteHead();
-        return removedHead ? removedHead.value : null;
-    }
-
-    toString(callback?: (value: any) => string) {
-        // Return string representation of the queue's linked list.
-        return this.linkedList.toString(callback);
+        return removedHead ? removedHead.data : null;
     }
 }

@@ -8,24 +8,12 @@ describe('Queue', () => {
         expect(sut.linkedList).not.toBeNull();
     });
 
-    it('should enqueue data to queue', () => {
-        const sut = new Queue();
-
-        sut.enqueue(1);
-        sut.enqueue(2);
-
-        expect(sut.toString()).toBe('1,2');
-    });
-
     it('should be possible to enqueue/dequeue objects', () => {
         const sut = new Queue();
 
         sut.enqueue({value: 'test1', key: 'key1'});
         sut.enqueue({value: 'test2', key: 'key2'});
 
-        const stringifier = (value: any) => `${value.key}:${value.value}`;
-
-        expect(sut.toString(stringifier)).toBe('key1:test1,key2:test2');
         expect(sut.dequeue().value).toBe('test1');
         expect(sut.dequeue().value).toBe('test2');
     });
