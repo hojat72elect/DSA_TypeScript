@@ -1,4 +1,4 @@
-import {LinkedList} from "../linked_list/LinkedList.ts";
+import {NewSinglyLinkedList} from "../linked_list/NewSinglyLinkedList.ts";
 
 /**
  * We implemented Stack based on LinkedList since these
@@ -7,10 +7,10 @@ import {LinkedList} from "../linked_list/LinkedList.ts";
  */
 export class Stack<T> {
 
-    private readonly linkedList: LinkedList<T>;
+    private readonly linkedList: NewSinglyLinkedList<T>;
 
     constructor() {
-        this.linkedList = new LinkedList();
+        this.linkedList = new NewSinglyLinkedList();
     }
 
     getList() {
@@ -27,7 +27,7 @@ export class Stack<T> {
     peek(): T | null {
         if (this.isEmpty()) return null;
 
-        return this.linkedList.head?.value;
+        return this.linkedList.head?.data!;
     }
 
     /**
@@ -39,13 +39,13 @@ export class Stack<T> {
 
     pop(): T | null {
         const removedHead = this.linkedList.deleteHead();
-        return removedHead ? removedHead.value : null;
+        return removedHead ? removedHead.data : null;
     }
 
     toArray(): T[] {
         return this.linkedList
             .toArray()
-            .map((node) => node.value);
+            .map((node) => node.data);
     }
 
 }

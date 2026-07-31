@@ -11,7 +11,7 @@ class NewLinkedListNode<T> {
     }
 }
 
-class NewSinglyLinkedList<T> {
+export class NewSinglyLinkedList<T> {
     head: NewLinkedListNode<T> | null;
     tail: NewLinkedListNode<T> | null;
     private length: number;
@@ -105,15 +105,6 @@ class NewSinglyLinkedList<T> {
             throw new Error(`Index ${rawIndex} is out of bounds for LinkedList of length ${this.length}`);
         }
 
-        const newNode = new NewLinkedListNode(value);
-        if (this.length === 0) {
-            // List is currently empty
-            this.head = newNode;
-            this.tail = newNode;
-            this.length++;
-            return this;
-        }
-
         if (rawIndex === 0) {
             this.prepend(value);
             return this;
@@ -130,6 +121,7 @@ class NewSinglyLinkedList<T> {
             previousNode = previousNode.next!;
         }
 
+        const newNode = new NewLinkedListNode(value);
         newNode.next = previousNode.next;
         previousNode.next = newNode;
         this.length++;
