@@ -209,4 +209,16 @@ export class NewSinglyLinkedList<T> {
 
         return nodes;
     }
+
+    toString(stringifier?: (value: T) => string): string {
+        const elements: string[] = [];
+        let currentNode = this.head;
+
+        while (currentNode !== null) {
+            elements.push(stringifier ? stringifier(currentNode.data) : String(currentNode.data));
+            currentNode = currentNode.next;
+        }
+
+        return elements.join(",") || "";
+    }
 }

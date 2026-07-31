@@ -1,10 +1,9 @@
-import {LinkedList} from "../linked_list/LinkedList.ts";
 import {GraphEdge} from "./GraphEdge.ts";
-import {LinkedListNode} from "../linked_list/LinkedListNode.ts";
+import {NewLinkedListNode, NewSinglyLinkedList} from "../linked_list/NewSinglyLinkedList.ts";
 
 export class GraphVertex {
     public value: any;
-    public edges: LinkedList<GraphEdge>;
+    public edges: NewSinglyLinkedList<GraphEdge>;
 
     constructor(value: any) {
         if (value === undefined) throw new Error('Graph vertex must have a value');
@@ -20,7 +19,7 @@ export class GraphVertex {
         // Normally you would store a string value like a vertex name,
         // but it may be any object as well.
         this.value = value;
-        this.edges = new LinkedList<GraphEdge>(edgeComparator);
+        this.edges = new NewSinglyLinkedList<GraphEdge>(edgeComparator);
     }
 
     public addEdge(edge: GraphEdge): this {
@@ -29,15 +28,15 @@ export class GraphVertex {
         return this;
     }
 
-    public deleteEdge(edge: GraphEdge) {
+    public deleteEdge(edge: GraphEdge): void {
         this.edges.delete(edge);
     }
 
     public getNeighbors(): GraphVertex[] {
         const edges = this.edges.toArray();
 
-        const neighborsConverter = (node: LinkedListNode): GraphVertex => {
-            return node.value.startVertex === this ? node.value.endVertex : node.value.startVertex;
+        const neighborsConverter = (node: NewLinkedListNode<GraphEdge>): GraphVertex => {
+            return node.data.startVertex === this ? node.data.endVertex : node.data.startVertex;
         };
 
         // Return either start or end vertex.
@@ -46,7 +45,7 @@ export class GraphVertex {
     }
 
     public getEdges(): GraphEdge[] {
-        return this.edges.toArray().map((linkedListNode: LinkedListNode) => linkedListNode.value);
+        return this.edges.toArray().map((linkedListNode: NewLinkedListNode<GraphEdge>) => linkedListNode.data);
     }
 
     public getDegree(): number {
@@ -54,17 +53,13 @@ export class GraphVertex {
     }
 
     public hasEdge(requiredEdge: GraphEdge): boolean {
-        const edgeNode = this.edges.find({
-            callback: (edge: GraphEdge) => edge === requiredEdge,
-        });
+        const edgeNode = this.edges.find(undefined, (edge: GraphEdge) => edge.getKey() === requiredEdge.getKey());
 
         return !!edgeNode;
     }
 
     public hasNeighbor(vertex: GraphVertex): boolean {
-        const vertexNode = this.edges.find({
-            callback: (edge: GraphEdge) => edge.startVertex === vertex || edge.endVertex === vertex,
-        });
+        const vertexNode = this.edges.find(undefined, (edge: GraphEdge) => edge.startVertex === vertex || edge.endVertex === vertex);
 
         return !!vertexNode;
     }
@@ -74,13 +69,13 @@ export class GraphVertex {
             return edge.startVertex === vertex || edge.endVertex === vertex;
         };
 
-        const edge = this.edges.find({callback: edgeFinder});
+        const edge = this.edges.find(undefined, edgeFinder);
 
-        return edge ? edge.value : null;
+        return edge ? edge.data : null;
     }
 
     public getKey(): string {
-        return this.value;
+        return String(this.value);
     }
 
     public deleteAllEdges(): this {
@@ -90,6 +85,6 @@ export class GraphVertex {
     }
 
     public toString(callback?: (value: any) => string): string {
-        return callback ? callback(this.value).toString() : this.value.toString();
+        return callback ? callback(this.value) : String(this.value);
     }
 }

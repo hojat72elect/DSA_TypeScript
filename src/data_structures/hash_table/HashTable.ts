@@ -1,5 +1,4 @@
-import {LinkedList} from "../linked_list/LinkedList.ts";
-import {LinkedListNode} from "../linked_list/LinkedListNode.ts";
+import {NewLinkedListNode, NewSinglyLinkedList} from "../linked_list/NewSinglyLinkedList.ts";
 
 export interface HashTableValue<T> {
     key: string;
@@ -15,14 +14,14 @@ export interface HashTableValue<T> {
 const defaultHashTableSize = 32;
 
 export class HashTable<T> {
-    public buckets: LinkedList<HashTableValue<T>>[];
+    public buckets: NewSinglyLinkedList<HashTableValue<T>>[];
     public keys: Record<string, number>;
 
     constructor(hashTableSize: number = defaultHashTableSize) {
         // Create hash table of certain size and fill each bucket with an empty linked list.
         this.buckets = Array(hashTableSize)
             .fill(null)
-            .map(() => new LinkedList<HashTableValue<T>>());
+            .map(() => new NewSinglyLinkedList<HashTableValue<T>>());
 
         // Just to keep track of all actual keys in a fast way.
         this.keys = {};
@@ -61,33 +60,33 @@ export class HashTable<T> {
         const keyHash = this.hash(key);
         this.keys[key] = keyHash;
         const bucketLinkedList = this.buckets[keyHash]!;
-        const node = bucketLinkedList.find({callback: (nodeValue) => nodeValue.key === key});
+        const node = bucketLinkedList.find(undefined, (nodeValue: HashTableValue<T>) => nodeValue.key === key);
 
         if (!node) {
             // Insert new node.
             bucketLinkedList.append({key, value});
         } else {
             // Update value of existing node.
-            node.value.value = value;
+            node.data.value = value;
         }
     }
 
-    delete(key: string): LinkedListNode | null {
+    delete(key: string): NewLinkedListNode<HashTableValue<T>> | null {
         const keyHash = this.hash(key);
         delete this.keys[key];
         const bucketLinkedList = this.buckets[keyHash]!;
-        const node = bucketLinkedList.find({callback: (nodeValue) => nodeValue.key === key});
+        const node = bucketLinkedList.find(undefined, (nodeValue: HashTableValue<T>) => nodeValue.key === key);
 
-        if (node) return bucketLinkedList.delete(node.value);
+        if (node) return bucketLinkedList.delete(node.data);
 
         return null;
     }
 
     get(key: string): T | undefined {
         const bucketLinkedList = this.buckets[this.hash(key)]!;
-        const node = bucketLinkedList.find({callback: (nodeValue) => nodeValue.key === key});
+        const node = bucketLinkedList.find(undefined, (nodeValue: HashTableValue<T>) => nodeValue.key === key);
 
-        return node ? node.value.value : undefined;
+        return node ? node.data.value : undefined;
     }
 
     has(key: string): boolean {
@@ -105,7 +104,7 @@ export class HashTable<T> {
         return this.buckets.reduce<T[]>((values, bucket) => {
             const bucketValues = bucket
                 .toArray()
-                .map((linkedListNode) => linkedListNode.value.value);
+                .map((linkedListNode) => linkedListNode.data.value);
             return values.concat(bucketValues);
         }, []);
     }
