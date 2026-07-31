@@ -60,33 +60,35 @@ export class NewSinglyLinkedList<T> {
     /**
      * Deletes the first occurrence of the `data` if it exists.
      */
-    delete(data: T) {
-        if (!this.head) return; // list is empty
+    delete(value: T): NewLinkedListNode<T> | null {
+        if (!this.head) return null;
 
-        if (this.head.data === data) {
-            // delete the head node
+        let deletedNode = null;
+
+        while (this.head && this.compare.equal(this.head.data, value)) {
+            deletedNode = this.head;
             this.head = this.head.next;
-
-            if (!this.head) this.tail = null; // the list has become empty, the tail should be updated accordingly
-
-            this.length--;
-            return;
         }
 
-        // Delete a middle or tail node
         let currentNode = this.head;
-        while (currentNode.next !== null && currentNode.next.data !== data) {
-            currentNode = currentNode.next;
-        }
 
-        if (currentNode.next !== null) {
-            if (currentNode.next === this.tail) {
-                this.tail = currentNode; // We're deleting the tail
+        if (currentNode !== null) {
+            while (currentNode?.next) {
+                if (this.compare.equal(currentNode.next.data, value)) {
+                    deletedNode = currentNode.next;
+                    currentNode.next = currentNode.next.next;
+                } else {
+                    currentNode = currentNode.next;
+                }
             }
-
-            currentNode.next = currentNode.next.next;
-            this.length--;
         }
+
+        // Check if tail must be deleted.
+        if (this.compare.equal(this.tail?.data, value)) {
+            this.tail = currentNode;
+        }
+
+        return deletedNode;
     }
 
     print() {
