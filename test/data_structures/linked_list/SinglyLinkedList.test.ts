@@ -1,5 +1,5 @@
 import {describe, expect, it} from "bun:test";
-import {SinglyLinkedList, LinkedListNode} from "../../../src/data_structures/linked_list/SinglyLinkedList.ts";
+import {SinglyLinkedList} from "../../../src/data_structures/linked_list/SinglyLinkedList.ts";
 
 describe('SinglyLinkedList', () => {
     it('should create empty linked list', () => {
@@ -207,7 +207,7 @@ describe('SinglyLinkedList', () => {
     });
 
     it('should find node by means of custom compare function', () => {
-        const comparatorFunction = (a:any, b:any) => {
+        const comparatorFunction = (a: any, b: any) => {
             if (a.customValue === b.customValue) {
                 return 0;
             }
