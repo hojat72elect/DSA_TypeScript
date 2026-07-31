@@ -64,10 +64,12 @@ export class SinglyLinkedList<T> {
         if (!this.head) return null;
 
         let deletedNode = null;
+        let deletedCount = 0;
 
         while (this.head && this.compare.equal(this.head.data, value)) {
             deletedNode = this.head;
             this.head = this.head.next;
+            deletedCount++;
         }
 
         let currentNode = this.head;
@@ -77,6 +79,7 @@ export class SinglyLinkedList<T> {
                 if (this.compare.equal(currentNode.next.data, value)) {
                     deletedNode = currentNode.next;
                     currentNode.next = currentNode.next.next;
+                    deletedCount++;
                 } else {
                     currentNode = currentNode.next;
                 }
@@ -88,6 +91,7 @@ export class SinglyLinkedList<T> {
             this.tail = currentNode;
         }
 
+        this.length -= deletedCount;
         return deletedNode;
     }
 
@@ -132,7 +136,7 @@ export class SinglyLinkedList<T> {
         while (currentNode) {
             if (callback && callback(currentNode.data)) return currentNode;
 
-            if (value !== undefined && currentNode.data === value) return currentNode;
+            if (value !== undefined && this.compare.equal(currentNode.data, value)) return currentNode;
 
             currentNode = currentNode.next!;
         }
