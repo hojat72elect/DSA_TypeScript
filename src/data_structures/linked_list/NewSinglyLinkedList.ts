@@ -130,6 +130,22 @@ export class NewSinglyLinkedList<T> {
         return this;
     }
 
+    find(value?: T, callback?: (value: T) => boolean): NewLinkedListNode<T> | null {
+
+        if (!this.head) return null;
+
+        let currentNode = this.head;
+        while (currentNode) {
+            if (callback && callback(currentNode.data)) return currentNode;
+
+            if (value !== undefined && currentNode.data === value) return currentNode;
+
+            currentNode = currentNode.next!;
+        }
+
+        return null
+    }
+
     deleteHead(): NewLinkedListNode<T> | null {
         if (!this.head) return null;
 
