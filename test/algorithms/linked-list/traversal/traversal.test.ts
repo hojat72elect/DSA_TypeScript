@@ -1,10 +1,10 @@
 import {traversal} from "../../../../src/algorithms/linked_list/traversal/traversal.ts";
 import {describe, expect, it} from "bun:test";
-import {LinkedList} from "../../../../src/data_structures/linked_list/LinkedList.ts";
+import {NewSinglyLinkedList} from "../../../../src/data_structures/linked_list/NewSinglyLinkedList.ts";
 
 describe('traversal', () => {
     it('should traverse linked list', () => {
-        const linkedList = new LinkedList();
+        const linkedList = new NewSinglyLinkedList();
 
         linkedList
             .append(1)

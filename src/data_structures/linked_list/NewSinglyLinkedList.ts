@@ -1,7 +1,7 @@
 /**
  * This node is only used for a singly linked list.
  */
-class NewLinkedListNode<T> {
+export class NewLinkedListNode<T> {
     data: T;
     next: NewLinkedListNode<T> | null;
 
@@ -25,7 +25,7 @@ export class NewSinglyLinkedList<T> {
     /**
      * Add an item to the end of the list.
      */
-    append(data: T) {
+    append(data: T): NewSinglyLinkedList<T> {
         const newNode = new NewLinkedListNode(data);
 
         if (!this.head) {
@@ -37,6 +37,7 @@ export class NewSinglyLinkedList<T> {
         }
 
         this.length++;
+        return this;
     }
 
     /**
