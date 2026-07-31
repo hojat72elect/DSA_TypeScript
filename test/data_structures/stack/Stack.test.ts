@@ -8,15 +8,6 @@ describe('Stack', () => {
         expect(sut.getList()).not.toBeNull();
     });
 
-    it('should stack data to stack', () => {
-        const sut = new Stack();
-
-        sut.push(1);
-        sut.push(2);
-
-        expect(sut.toString()).toBe('2,1');
-    });
-
     it('should peek data from stack', () => {
         const sut = new Stack();
 
@@ -57,9 +48,6 @@ describe('Stack', () => {
         sut.push({value: 'test1', key: 'key1'});
         sut.push({value: 'test2', key: 'key2'});
 
-        const stringifier = (value: any) => `${value.key}:${value.value}`;
-
-        expect(sut.toString(stringifier)).toBe('key2:test2,key1:test1');
         expect(sut.pop().value).toBe('test2');
         expect(sut.pop().value).toBe('test1');
     });

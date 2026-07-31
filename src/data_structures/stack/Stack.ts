@@ -48,7 +48,4 @@ export class Stack<T> {
             .map((node) => node.value);
     }
 
-    toString(callback?: (value: T) => string) {
-        return this.linkedList.toString(callback);
-    }
 }
