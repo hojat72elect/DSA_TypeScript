@@ -100,4 +100,40 @@ class NewSinglyLinkedList<T> {
         return this.length;
     }
 
+    insert(value: T, rawIndex: number): NewSinglyLinkedList<T> {
+        if (rawIndex < 0 || rawIndex > this.length) {
+            throw new Error(`Index ${rawIndex} is out of bounds for LinkedList of length ${this.length}`);
+        }
+
+        const newNode = new NewLinkedListNode(value);
+        if (this.length === 0) {
+            // List is currently empty
+            this.head = newNode;
+            this.tail = newNode;
+            this.length++;
+            return this;
+        }
+
+        if (rawIndex === 0) {
+            this.prepend(value);
+            return this;
+        }
+
+        if (rawIndex === this.length) {
+            this.append(value);
+            return this;
+        }
+
+        // We're inserting somewhere in the middle
+        let previousNode = this.head!;
+        for (let i = 0; i < rawIndex - 1; i++) {
+            previousNode = previousNode.next!;
+        }
+
+        newNode.next = previousNode.next;
+        previousNode.next = newNode;
+        this.length++;
+
+        return this;
+    }
 }
