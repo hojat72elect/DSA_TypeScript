@@ -136,4 +136,41 @@ class NewSinglyLinkedList<T> {
 
         return this;
     }
+
+    deleteHead(): NewLinkedListNode<T> | null {
+        if (!this.head) return null;
+
+        const removedNode = this.head;
+        this.head = this.head.next;
+        this.length--;
+
+        if (this.length === 0) this.tail = null;
+
+        removedNode.next = null;
+        return removedNode;
+    }
+
+    deleteTail(): NewLinkedListNode<T> | null {
+        if (!this.head) return null;
+
+        const removedNode = this.tail;
+
+        if (this.head === this.tail) {
+            this.head = null;
+            this.tail = null;
+            this.length = 0;
+            return removedNode;
+        }
+
+        let currentNode = this.head;
+        while (currentNode.next !== this.tail) {
+            currentNode = currentNode.next!;
+        }
+
+        this.tail = currentNode;
+        this.tail.next = null;
+        this.length--;
+
+        return removedNode;
+    }
 }
