@@ -1,3 +1,5 @@
+import {Comparator} from "../../utils/comparator/Comparator.ts";
+
 /**
  * This node is only used for a singly linked list.
  */
@@ -14,11 +16,13 @@ export class NewLinkedListNode<T> {
 export class NewSinglyLinkedList<T> {
     head: NewLinkedListNode<T> | null;
     tail: NewLinkedListNode<T> | null;
+    protected compare: Comparator;
     private length: number;
 
-    constructor() {
+    constructor(comparatorFunction?: (a: T, b: T) => number) {
         this.head = null;
         this.tail = null;
+        this.compare = new Comparator(comparatorFunction);
         this.length = 0;
     }
 
