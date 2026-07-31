@@ -1,9 +1,9 @@
 import {GraphEdge} from "./GraphEdge.ts";
-import {NewLinkedListNode, NewSinglyLinkedList} from "../linked_list/NewSinglyLinkedList.ts";
+import {LinkedListNode, SinglyLinkedList} from "../linked_list/SinglyLinkedList.ts";
 
 export class GraphVertex {
     public value: any;
-    public edges: NewSinglyLinkedList<GraphEdge>;
+    public edges: SinglyLinkedList<GraphEdge>;
 
     constructor(value: any) {
         if (value === undefined) throw new Error('Graph vertex must have a value');
@@ -19,7 +19,7 @@ export class GraphVertex {
         // Normally you would store a string value like a vertex name,
         // but it may be any object as well.
         this.value = value;
-        this.edges = new NewSinglyLinkedList<GraphEdge>(edgeComparator);
+        this.edges = new SinglyLinkedList<GraphEdge>(edgeComparator);
     }
 
     public addEdge(edge: GraphEdge): this {
@@ -35,7 +35,7 @@ export class GraphVertex {
     public getNeighbors(): GraphVertex[] {
         const edges = this.edges.toArray();
 
-        const neighborsConverter = (node: NewLinkedListNode<GraphEdge>): GraphVertex => {
+        const neighborsConverter = (node: LinkedListNode<GraphEdge>): GraphVertex => {
             return node.data.startVertex === this ? node.data.endVertex : node.data.startVertex;
         };
 
@@ -45,7 +45,7 @@ export class GraphVertex {
     }
 
     public getEdges(): GraphEdge[] {
-        return this.edges.toArray().map((linkedListNode: NewLinkedListNode<GraphEdge>) => linkedListNode.data);
+        return this.edges.toArray().map((linkedListNode: LinkedListNode<GraphEdge>) => linkedListNode.data);
     }
 
     public getDegree(): number {

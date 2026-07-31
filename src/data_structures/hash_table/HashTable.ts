@@ -1,4 +1,4 @@
-import {NewLinkedListNode, NewSinglyLinkedList} from "../linked_list/NewSinglyLinkedList.ts";
+import {LinkedListNode, SinglyLinkedList} from "../linked_list/SinglyLinkedList.ts";
 
 export interface HashTableValue<T> {
     key: string;
@@ -14,14 +14,14 @@ export interface HashTableValue<T> {
 const defaultHashTableSize = 32;
 
 export class HashTable<T> {
-    public buckets: NewSinglyLinkedList<HashTableValue<T>>[];
+    public buckets: SinglyLinkedList<HashTableValue<T>>[];
     public keys: Record<string, number>;
 
     constructor(hashTableSize: number = defaultHashTableSize) {
         // Create hash table of certain size and fill each bucket with an empty linked list.
         this.buckets = Array(hashTableSize)
             .fill(null)
-            .map(() => new NewSinglyLinkedList<HashTableValue<T>>());
+            .map(() => new SinglyLinkedList<HashTableValue<T>>());
 
         // Just to keep track of all actual keys in a fast way.
         this.keys = {};
@@ -71,7 +71,7 @@ export class HashTable<T> {
         }
     }
 
-    delete(key: string): NewLinkedListNode<HashTableValue<T>> | null {
+    delete(key: string): LinkedListNode<HashTableValue<T>> | null {
         const keyHash = this.hash(key);
         delete this.keys[key];
         const bucketLinkedList = this.buckets[keyHash]!;

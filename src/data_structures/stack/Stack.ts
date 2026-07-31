@@ -1,4 +1,4 @@
-import {NewSinglyLinkedList} from "../linked_list/NewSinglyLinkedList.ts";
+import {SinglyLinkedList} from "../linked_list/SinglyLinkedList.ts";
 
 /**
  * We implemented Stack based on LinkedList since these
@@ -7,10 +7,10 @@ import {NewSinglyLinkedList} from "../linked_list/NewSinglyLinkedList.ts";
  */
 export class Stack<T> {
 
-    private readonly linkedList: NewSinglyLinkedList<T>;
+    private readonly linkedList: SinglyLinkedList<T>;
 
     constructor() {
-        this.linkedList = new NewSinglyLinkedList();
+        this.linkedList = new SinglyLinkedList();
     }
 
     getList() {

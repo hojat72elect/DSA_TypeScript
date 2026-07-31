@@ -1,6 +1,6 @@
-import {NewSinglyLinkedList} from "../../../data_structures/linked_list/NewSinglyLinkedList.ts";
+import {SinglyLinkedList} from "../../../data_structures/linked_list/SinglyLinkedList.ts";
 
-export function traversal(linkedList: NewSinglyLinkedList<any>, callback: (nodeValue: any) => void) {
+export function traversal(linkedList: SinglyLinkedList<any>, callback: (nodeValue: any) => void) {
     let currentNode = linkedList.head;
 
     while (currentNode) {

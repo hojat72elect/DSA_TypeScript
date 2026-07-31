@@ -1,4 +1,4 @@
-import {NewSinglyLinkedList} from "../linked_list/NewSinglyLinkedList.ts";
+import {SinglyLinkedList} from "../linked_list/SinglyLinkedList.ts";
 
 /**
  * We're going to implement `Queue` based on `LinkedList` since the two
@@ -7,10 +7,10 @@ import {NewSinglyLinkedList} from "../linked_list/NewSinglyLinkedList.ts";
  * operations of Queue with append/deleteHead operations of LinkedList.
  */
 export class Queue {
-    linkedList: NewSinglyLinkedList<any>;
+    linkedList: SinglyLinkedList<any>;
 
     constructor() {
-        this.linkedList = new NewSinglyLinkedList<any>();
+        this.linkedList = new SinglyLinkedList<any>();
     }
 
     isEmpty(): boolean {

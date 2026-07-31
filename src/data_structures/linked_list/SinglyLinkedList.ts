@@ -3,9 +3,9 @@ import {Comparator} from "../../utils/comparator/Comparator.ts";
 /**
  * This node is only used for a singly linked list.
  */
-export class NewLinkedListNode<T> {
+export class LinkedListNode<T> {
     data: T;
-    next: NewLinkedListNode<T> | null;
+    next: LinkedListNode<T> | null;
 
     constructor(data: T) {
         this.data = data;
@@ -13,9 +13,9 @@ export class NewLinkedListNode<T> {
     }
 }
 
-export class NewSinglyLinkedList<T> {
-    head: NewLinkedListNode<T> | null;
-    tail: NewLinkedListNode<T> | null;
+export class SinglyLinkedList<T> {
+    head: LinkedListNode<T> | null;
+    tail: LinkedListNode<T> | null;
     protected compare: Comparator;
     private length: number;
 
@@ -29,8 +29,8 @@ export class NewSinglyLinkedList<T> {
     /**
      * Add an item to the end of the list.
      */
-    append(data: T): NewSinglyLinkedList<T> {
-        const newNode = new NewLinkedListNode(data);
+    append(data: T): SinglyLinkedList<T> {
+        const newNode = new LinkedListNode(data);
 
         if (!this.head) {
             this.head = newNode;
@@ -48,7 +48,7 @@ export class NewSinglyLinkedList<T> {
      * Add an item to the beginning of the list.
      */
     prepend(data: T) {
-        const newNode = new NewLinkedListNode(data);
+        const newNode = new LinkedListNode(data);
         newNode.next = this.head;
         this.head = newNode;
 
@@ -60,7 +60,7 @@ export class NewSinglyLinkedList<T> {
     /**
      * Deletes the first occurrence of the `data` if it exists.
      */
-    delete(value: T): NewLinkedListNode<T> | null {
+    delete(value: T): LinkedListNode<T> | null {
         if (!this.head) return null;
 
         let deletedNode = null;
@@ -107,7 +107,7 @@ export class NewSinglyLinkedList<T> {
         return this.length;
     }
 
-    insert(value: T, rawIndex: number): NewSinglyLinkedList<T> {
+    insert(value: T, rawIndex: number): SinglyLinkedList<T> {
         if (rawIndex < 0 || rawIndex > this.length) {
             throw new Error(`Index ${rawIndex} is out of bounds for LinkedList of length ${this.length}`);
         }
@@ -128,7 +128,7 @@ export class NewSinglyLinkedList<T> {
             previousNode = previousNode.next!;
         }
 
-        const newNode = new NewLinkedListNode(value);
+        const newNode = new LinkedListNode(value);
         newNode.next = previousNode.next;
         previousNode.next = newNode;
         this.length++;
@@ -136,7 +136,7 @@ export class NewSinglyLinkedList<T> {
         return this;
     }
 
-    find(value?: T, callback?: (value: T) => boolean): NewLinkedListNode<T> | null {
+    find(value?: T, callback?: (value: T) => boolean): LinkedListNode<T> | null {
 
         if (!this.head) return null;
 
@@ -152,7 +152,7 @@ export class NewSinglyLinkedList<T> {
         return null
     }
 
-    deleteHead(): NewLinkedListNode<T> | null {
+    deleteHead(): LinkedListNode<T> | null {
         if (!this.head) return null;
 
         const removedNode = this.head;
@@ -165,7 +165,7 @@ export class NewSinglyLinkedList<T> {
         return removedNode;
     }
 
-    deleteTail(): NewLinkedListNode<T> | null {
+    deleteTail(): LinkedListNode<T> | null {
         if (!this.head) return null;
 
         const removedNode = this.tail;
@@ -189,8 +189,8 @@ export class NewSinglyLinkedList<T> {
         return removedNode;
     }
 
-    static fromArray<T>(values: T[]): NewSinglyLinkedList<T> {
-        const list = new NewSinglyLinkedList<T>();
+    static fromArray<T>(values: T[]): SinglyLinkedList<T> {
+        const list = new SinglyLinkedList<T>();
 
         for (const value of values) {
             list.append(value);
@@ -198,8 +198,8 @@ export class NewSinglyLinkedList<T> {
         return list;
     }
 
-    toArray(): NewLinkedListNode<T>[] {
-        const nodes: NewLinkedListNode<T>[] = [];
+    toArray(): LinkedListNode<T>[] {
+        const nodes: LinkedListNode<T>[] = [];
         let currentNode = this.head;
 
         while (currentNode !== null) {

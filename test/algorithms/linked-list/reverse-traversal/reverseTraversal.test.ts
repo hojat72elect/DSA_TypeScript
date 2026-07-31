@@ -1,10 +1,10 @@
 import {reverseTraversal} from "../../../../src/algorithms/linked_list/reverse_traversal/reverseTraversal.ts";
 import {describe, expect, it} from "bun:test";
-import {NewSinglyLinkedList} from "../../../../src/data_structures/linked_list/NewSinglyLinkedList.ts";
+import {SinglyLinkedList} from "../../../../src/data_structures/linked_list/SinglyLinkedList.ts";
 
 describe('reverseTraversal', () => {
     it('should traverse linked list in reverse order', () => {
-        const linkedList = new NewSinglyLinkedList();
+        const linkedList = new SinglyLinkedList();
 
         linkedList
             .append(1)

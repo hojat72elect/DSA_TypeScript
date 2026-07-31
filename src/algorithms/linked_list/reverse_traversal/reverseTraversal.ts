@@ -1,12 +1,12 @@
-import {NewLinkedListNode, NewSinglyLinkedList} from "../../../data_structures/linked_list/NewSinglyLinkedList.ts";
+import {LinkedListNode, SinglyLinkedList} from "../../../data_structures/linked_list/SinglyLinkedList.ts";
 
-function reverseTraversalRecursive(node: NewLinkedListNode<any>, callback: (nodeValue: any) => void) {
+function reverseTraversalRecursive(node: LinkedListNode<any>, callback: (nodeValue: any) => void) {
     if (node) {
         reverseTraversalRecursive(node.next!, callback);
         callback(node.data);
     }
 }
 
-export function reverseTraversal(linkedList: NewSinglyLinkedList<any>, callback: (nodeValue: any) => void) {
+export function reverseTraversal(linkedList: SinglyLinkedList<any>, callback: (nodeValue: any) => void) {
     reverseTraversalRecursive(linkedList.head!, callback);
 }
